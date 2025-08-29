@@ -3,74 +3,101 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Edward Dai – Portfolio</title>
+  <title>Edward Dai - Sound Designer Portfolio</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       margin: 0;
-      background: #f9f9f9;
-      padding: 2rem;
+      padding: 0;
       line-height: 1.6;
+      background-color: #fafafa;
       color: #333;
+    }
+    header {
+      background: #222;
+      color: #fff;
+      padding: 20px;
       text-align: center;
     }
-    h1 {
-      font-size: 2.5rem;
-      margin-bottom: 1.5rem;
-      color: #111;
+    header h1 {
+      margin: 0;
     }
-    video {
-      width: 100%;
-      max-width: 960px;
-      border-radius: 12px;
-      margin-bottom: 2rem;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    nav {
+      margin: 15px 0;
     }
-    .nav {
-      text-align: center;
-      margin-bottom: 2rem;
-    }
-    .nav a {
-      margin: 0 1rem;
+    nav a {
+      margin: 0 15px;
       text-decoration: none;
-      color: #111;
+      color: #fff;
       font-weight: bold;
     }
-    .nav a:hover {
-      color: #555;
+    .container {
+      max-width: 900px;
+      margin: 20px auto;
+      padding: 0 20px;
     }
-    .button {
-      display: inline-block;
-      padding: 0.75rem 1.5rem;
-      font-size: 1rem;
-      background: #111;
-      color: #fff;
-      text-decoration: none;
+    .reel {
+      text-align: center;
+      margin: 30px 0;
+    }
+    .reel video {
+      width: 100%;
+      max-width: 800px;
+      border: 2px solid #ccc;
       border-radius: 6px;
-      transition: background 0.3s;
     }
-    .button:hover {
-      background: #444;
+    .contact {
+      background: #f0f0f0;
+      padding: 40px 20px;
+      margin-top: 60px;
+      text-align: center;
+      border-top: 2px solid #ddd;
+    }
+    .contact h2 {
+      margin-bottom: 15px;
+    }
+    .contact p {
+      margin: 5px 0;
+    }
+    footer {
+      background: #222;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+      margin-top: 20px;
     }
   </style>
 </head>
 <body>
-  <div class="nav">
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="projects.html">Projects</a>
+  <header>
+    <h1>Edward Dai</h1>
+    <p>Sound Designer Portfolio</p>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="reel">
+      <h2>Demo Reel</h2>
+      <video controls>
+        <source src="demo-reel.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
   </div>
 
-  <h1>Edward Dai</h1>
+  <div class="contact">
+    <h2>Contact Me</h2>
+    <p>If you’d like to work together or have any inquiries, feel free to reach out:</p>
+    <p><strong>Email:</strong> <a href="mailto:edward@example.com">edward@example.com</a></p>
+    <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/edward-dai" target="_blank">linkedin.com/in/edward-dai</a></p>
+  </div>
 
-  <!-- Demo Reel -->
-  <video controls autoplay muted loop>
-    <source src="videos/demo-reel.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-
-  <p>Welcome to my portfolio! Explore my projects and learn more about my work.</p>
-
-  <a href="about.html" class="button">About Me</a>
+  <footer>
+    <p>&copy; 2025 Edward Dai. All rights reserved.</p>
+  </footer>
 </body>
 </html>
