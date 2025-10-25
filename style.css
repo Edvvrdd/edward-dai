@@ -36,6 +36,27 @@ nav a:hover {
   text-decoration: underline;
 }
 
+/* Social Banner */
+.social-banner {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-icon {
+  width: 32px;
+  height: 32px;
+  filter: brightness(0) invert(1); /* makes icons white on dark background */
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.1);
+  filter: brightness(0.8) invert(1);
+}
+
+
 /* Container */
 .container {
   max-width: 900px;
