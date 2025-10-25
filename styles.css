@@ -1,0 +1,113 @@
+/* style.css */
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #fafafa;
+  color: #333;
+}
+
+/* Header */
+header {
+  background: #222;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+header p {
+  margin: 5px 0 15px;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Container */
+.container {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+/* Demo Reel */
+.reel {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.reel h2 {
+  margin-bottom: 15px;
+}
+
+.reel video {
+  width: 100%;
+  max-width: 800px;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+}
+
+/* Contact Section */
+.contact {
+  background: #f0f0f0;
+  padding: 40px 20px;
+  margin-top: 60px;
+  text-align: center;
+  border-top: 2px solid #ddd;
+}
+
+.contact h2 {
+  margin-bottom: 15px;
+}
+
+.contact p {
+  margin: 5px 0;
+}
+
+.contact a {
+  color: #0077b5;
+  text-decoration: none;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+  font-size: 0.9em;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  nav a {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .reel video {
+    max-width: 100%;
+  }
+
+  .container {
+    padding: 0 15px;
+  }
+}
