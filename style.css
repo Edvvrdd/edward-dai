@@ -9,6 +9,10 @@ body {
   color: #333;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* Header */
 header {
   background: #222;

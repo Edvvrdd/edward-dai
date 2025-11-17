@@ -8,11 +8,12 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  
   <header>
     <h1>Edward Dai</h1>
     <p>Sound Designer Portfolio</p>
+
     <nav>
-      <!-- Add this right below <nav> inside <header> -->
       <div class="social-banner">
         <a href="https://www.linkedin.com/in/edward-dai" target="_blank" rel="noopener noreferrer">
           <img src="icons/linkedin.svg" alt="LinkedIn" class="social-icon">
@@ -25,23 +26,45 @@
         </a>
       </div>
 
-      <a href="/Home/">Home</a>
-      <a href="/About/">About</a>
-      <a href="/Projects/">Projects</a>
+      <!-- Scroll anchors -->
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
     </nav>
   </header>
 
-  <main class="container">
-    <section class="reel">
-      <h2>Demo Reel</h2>
-      <video controls aria-label="Edward Dai sound design demo reel">
-        <source src="videos/demo-reel.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-    </section>
-  </main>
+  <!-- HOME -->
+  <section id="home" class="container">
+    <h2>Demo Reel</h2>
+    <video controls aria-label="Edward Dai sound design demo reel">
+      <source src="videos/demo-reel.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </section>
 
-  <section class="contact" id="contact">
+  <!-- ABOUT -->
+  <section id="about" class="container">
+    <h2>About Me</h2>
+    <p>Write your about info here...</p>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="container">
+    <h2>Projects</h2>
+
+    <!-- Example item -->
+    <div class="project-item">
+      <h3>Project Title</h3>
+      <p>Description of the project.</p>
+      <a href="#" target="_blank">View Project</a>
+    </div>
+
+    <!-- Add more later -->
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact">
     <h2>Contact Me</h2>
     <p>If you’d like to work together or have any inquiries, feel free to reach out:</p>
     <p><strong>Email:</strong> <a href="mailto:edward@example.com">edward@example.com</a></p>
@@ -51,5 +74,6 @@
   <footer>
     <p>&copy; 2025 Edward Dai. All rights reserved.</p>
   </footer>
+
 </body>
 </html>
