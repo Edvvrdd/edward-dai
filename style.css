@@ -40,6 +40,10 @@ nav a:hover {
   text-decoration: underline;
 }
 
+section {
+  padding-bottom: 280px 0;   /* vertical spacing */
+}
+
 /* Social Banner */
 .social-banner {
   margin-top: 10px;
