@@ -255,8 +255,8 @@ footer {
 }
 
 .carousel-card {
-  flex: 0 0 calc(33.333% - 14px);
-  min-width: calc(33.333% - 14px);
+  flex: 0 0 calc(28% - 14px);
+  min-width: calc(28% - 14px);
   text-decoration: none;
   display: block;
   transition: transform 0.3s ease;
@@ -860,6 +860,7 @@ footer {
 .about-full p {
   color: #B8BABD;
   line-height: 1.8;
+  font-size: 1.15em;
 }
 
 /* Responsive Landing Section */
@@ -958,7 +959,7 @@ footer {
 }
 
 .tech-icon {
-  height: 42px;
+  height: 80px;
   width: auto;
   opacity: 0.85;
   transition: all 0.3s ease;
@@ -1022,11 +1023,11 @@ footer {
 /* Responsive Tech Banner */
 @media (max-width: 768px) {
   .tech-icons {
-    gap: 35px;
+    gap: 40px;
   }
 
   .tech-icon {
-    height: 36px;
+    height: 60px;
   }
 }
 
@@ -1036,10 +1037,10 @@ footer {
   }
 
   .tech-icons {
-    gap: 25px;
+    gap: 30px;
   }
 
   .tech-icon {
-    height: 30px;
+    height: 50px;
   }
 }
