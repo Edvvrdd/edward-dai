@@ -42,23 +42,31 @@
     </div>
   </section>
 
-  <!-- FEATURED PROJECT: LAMBYRINTH -->
-  <section class="featured-project">
-    <div class="container">
-      <div class="featured-project-grid">
-        
-        <!-- Left: Video -->
-        <div class="featured-project-media">
-          <div class="project-video-container">
-            <video controls aria-label="Lambyrinth gameplay and audio showcase">
-              <source src="videos/lambyrinth-showcase.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-            </video>
-          </div>
+  <!-- PROJECTS CONTAINER with sticky video -->
+  <div class="projects-sticky-container">
+    
+    <!-- Sticky Video Sidebar -->
+    <aside class="sticky-video-sidebar">
+      <div class="sticky-video-wrapper">
+        <div class="project-video-container">
+          <video controls aria-label="Current project showcase">
+            <source src="videos/lambyrinth-showcase.mp4" type="video/mp4" id="sticky-video-source">
+            Your browser does not support the video tag.
+          </video>
         </div>
-        
-        <!-- Right: Info -->
-        <div class="featured-project-info">
+        <div class="video-project-label">
+          <span id="current-project-name">Lambyrinth</span>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="projects-main-content">
+      
+      <!-- FEATURED PROJECT: LAMBYRINTH -->
+      <section class="featured-project" id="project-lambyrinth" data-video="videos/lambyrinth-showcase.mp4" data-name="Lambyrinth">
+        <div class="featured-project-content">
+          
           <div class="project-badge">Featured Project</div>
           <h2>Lambyrinth</h2>
           <p class="project-tagline">Horror Puzzle Game | Audio Lead & Technical Implementation</p>
@@ -94,181 +102,220 @@
               Full Case Study
             </a>
           </div>
-        </div>
-        
-      </div>
-      
-      <!-- Expandable Details Section -->
-      <div class="project-details-expander">
-        <button class="expander-toggle" onclick="toggleExpander('lambyrinth-details')">
-          <span class="expander-title">Project Details & Technical Breakdown</span>
-          <svg class="expander-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <polyline points="6 9 12 15 18 9"></polyline>
-          </svg>
-        </button>
-        
-        <div id="lambyrinth-details" class="expander-content">
-          <div class="expander-content-inner">
+          
+          <!-- Expandable Details Section -->
+          <div class="project-details-expander">
+            <button class="expander-toggle" onclick="toggleExpander('lambyrinth-details')">
+              <span class="expander-title">Project Details & Technical Breakdown</span>
+              <svg class="expander-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
             
-            <!-- Key Features -->
-            <div class="detail-section">
-              <h3>Key Audio Features</h3>
-              <div class="features-grid">
-                <div class="feature-card">
-                  <div class="feature-icon">🎙️</div>
-                  <h4>Responsive VO System</h4>
-                  <p>Dynamic voice-over system that responds to player proximity to sheep, monster presence, and player inactivity, creating a deeply personal horror experience.</p>
+            <div id="lambyrinth-details" class="expander-content">
+              <div class="expander-content-inner">
+                
+                <!-- Key Features -->
+                <div class="detail-section">
+                  <h3>Key Audio Features</h3>
+                  <div class="features-grid">
+                    <div class="feature-card">
+                      <div class="feature-icon">🎙️</div>
+                      <h4>Responsive VO System</h4>
+                      <p>Dynamic voice-over system that responds to player proximity to sheep, monster presence, and player inactivity, creating a deeply personal horror experience.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                      <div class="feature-icon">👹</div>
+                      <h4>Voice Mimicry Mechanic</h4>
+                      <p>The monster captures and distorts the player's voice, playing it back from different locations to create psychological horror and disorientation.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                      <div class="feature-icon">🌲</div>
+                      <h4>Atmospheric Soundscape</h4>
+                      <p>Layered forest ambience that shifts between vast openness and claustrophobic tension, using spatial audio to guide and mislead the player.</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                      <div class="feature-icon">⚙️</div>
+                      <h4>FMOD Integration</h4>
+                      <p>Complex parameter-driven audio events using FMOD, including real-time microphone input processing and 3D spatial positioning.</p>
+                    </div>
+                  </div>
                 </div>
                 
-                <div class="feature-card">
-                  <div class="feature-icon">👹</div>
-                  <h4>Voice Mimicry Mechanic</h4>
-                  <p>The monster captures and distorts the player's voice, playing it back from different locations to create psychological horror and disorientation.</p>
+                <!-- Technical Implementation -->
+                <div class="detail-section">
+                  <h3>Technical Implementation</h3>
+                  <div class="tech-breakdown">
+                    <div class="tech-item">
+                      <h4>Responsive VO System</h4>
+                      <p>Built using FMOD parameters tracking player location, object proximity, and monster state. The system triggers contextual dialogue based on multiple game variables, creating a character that feels alive and connected to the player's actions.</p>
+                      <ul>
+                        <li>Proximity-based dialogue triggers</li>
+                        <li>Emotional state transitions based on threat level</li>
+                        <li>Inactivity detection for ambient character moments</li>
+                      </ul>
+                    </div>
+                    
+                    <div class="tech-item">
+                      <h4>Mimic Monster Audio</h4>
+                      <p>Captures microphone input, processes it with distortion and reverb effects in real-time, and triggers it as a 3D sound event from the monster's location. This creates one of the game's most memorable and terrifying moments.</p>
+                      <ul>
+                        <li>Real-time microphone input capture</li>
+                        <li>Dynamic audio processing (distortion, pitch shift, reverb)</li>
+                        <li>3D spatial audio positioning based on monster location</li>
+                      </ul>
+                    </div>
+                  </div>
                 </div>
                 
-                <div class="feature-card">
-                  <div class="feature-icon">🌲</div>
-                  <h4>Atmospheric Soundscape</h4>
-                  <p>Layered forest ambience that shifts between vast openness and claustrophobic tension, using spatial audio to guide and mislead the player.</p>
+                <!-- Challenges & Solutions -->
+                <div class="detail-section">
+                  <h3>Challenges & Solutions</h3>
+                  <div class="challenge-solution">
+                    <div class="challenge">
+                      <strong>Challenge:</strong> Creating a sense of dread in an open forest environment
+                    </div>
+                    <div class="solution">
+                      <strong>Solution:</strong> Layered ambience with dynamic mixing based on player location, using silence and subtle sounds to build tension rather than constant noise
+                    </div>
+                  </div>
+                  
+                  <div class="challenge-solution">
+                    <div class="challenge">
+                      <strong>Challenge:</strong> Making the monster feel present without being visible
+                    </div>
+                    <div class="solution">
+                      <strong>Solution:</strong> Implemented directional audio cues, breathing sounds, and the voice mimicry system to create psychological presence
+                    </div>
+                  </div>
                 </div>
                 
-                <div class="feature-card">
-                  <div class="feature-icon">⚙️</div>
-                  <h4>FMOD Integration</h4>
-                  <p>Complex parameter-driven audio events using FMOD, including real-time microphone input processing and 3D spatial positioning.</p>
-                </div>
-              </div>
-            </div>
-            
-            <!-- Technical Implementation -->
-            <div class="detail-section">
-              <h3>Technical Implementation</h3>
-              <div class="tech-breakdown">
-                <div class="tech-item">
-                  <h4>Responsive VO System</h4>
-                  <p>Built using FMOD parameters tracking player location, object proximity, and monster state. The system triggers contextual dialogue based on multiple game variables, creating a character that feels alive and connected to the player's actions.</p>
-                  <ul>
-                    <li>Proximity-based dialogue triggers</li>
-                    <li>Emotional state transitions based on threat level</li>
-                    <li>Inactivity detection for ambient character moments</li>
-                  </ul>
+                <!-- Results -->
+                <div class="detail-section">
+                  <h3>Results & Learnings</h3>
+                  <p>Leading the audio direction for Lambyrinth taught me how to maintain a cohesive sonic vision while managing a wide range of assets. The voice mimicry mechanic became one of the most talked-about features, demonstrating the power of audio to create truly memorable gameplay moments. This project deepened my understanding of FMOD's parameter-driven systems and reinforced the importance of designing sound that shapes the player's emotional journey.</p>
                 </div>
                 
-                <div class="tech-item">
-                  <h4>Mimic Monster Audio</h4>
-                  <p>Captures microphone input, processes it with distortion and reverb effects in real-time, and triggers it as a 3D sound event from the monster's location. This creates one of the game's most memorable and terrifying moments.</p>
-                  <ul>
-                    <li>Real-time microphone input capture</li>
-                    <li>Dynamic audio processing (distortion, pitch shift, reverb)</li>
-                    <li>3D spatial audio positioning based on monster location</li>
-                  </ul>
-                </div>
               </div>
             </div>
-            
-            <!-- Challenges & Solutions -->
-            <div class="detail-section">
-              <h3>Challenges & Solutions</h3>
-              <div class="challenge-solution">
-                <div class="challenge">
-                  <strong>Challenge:</strong> Creating a sense of dread in an open forest environment
-                </div>
-                <div class="solution">
-                  <strong>Solution:</strong> Layered ambience with dynamic mixing based on player location, using silence and subtle sounds to build tension rather than constant noise
-                </div>
-              </div>
-              
-              <div class="challenge-solution">
-                <div class="challenge">
-                  <strong>Challenge:</strong> Making the monster feel present without being visible
-                </div>
-                <div class="solution">
-                  <strong>Solution:</strong> Implemented directional audio cues, breathing sounds, and the voice mimicry system to create psychological presence
-                </div>
-              </div>
-            </div>
-            
-            <!-- Results -->
-            <div class="detail-section">
-              <h3>Results & Learnings</h3>
-              <p>Leading the audio direction for Lambyrinth taught me how to maintain a cohesive sonic vision while managing a wide range of assets. The voice mimicry mechanic became one of the most talked-about features, demonstrating the power of audio to create truly memorable gameplay moments. This project deepened my understanding of FMOD's parameter-driven systems and reinforced the importance of designing sound that shapes the player's emotional journey.</p>
-            </div>
-            
           </div>
+          
         </div>
-      </div>
-      
-    </div>
-  </section>
+      </section>
 
-  <!-- PERSONAL PROJECTS SECTION -->
-  <section class="personal-projects-section">
-    <div class="container">
-      <h2>Personal Projects</h2>
-      <p class="section-intro">Experimental audio design and technical explorations</p>
-      
-      <div class="projects-grid">
-        
-        <!-- Personal Project 1 -->
-        <div class="project-card">
-          <div class="project-card-image">
-            <img src="images/projects/personal1.jpg" alt="Personal Project 1" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-            <div class="image-placeholder-fallback">
-              <span>Project Image</span>
+      <!-- PERSONAL PROJECT 1 -->
+      <section class="featured-project" id="project-personal1" data-video="videos/personal1-showcase.mp4" data-name="Personal Project 1">
+        <div class="featured-project-content">
+          
+          <div class="project-badge">Personal Project</div>
+          <h2>Personal Project 1</h2>
+          <p class="project-tagline">Experimental Audio System | Solo Developer</p>
+          
+          <p class="project-intro">An experimental project exploring procedural audio generation and adaptive soundscapes. This personal exploration focused on creating dynamic audio systems that respond to environmental parameters and player behavior in real-time.</p>
+          
+          <div class="project-meta">
+            <div class="meta-item">
+              <strong>Role:</strong> Solo Developer
+            </div>
+            <div class="meta-item">
+              <strong>Tools:</strong> FMOD, Unity, Reaper
+            </div>
+            <div class="meta-item">
+              <strong>Focus:</strong> Procedural Audio
             </div>
           </div>
-          <div class="project-card-content">
-            <h3>Project Name 1</h3>
-            <p class="project-card-description">Brief description of the personal project, highlighting the audio techniques or systems explored.</p>
-            <div class="project-card-tags">
-              <span class="tag">FMOD</span>
-              <span class="tag">Unity</span>
-              <span class="tag">Procedural Audio</span>
+          
+          <div class="project-links">
+            <a href="#" class="btn btn-secondary">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                <circle cx="12" cy="12" r="3"></circle>
+              </svg>
+              View Details
+            </a>
+          </div>
+          
+          <!-- Expandable Details -->
+          <div class="project-details-expander">
+            <button class="expander-toggle" onclick="toggleExpander('personal1-details')">
+              <span class="expander-title">Project Details & Technical Breakdown</span>
+              <svg class="expander-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+            
+            <div id="personal1-details" class="expander-content">
+              <div class="expander-content-inner">
+                <div class="detail-section">
+                  <h3>Project Overview</h3>
+                  <p>Detailed description of the personal project will go here, including technical challenges, solutions, and learnings from the experimental audio work.</p>
+                </div>
+              </div>
             </div>
           </div>
+          
         </div>
-        
-        <!-- Personal Project 2 -->
-        <div class="project-card">
-          <div class="project-card-image">
-            <img src="images/projects/personal2.jpg" alt="Personal Project 2" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-            <div class="image-placeholder-fallback">
-              <span>Project Image</span>
+      </section>
+
+      <!-- PERSONAL PROJECT 2 -->
+      <section class="featured-project" id="project-personal2" data-video="videos/personal2-showcase.mp4" data-name="Personal Project 2">
+        <div class="featured-project-content">
+          
+          <div class="project-badge">Personal Project</div>
+          <h2>Personal Project 2</h2>
+          <p class="project-tagline">Adaptive Music System | Technical Exploration</p>
+          
+          <p class="project-intro">A deep dive into adaptive music systems using Wwise and Unreal Engine. This project explored vertical and horizontal re-orchestration techniques to create seamless musical transitions based on gameplay intensity.</p>
+          
+          <div class="project-meta">
+            <div class="meta-item">
+              <strong>Role:</strong> Solo Developer
+            </div>
+            <div class="meta-item">
+              <strong>Tools:</strong> Wwise, Unreal Engine, Reaper
+            </div>
+            <div class="meta-item">
+              <strong>Focus:</strong> Adaptive Music
             </div>
           </div>
-          <div class="project-card-content">
-            <h3>Project Name 2</h3>
-            <p class="project-card-description">Brief description of the personal project, highlighting the audio techniques or systems explored.</p>
-            <div class="project-card-tags">
-              <span class="tag">Wwise</span>
-              <span class="tag">Unreal Engine</span>
-              <span class="tag">Adaptive Music</span>
+          
+          <div class="project-links">
+            <a href="#" class="btn btn-secondary">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                <circle cx="12" cy="12" r="3"></circle>
+              </svg>
+              View Details
+            </a>
+          </div>
+          
+          <!-- Expandable Details -->
+          <div class="project-details-expander">
+            <button class="expander-toggle" onclick="toggleExpander('personal2-details')">
+              <span class="expander-title">Project Details & Technical Breakdown</span>
+              <svg class="expander-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+            
+            <div id="personal2-details" class="expander-content">
+              <div class="expander-content-inner">
+                <div class="detail-section">
+                  <h3>Project Overview</h3>
+                  <p>Detailed description of the personal project will go here, including technical challenges, solutions, and learnings from the adaptive music exploration.</p>
+                </div>
+              </div>
             </div>
           </div>
+          
         </div>
-        
-        <!-- Personal Project 3 -->
-        <div class="project-card">
-          <div class="project-card-image">
-            <img src="images/projects/personal3.jpg" alt="Personal Project 3" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-            <div class="image-placeholder-fallback">
-              <span>Project Image</span>
-            </div>
-          </div>
-          <div class="project-card-content">
-            <h3>Project Name 3</h3>
-            <p class="project-card-description">Brief description of the personal project, highlighting the audio techniques or systems explored.</p>
-            <div class="project-card-tags">
-              <span class="tag">Field Recording</span>
-              <span class="tag">Sound Design</span>
-              <span class="tag">Foley</span>
-            </div>
-          </div>
-        </div>
-        
-      </div>
-    </div>
-  </section>
+      </section>
+
+    </main>
+  </div>
 
   <footer>
     <p>&copy; 2025 Edward Dai. All rights reserved.</p>
@@ -289,6 +336,37 @@
         button.classList.add('active');
       }
     }
+
+    // Sticky video - update video source based on scroll position
+    window.addEventListener('scroll', function() {
+      const projects = document.querySelectorAll('.featured-project');
+      const videoElement = document.querySelector('.sticky-video-wrapper video');
+      const videoSource = document.getElementById('sticky-video-source');
+      const projectLabel = document.getElementById('current-project-name');
+      
+      let currentProject = null;
+      
+      projects.forEach(project => {
+        const rect = project.getBoundingClientRect();
+        const windowHeight = window.innerHeight;
+        
+        // Check if project is in view (with some buffer)
+        if (rect.top < windowHeight * 0.6 && rect.bottom > windowHeight * 0.2) {
+          currentProject = project;
+        }
+      });
+      
+      if (currentProject) {
+        const newVideo = currentProject.dataset.video;
+        const newName = currentProject.dataset.name;
+        
+        if (videoSource.src !== newVideo && newVideo) {
+          videoSource.src = newVideo;
+          videoElement.load();
+          projectLabel.textContent = newName;
+        }
+      }
+    });
   </script>
 
 </body>
