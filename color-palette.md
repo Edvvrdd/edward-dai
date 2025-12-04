@@ -1,76 +1,78 @@
 # Edward Dai Portfolio - Color Palette
 
-## Dark Mode with Green & Blue Accents
+## Custom Dark Mode with Blue & Green Accents
 
-### Base Colors (Backgrounds & Surfaces)
+**Palette Source:** https://coolors.co/454ade-214e34-c9d7f8-190933-7b9e87
 
-- **Primary Background**: `#0a0f0d` - Very dark green-tinted black
-- **Secondary Background**: `#141a17` - Dark gray with subtle green
-- **Card/Surface**: `#1a2420` - Slightly lighter dark green-gray
-- **Elevated Surface**: `#1f2d27` - Medium dark with green tint
+---
+
+## Core Colors
+
+### Primary Accent (Blue)
+- **Main Blue**: `#454ADE` - Vibrant blue for headings, buttons, primary actions
+- **Hover Blue**: `#5A5FE8` - Lighter blue for hover states
+
+### Backgrounds
+- **Deep Background**: `#190933` - Very dark purple for main page background
+- **Secondary Background**: `#1a1240` - Slightly lighter purple for sections
+- **Card Background**: `#214E34` - Dark green for cards and panels
+- **Elevated Surface**: `#2a5f42` - Medium green for elevated elements
 
 ### Text Colors
+- **Primary Text**: `#C9D7F8` - Light blue for main content
+- **Secondary Text**: `#B5C7E8` - Slightly muted blue for secondary content
+- **Muted Text**: `#8FA3C8` - Blue-gray for less important text
+- **Disabled Text**: `#6A7A9A` - Dark blue-gray for disabled elements
 
-- **Primary Text**: `#e8f0ed` - Off-white with slight green tint
-- **Secondary Text**: `#c5d5ce` - Light gray-green
-- **Muted Text**: `#8fa99d` - Medium gray-green
-- **Disabled Text**: `#5a6b62` - Dark gray-green
+### Secondary Accent (Sage Green)
+- **Sage Green**: `#7B9E87` - For links, secondary highlights, and accents
 
-### Accent Colors
+### Borders & Dividers
+- **Medium Border**: `#2a5f42` - Green-tinted borders
+- **Light Border**: `#3a7056` - Lighter green borders for emphasis
 
-- **Primary Accent (Teal-Blue)**: `#4ecdc4` - Vibrant teal for main actions
-- **Secondary Accent (Green)**: `#52b788` - Fresh green for highlights
-- **Tertiary Accent (Blue)**: `#5390d9` - Cool blue for links
-- **Hover State**: `#6ee7df` - Lighter teal for hover effects
-
-### Semantic Colors
-
-- **Success/Positive**: `#52b788` - Green
-- **Info/Link**: `#5390d9` - Blue
-- **Warning**: `#f4a261` - Warm orange (minimal use)
-- **Error**: `#e76f51` - Coral red (minimal use)
-
-### Border & Divider Colors
-
-- **Subtle Border**: `#2a3d35` - Dark green-gray
-- **Medium Border**: `#3d5a4c` - Medium green-gray
-- **Accent Border**: `#4ecdc4` - Teal (for hover states)
-
-### Gradient Accents
-
-- **Primary Gradient**: `linear-gradient(135deg, #4ecdc4 0%, #52b788 100%)` - Teal to green
-- **Secondary Gradient**: `linear-gradient(135deg, #5390d9 0%, #4ecdc4 100%)` - Blue to teal
-- **Subtle Gradient**: `linear-gradient(135deg, #1a2420 0%, #1f2d27 100%)` - Dark surface gradient
+---
 
 ## Usage Guidelines
 
-### Primary Actions & Links
-Use **Primary Accent (Teal-Blue)** `#4ecdc4` for:
-- Primary buttons
-- Important links
+### Primary Actions & Headings
+Use **Main Blue** `#454ADE` for:
+- All headings (h1-h6)
+- Primary buttons and CTAs
+- Important highlights
 - Active navigation items
-- Call-to-action elements
-
-### Highlights & Success States
-Use **Secondary Accent (Green)** `#52b788` for:
-- Success messages
-- Positive indicators
-- Category tags
-- Subtle highlights
-
-### Information & Standard Links
-Use **Tertiary Accent (Blue)** `#5390d9` for:
-- Standard text links
-- Information badges
-- Secondary buttons
-- Navigation hover states
+- Section titles
 
 ### Backgrounds
-- Use darkest colors for main background
-- Layer surfaces with progressively lighter shades
-- Add subtle green tint to maintain cohesion
+- **Deep Background** `#190933` - Main page background (dark purple)
+- **Card Background** `#214E34` - Cards, panels, containers (dark green)
+- **Elevated Surface** `#2a5f42` - Hover states, elevated cards (medium green)
 
 ### Text Hierarchy
-- Primary text: High contrast white-green
-- Secondary text: Medium contrast gray-green
-- Muted text: Lower contrast for less important info
+- **Primary Text** `#C9D7F8` - Body text, main content (light blue)
+- **Secondary Text** `#B5C7E8` - Supporting text, descriptions
+- **Muted Text** `#8FA3C8` - Metadata, timestamps, less important info
+
+### Links & Secondary Elements
+Use **Sage Green** `#7B9E87` for:
+- Text links
+- Secondary buttons
+- Icons
+- Subtle accents
+
+### Borders
+- Use medium green `#2a5f42` for standard borders
+- Use lighter green `#3a7056` for emphasis or hover states
+
+---
+
+## Color Psychology
+
+This palette combines:
+- **Deep Purple** (#190933) - Sophistication, creativity, depth
+- **Dark Green** (#214E34) - Nature, growth, technical expertise
+- **Vibrant Blue** (#454ADE) - Energy, professionalism, trust
+- **Light Blue** (#C9D7F8) - Clarity, readability, modern feel
+- **Sage Green** (#7B9E87) - Balance, harmony, organic connection
+
+Perfect for a game audio portfolio that balances technical expertise with creative energy.
