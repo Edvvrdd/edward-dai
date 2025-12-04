@@ -67,7 +67,7 @@ header {
 .social-link {
   display: flex;
   align-items: center;
-  transition: transform 0.2s ease;
+  transition: transform 0.3s ease;
 }
 
 .social-link:hover {
@@ -78,7 +78,7 @@ header {
   width: 22px;
   height: 22px;
   filter: brightness(0) invert(1);
-  transition: filter 0.2s ease;
+  transition: filter 0.3s ease;
 }
 
 .social-link:hover .social-icon-small {
@@ -259,8 +259,29 @@ footer {
   min-width: calc(28% - 14px);
   text-decoration: none;
   display: block;
-  transition: transform 0.3s ease;
+  transition: all 0.3s ease;
+  position: relative;
 }
+
+.carousel-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, #00D9FF 0%, #A78BFA 100%);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+  z-index: 10;
+  border-radius: 12px 12px 0 0;
+}
+
+.carousel-card:hover::before {
+  transform: scaleX(1);
+}
+
 
 .carousel-card:hover {
   transform: translateY(-8px);
@@ -274,12 +295,13 @@ footer {
   overflow: hidden;
   position: relative;
   border: 2px solid #252B47;
-  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .carousel-card:hover .carousel-image-placeholder {
   border-color: #00D9FF;
-  box-shadow: 0 0 20px rgba(78, 205, 196, 0.3);
+  box-shadow: 0 8px 24px rgba(0, 217, 255, 0.2);
+  background-color: rgba(18, 23, 46, 0.9);
 }
 
 .carousel-image-placeholder img {
@@ -360,16 +382,36 @@ footer {
   border-radius: 12px;
   padding: 35px;
   border: 2px solid #252B47;
-  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+  transition: all 0.3s ease;
   display: flex;
   flex-direction: column;
   position: relative;
 }
 
+.testimonial-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, #A78BFA 0%, #00D9FF 100%);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+  border-radius: 12px 12px 0 0;
+}
+
+.testimonial-card:hover::before {
+  transform: scaleX(1);
+}
+
+
 .testimonial-card:hover {
   transform: translateY(-8px);
   border-color: #A78BFA;
-  box-shadow: 0 8px 24px rgba(82, 183, 136, 0.2);
+  box-shadow: 0 8px 24px rgba(167, 139, 250, 0.2);
+  background-color: rgba(26, 31, 58, 0.95);
 }
 
 .quote-icon {
@@ -377,9 +419,16 @@ footer {
   color: #00D9FF;
   line-height: 1;
   margin-bottom: 15px;
+  transition: all 0.3s ease;
   font-family: Georgia, serif;
   opacity: 0.4;
 }
+
+.testimonial-card:hover .quote-icon {
+  color: #A78BFA;
+  transform: scale(1.1);
+}
+
 
 .testimonial-quote {
   color: #B8BABD;
