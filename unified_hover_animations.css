@@ -1,0 +1,273 @@
+/* ===================================
+   UNIFIED HOVER ANIMATION SYSTEM
+   Applied to all card-type elements
+   =================================== */
+
+/* Update Carousel Cards - Add top accent bar and standardize effects */
+.carousel-card {
+  flex: 0 0 calc(28% - 14px);
+  min-width: calc(28% - 14px);
+  text-decoration: none;
+  display: block;
+  transition: all 0.3s ease; /* Changed from transform only */
+  position: relative; /* Added for accent bar */
+}
+
+.carousel-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, #00D9FF 0%, #A78BFA 100%);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+  z-index: 10;
+  border-radius: 12px 12px 0 0;
+}
+
+.carousel-card:hover::before {
+  transform: scaleX(1);
+}
+
+.carousel-card:hover {
+  transform: translateY(-8px);
+}
+
+.carousel-image-placeholder {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background-color: #12172E;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+  border: 2px solid #252B47;
+  transition: all 0.3s ease; /* Standardized */
+}
+
+.carousel-card:hover .carousel-image-placeholder {
+  border-color: #00D9FF;
+  box-shadow: 0 8px 24px rgba(0, 217, 255, 0.2); /* Standardized shadow */
+  background-color: rgba(18, 23, 46, 0.9); /* Added subtle background change */
+}
+
+/* Update Testimonial Cards - Add top accent bar and standardize */
+.testimonial-card {
+  background-color: #1A1F3A;
+  border-radius: 12px;
+  padding: 35px;
+  border: 2px solid #252B47;
+  transition: all 0.3s ease; /* Standardized */
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.testimonial-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, #A78BFA 0%, #00D9FF 100%);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+  border-radius: 12px 12px 0 0;
+}
+
+.testimonial-card:hover::before {
+  transform: scaleX(1);
+}
+
+.testimonial-card:hover {
+  transform: translateY(-8px);
+  border-color: #A78BFA;
+  box-shadow: 0 8px 24px rgba(167, 139, 250, 0.2); /* Standardized shadow */
+  background-color: rgba(26, 31, 58, 0.95); /* Added subtle background change */
+}
+
+/* Add quote icon animation */
+.quote-icon {
+  font-size: 64px;
+  color: #00D9FF;
+  line-height: 1;
+  margin-bottom: 15px;
+  transition: all 0.3s ease; /* Added */
+}
+
+.testimonial-card:hover .quote-icon {
+  color: #A78BFA;
+  transform: scale(1.1);
+}
+
+/* Standardize Social Icons timing */
+.social-link {
+  display: flex;
+  align-items: center;
+  transition: transform 0.3s ease; /* Changed from 0.2s to 0.3s */
+}
+
+.social-link:hover {
+  transform: translateY(-2px);
+}
+
+.social-icon-small {
+  width: 22px;
+  height: 22px;
+  filter: brightness(0) invert(1);
+  transition: filter 0.3s ease; /* Changed from 0.2s to 0.3s */
+}
+
+.social-link:hover .social-icon-small {
+  filter: brightness(0) invert(1) sepia(1) saturate(5) hue-rotate(140deg);
+}
+
+/* Standardize Tech Icons */
+.tech-icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.tech-icon-wrapper:hover {
+  transform: scale(1.15);
+}
+
+.tech-icon {
+  height: 80px;
+  width: auto;
+  opacity: 0.85;
+  transition: all 0.3s ease;
+}
+
+/* Keep individual color tints but standardize timing - all already at 0.3s */
+
+/* Video carousel navigation buttons - add consistent hover */
+.video-nav-btn {
+  background: rgba(167, 139, 250, 0.2);
+  border: 1px solid #252B47;
+  color: #E8EAED;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 6px;
+  transition: all 0.3s ease; /* Added */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.video-nav-btn:hover {
+  background: rgba(167, 139, 250, 0.4);
+  border-color: #A78BFA;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(167, 139, 250, 0.2);
+}
+
+.video-nav-btn:active {
+  transform: translateY(0);
+}
+
+/* Carousel dots - add consistent hover */
+.dot {
+  height: 12px;
+  width: 12px;
+  margin: 0 5px;
+  background-color: #252B47;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+  transition: all 0.3s ease; /* Added */
+  border: 2px solid transparent;
+}
+
+.dot:hover {
+  background-color: #A78BFA;
+  transform: scale(1.2);
+  border-color: #A78BFA;
+}
+
+.dot.active {
+  background-color: #00D9FF;
+  border-color: #00D9FF;
+}
+
+.dot.active:hover {
+  background-color: #A78BFA;
+  border-color: #A78BFA;
+}
+
+/* Ensure all text links have consistent hover */
+a {
+  transition: all 0.3s ease;
+}
+
+/* Contact info links standardization */
+.contact-info-inline a {
+  color: #A78BFA;
+  text-decoration: none;
+  transition: all 0.3s ease; /* Ensure consistency */
+}
+
+.contact-info-inline a:hover {
+  color: #00D9FF;
+  text-decoration: underline;
+}
+
+/* CTA contact info links - already good, just ensure timing */
+.cta-contact-info a {
+  color: #A78BFA;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.cta-contact-info a:hover {
+  color: #00D9FF;
+  text-decoration: underline;
+}
+
+/* ===================================
+   RESPONSIVE ADJUSTMENTS
+   =================================== */
+
+@media (max-width: 1024px) {
+  .carousel-card {
+    flex: 0 0 calc(50% - 10px);
+    min-width: calc(50% - 10px);
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel-card {
+    flex: 0 0 100%;
+    min-width: 100%;
+  }
+
+  .testimonial-card {
+    padding: 25px;
+  }
+
+  .quote-icon {
+    font-size: 48px;
+  }
+
+  /* Reduce hover effects on mobile for better touch experience */
+  .carousel-card:hover,
+  .testimonial-card:hover,
+  .skill-card:hover {
+    transform: translateY(-4px); /* Reduced from -8px */
+  }
+}
+
+@media (max-width: 480px) {
+  /* Further reduce animations on very small screens */
+  .carousel-card:hover,
+  .testimonial-card:hover,
+  .skill-card:hover {
+    transform: translateY(-2px);
+  }
+}
