@@ -665,3 +665,146 @@ footer {
     padding: 0 15px;
   }
 }
+
+/* Landing Section */
+.landing-section {
+  background-color: #0a0f0d;
+  padding: 60px 0;
+}
+
+.landing-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 50px;
+  align-items: start;
+}
+
+.landing-reel h2 {
+  color: #ffffff;
+  margin-bottom: 20px;
+  font-size: 1.8em;
+}
+
+.landing-reel video {
+  width: 100%;
+  border: 2px solid #2a3d35;
+  border-radius: 12px;
+  background-color: #000;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.landing-info {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.bio-section {
+  background-color: #141a17;
+  padding: 30px;
+  border-radius: 12px;
+  border: 2px solid #2a3d35;
+}
+
+.bio-section h2 {
+  color: #ffffff;
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 1.6em;
+}
+
+.bio-section p {
+  color: #c5d5ce;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.contact-info {
+  background-color: #1a2420;
+  padding: 25px;
+  border-radius: 12px;
+  border: 2px solid #2a3d35;
+  border-left: 4px solid #4ecdc4;
+}
+
+.contact-info h3 {
+  color: #4ecdc4;
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 1.3em;
+}
+
+.contact-info p {
+  color: #c5d5ce;
+  margin: 8px 0;
+  line-height: 1.6;
+}
+
+.contact-info strong {
+  color: #e8f0ed;
+}
+
+.contact-info a {
+  color: #5390d9;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+  color: #4ecdc4;
+  text-decoration: underline;
+}
+
+/* About Full Section */
+.about-full {
+  padding: 60px 20px;
+}
+
+.about-full h2 {
+  color: #ffffff;
+  margin-bottom: 20px;
+  font-size: 1.8em;
+}
+
+.about-full p {
+  color: #c5d5ce;
+  line-height: 1.8;
+}
+
+/* Responsive Landing Section */
+@media (max-width: 968px) {
+  .landing-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .landing-info {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .landing-section {
+    padding: 40px 0;
+  }
+
+  .bio-section {
+    padding: 20px;
+  }
+
+  .contact-info {
+    padding: 20px;
+  }
+
+  .landing-reel h2 {
+    font-size: 1.5em;
+  }
+
+  .bio-section h2 {
+    font-size: 1.4em;
+  }
+
+  .contact-info h3 {
+    font-size: 1.2em;
+  }
+}
