@@ -46,7 +46,7 @@ nav a:hover {
 }
 
 section {
-  padding: 60px 0;   /* Fixed: was padding-bottom with two values */
+  padding: 60px 0;
 }
 
 /* Social Banner */
@@ -60,7 +60,7 @@ section {
 .social-icon {
   width: 32px;
   height: 32px;
-  filter: brightness(0) invert(1); /* makes icons white on dark background */
+  filter: brightness(0) invert(1);
   transition: transform 0.2s ease, filter 0.2s ease;
 }
 
@@ -69,10 +69,9 @@ section {
   filter: brightness(0.8) invert(1);
 }
 
-
 /* Container */
 .container {
-  max-width: 900px;
+  max-width: 1200px;
   margin: 20px auto;
   padding: 0 20px;
 }
@@ -205,23 +204,7 @@ footer {
   border-top: 1px solid #222;
 }
 
-/* Responsive Design */
-@media (max-width: 600px) {
-  nav a {
-    display: block;
-    margin: 10px 0;
-  }
-
-  .reel video {
-    max-width: 100%;
-  }
-
-  .container {
-    padding: 0 15px;
-  }
-}
-
-/* Carousel Section */
+/* Image Carousel Section */
 .carousel-section {
   background-color: #0f0f0f;
   padding: 60px 0;
@@ -233,88 +216,74 @@ footer {
   margin-bottom: 40px;
 }
 
-.carousel-container {
+.carousel-wrapper {
   position: relative;
-  max-width: 800px;
+  max-width: 100%;
   margin: 0 auto;
-  display: flex;
-  align-items: center;
-  gap: 20px;
+  overflow: hidden;
 }
 
 .carousel-track-container {
   overflow: hidden;
-  flex: 1;
-  border-radius: 8px;
+  padding: 10px 0;
 }
 
 .carousel-track {
   display: flex;
+  gap: 20px;
   transition: transform 0.5s ease-in-out;
 }
 
-.carousel-item {
-  min-width: 100%;
-  padding: 0 10px;
-  box-sizing: border-box;
-}
-
-.carousel-content {
-  background-color: #1a1a1a;
-  padding: 40px;
-  border-radius: 8px;
-  border: 1px solid #2a2a2a;
-  min-height: 250px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.carousel-content h3 {
-  color: #ffffff;
-  margin-top: 0;
-  margin-bottom: 15px;
-}
-
-.carousel-content p {
-  color: #d0d0d0;
-  line-height: 1.6;
-  flex-grow: 1;
-}
-
-.carousel-link {
-  color: #4a9eff;
+.carousel-card {
+  flex: 0 0 calc(33.333% - 14px);
+  min-width: calc(33.333% - 14px);
   text-decoration: none;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.carousel-card:hover {
+  transform: translateY(-8px);
+}
+
+.carousel-image-placeholder {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background-color: #1a1a1a;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+  border: 2px solid #2a2a2a;
+  transition: border-color 0.3s ease;
+}
+
+.carousel-card:hover .carousel-image-placeholder {
+  border-color: #4a9eff;
+}
+
+.carousel-image-placeholder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.image-placeholder-fallback {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
+}
+
+.image-placeholder-fallback span {
+  color: #666;
+  font-size: 1.2em;
   font-weight: bold;
-  display: inline-block;
-  margin-top: 15px;
-  transition: color 0.3s ease;
-}
-
-.carousel-link:hover {
-  color: #6bb3ff;
-}
-
-.carousel-btn {
-  background-color: #2a2a2a;
-  color: #ffffff;
-  border: none;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  font-size: 24px;
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-  flex-shrink: 0;
-}
-
-.carousel-btn:hover {
-  background-color: #4a9eff;
-  transform: scale(1.1);
-}
-
-.carousel-btn:active {
-  transform: scale(0.95);
 }
 
 .carousel-dots {
@@ -353,92 +322,120 @@ footer {
 .testimonials-section h2 {
   text-align: center;
   color: #ffffff;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
+  font-size: 2em;
 }
 
-.testimonials-grid {
+.testimonials-columns {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 30px;
   max-width: 1200px;
   margin: 0 auto;
 }
 
-.testimonial-item {
+.testimonial-card {
   background-color: #0f0f0f;
-  border-radius: 8px;
-  overflow: hidden;
-  border: 1px solid #2a2a2a;
-  transition: transform 0.3s ease, border-color 0.3s ease;
-}
-
-.testimonial-item:hover {
-  transform: translateY(-5px);
-  border-color: #4a9eff;
-}
-
-.testimonial-content {
-  padding: 30px;
-}
-
-.testimonial-text {
-  color: #d0d0d0;
-  font-style: italic;
-  line-height: 1.8;
-  margin-bottom: 20px;
+  border-radius: 12px;
+  padding: 35px;
+  border: 2px solid #2a2a2a;
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
   position: relative;
 }
 
-.testimonial-text::before {
-  content: '"';
-  font-size: 48px;
+.testimonial-card:hover {
+  transform: translateY(-8px);
+  border-color: #4a9eff;
+  box-shadow: 0 8px 24px rgba(74, 158, 255, 0.15);
+}
+
+.quote-icon {
+  font-size: 64px;
   color: #4a9eff;
-  position: absolute;
-  top: -10px;
-  left: -10px;
-  opacity: 0.3;
+  line-height: 1;
+  margin-bottom: 15px;
+  font-family: Georgia, serif;
+  opacity: 0.4;
+}
+
+.testimonial-quote {
+  color: #d0d0d0;
+  font-size: 1.05em;
+  line-height: 1.7;
+  margin: 0 0 25px 0;
+  flex-grow: 1;
+}
+
+.testimonial-divider {
+  width: 50px;
+  height: 3px;
+  background: linear-gradient(90deg, #4a9eff 0%, transparent 100%);
+  margin-bottom: 20px;
 }
 
 .testimonial-author {
-  border-top: 1px solid #2a2a2a;
-  padding-top: 15px;
+  margin: 0;
 }
 
 .author-name {
   color: #ffffff;
   font-weight: bold;
+  font-size: 1.1em;
   margin: 0 0 5px 0;
 }
 
-.author-title {
-  color: #b0b0b0;
-  font-size: 0.9em;
+.author-role {
+  color: #888;
+  font-size: 0.95em;
   margin: 0;
 }
 
-/* Responsive Design for Carousel and Testimonials */
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .carousel-card {
+    flex: 0 0 calc(50% - 10px);
+    min-width: calc(50% - 10px);
+  }
+
+  .testimonials-columns {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+}
+
 @media (max-width: 768px) {
-  .carousel-container {
-    gap: 10px;
+  .carousel-card {
+    flex: 0 0 100%;
+    min-width: 100%;
   }
-  
-  .carousel-btn {
-    width: 40px;
-    height: 40px;
-    font-size: 20px;
-  }
-  
-  .carousel-content {
-    padding: 25px;
-    min-height: 200px;
-  }
-  
-  .testimonials-grid {
+
+  .testimonials-columns {
     grid-template-columns: 1fr;
     gap: 20px;
   }
-  
-  .testimonial-content {
-    padding: 20px;
+
+  .testimonial-card {
+    padding: 25px;
+  }
+
+  .quote-icon {
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 600px) {
+  nav a {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .reel video {
+    max-width: 100%;
+  }
+
+  .container {
+    padding: 0 15px;
   }
 }
