@@ -878,17 +878,18 @@ footer {
 
 /* Technology Banner */
 .tech-banner {
-  background-color: #141a17;
-  padding: 40px 0;
-  border-top: 1px solid #2a3d35;
-  border-bottom: 1px solid #2a3d35;
+  background: linear-gradient(135deg, #1f2d27 0%, #2a3d35 100%);
+  padding: 35px 0;
+  border-top: 2px solid #3d5a4c;
+  border-bottom: 2px solid #3d5a4c;
+  box-shadow: inset 0 1px 0 rgba(78, 205, 196, 0.1);
 }
 
 .tech-icons {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 60px;
+  gap: 50px;
   flex-wrap: wrap;
 }
 
@@ -900,43 +901,92 @@ footer {
 }
 
 .tech-icon-wrapper:hover {
-  transform: scale(1.2);
+  transform: scale(1.15);
 }
 
 .tech-icon {
-  height: 50px;
+  height: 32px;
   width: auto;
-  filter: brightness(0) invert(1);
-  opacity: 0.8;
-  transition: opacity 0.3s ease;
+  opacity: 0.85;
+  transition: all 0.3s ease;
 }
 
-.tech-icon-wrapper:hover .tech-icon {
+/* Individual logo color tints */
+.tech-icon-wrapper:nth-child(1) .tech-icon {
+  filter: brightness(0.9) sepia(0.3) saturate(2) hue-rotate(180deg);
+}
+
+.tech-icon-wrapper:nth-child(1):hover .tech-icon {
+  filter: brightness(1) sepia(0.5) saturate(3) hue-rotate(180deg);
   opacity: 1;
-  filter: brightness(0) invert(1) sepia(1) saturate(3) hue-rotate(140deg);
+}
+
+.tech-icon-wrapper:nth-child(2) .tech-icon {
+  filter: brightness(0.9) sepia(0.3) saturate(2) hue-rotate(200deg);
+}
+
+.tech-icon-wrapper:nth-child(2):hover .tech-icon {
+  filter: brightness(1) sepia(0.5) saturate(3) hue-rotate(200deg);
+  opacity: 1;
+}
+
+.tech-icon-wrapper:nth-child(3) .tech-icon {
+  filter: brightness(0.9) sepia(0.3) saturate(2) hue-rotate(220deg);
+}
+
+.tech-icon-wrapper:nth-child(3):hover .tech-icon {
+  filter: brightness(1) sepia(0.5) saturate(3) hue-rotate(220deg);
+  opacity: 1;
+}
+
+.tech-icon-wrapper:nth-child(4) .tech-icon {
+  filter: brightness(0.9) sepia(0.3) saturate(2) hue-rotate(150deg);
+}
+
+.tech-icon-wrapper:nth-child(4):hover .tech-icon {
+  filter: brightness(1) sepia(0.5) saturate(3) hue-rotate(150deg);
+  opacity: 1;
+}
+
+.tech-icon-wrapper:nth-child(5) .tech-icon {
+  filter: brightness(0.9) sepia(0.3) saturate(2) hue-rotate(160deg);
+}
+
+.tech-icon-wrapper:nth-child(5):hover .tech-icon {
+  filter: brightness(1) sepia(0.5) saturate(3) hue-rotate(160deg);
+  opacity: 1;
+}
+
+.tech-icon-wrapper:nth-child(6) .tech-icon {
+  filter: brightness(0.9) sepia(0.3) saturate(2) hue-rotate(170deg);
+}
+
+.tech-icon-wrapper:nth-child(6):hover .tech-icon {
+  filter: brightness(1) sepia(0.5) saturate(3) hue-rotate(170deg);
+  opacity: 1;
 }
 
 /* Responsive Tech Banner */
 @media (max-width: 768px) {
   .tech-icons {
-    gap: 40px;
+    gap: 35px;
   }
 
   .tech-icon {
-    height: 40px;
+    height: 28px;
   }
 }
 
 @media (max-width: 600px) {
   .tech-banner {
-    padding: 30px 0;
+    padding: 25px 0;
   }
 
   .tech-icons {
-    gap: 30px;
+    gap: 25px;
   }
 
   .tech-icon {
-    height: 35px;
+    height: 24px;
   }
 }
