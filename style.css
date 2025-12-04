@@ -1901,3 +1901,267 @@ footer {
     font-size: 1.4em;
   }
 }
+/* ===================================
+   ENHANCED STICKY VIDEO LAYOUT
+   =================================== */
+
+/* Container for sticky sidebar + main content */
+.projects-sticky-container {
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  gap: 50px;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 60px 40px;
+  align-items: start;
+}
+
+/* Sticky Video Sidebar */
+.sticky-video-sidebar {
+  position: sticky;
+  top: 100px;
+  height: fit-content;
+}
+
+.sticky-video-wrapper {
+  background: #12172E;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 2px solid #252B47;
+  transition: all 0.3s ease;
+}
+
+.sticky-video-wrapper:hover {
+  border-color: #00D9FF;
+  box-shadow: 0 8px 24px rgba(0, 217, 255, 0.2);
+}
+
+.sticky-video-wrapper .project-video-container {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: #12172E;
+  border-radius: 0;
+  border: none;
+  margin: 0;
+}
+
+.sticky-video-wrapper video {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.video-project-label {
+  padding: 15px 20px;
+  background: rgba(18, 23, 46, 0.9);
+  border-top: 1px solid #252B47;
+  text-align: center;
+}
+
+.video-project-label span {
+  color: #00D9FF;
+  font-weight: 600;
+  font-size: 0.95em;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Main Content Area */
+.projects-main-content {
+  min-height: 100vh;
+}
+
+/* Featured Project Adjustments for Sidebar Layout */
+.projects-sticky-container .featured-project {
+  padding: 0 0 80px 0;
+  background: transparent;
+}
+
+.projects-sticky-container .featured-project:last-child {
+  padding-bottom: 40px;
+}
+
+.featured-project-content {
+  max-width: 100%;
+}
+
+/* Remove old grid layout when using sticky sidebar */
+.projects-sticky-container .featured-project-grid {
+  display: block;
+}
+
+.projects-sticky-container .featured-project-media {
+  display: none; /* Hide inline video since we have sidebar */
+}
+
+.projects-sticky-container .featured-project-info {
+  padding: 0;
+}
+
+/* Project Badge */
+.projects-sticky-container .project-badge {
+  display: inline-block;
+  background: linear-gradient(135deg, #A78BFA 0%, #00D9FF 100%);
+  color: #ffffff;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 0.85em;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Project Titles */
+.projects-sticky-container .featured-project h2 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.projects-sticky-container .project-tagline {
+  font-size: 1.1em;
+  color: #00D9FF;
+  margin-bottom: 25px;
+  font-weight: 500;
+}
+
+.projects-sticky-container .project-intro {
+  font-size: 1.05em;
+  line-height: 1.8;
+  color: #E8EAED;
+  margin-bottom: 30px;
+}
+
+.projects-sticky-container .project-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 30px;
+  padding: 20px;
+  background: rgba(18, 23, 46, 0.6);
+  border-left: 3px solid #A78BFA;
+  border-radius: 6px;
+}
+
+.projects-sticky-container .meta-item {
+  color: #B8BABD;
+  font-size: 0.95em;
+}
+
+.projects-sticky-container .meta-item strong {
+  color: #E8EAED;
+  margin-right: 8px;
+}
+
+.projects-sticky-container .project-links {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+/* Expander within sticky layout */
+.projects-sticky-container .project-details-expander {
+  margin-top: 40px;
+  border: 2px solid #252B47;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #12172E;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .projects-sticky-container {
+    grid-template-columns: 350px 1fr;
+    gap: 40px;
+    padding: 50px 30px;
+  }
+  
+  .sticky-video-sidebar {
+    top: 80px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .projects-sticky-container {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 40px 20px;
+  }
+  
+  .sticky-video-sidebar {
+    position: static;
+    max-width: 600px;
+    margin: 0 auto 40px;
+  }
+  
+  .projects-sticky-container .featured-project h2 {
+    font-size: 2em;
+  }
+}
+
+@media (max-width: 768px) {
+  .projects-sticky-container {
+    padding: 30px 20px;
+  }
+  
+  .sticky-video-sidebar {
+    max-width: 100%;
+  }
+  
+  .projects-sticky-container .featured-project {
+    padding: 0 0 60px 0;
+  }
+  
+  .projects-sticky-container .featured-project h2 {
+    font-size: 1.8em;
+  }
+  
+  .projects-sticky-container .project-tagline {
+    font-size: 1em;
+  }
+  
+  .projects-sticky-container .project-links {
+    flex-direction: column;
+  }
+  
+  .projects-sticky-container .project-links .btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .projects-sticky-container .featured-project h2 {
+    font-size: 1.6em;
+  }
+  
+  .video-project-label {
+    padding: 12px 15px;
+  }
+  
+  .video-project-label span {
+    font-size: 0.9em;
+  }
+}
+
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Add visual indicator when project is "active" (in view) */
+.featured-project.in-view {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0.8;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

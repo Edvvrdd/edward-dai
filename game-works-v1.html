@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Game audio projects by Edward Dai - Technical Sound Designer specializing in interactive audio systems">
+  <title>Game Projects - Edward Dai</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <nav class="main-nav">
+      <!-- Left: Social Links -->
+      <div class="nav-left">
+        <a href="https://www.linkedin.com/in/edward-dai-49057a342/" target="_blank" rel="noopener noreferrer" class="social-link">
+          <img src="icons/linkedin.svg" alt="LinkedIn" class="social-icon-small">
+        </a>
+        <a href="https://www.youtube.com/@SoundDevEd" target="_blank" rel="noopener noreferrer" class="social-link">
+          <img src="icons/youtube.svg" alt="YouTube" class="social-icon-small">
+        </a>
+        <a href="https://blepcatgames.itch.io/" target="_blank" rel="noopener noreferrer" class="social-link">
+          <img src="icons/itchio.svg" alt="itch.io" class="social-icon-small">
+        </a>
+      </div>
+      
+      <!-- Right: Page Links -->
+      <div class="nav-right">
+        <a href="index.html">Home</a>
+        <a href="game-works.html">Game Projects</a>
+        <a href="sound-design.html">Sound Design</a>
+        <a href="blog.html">Blog</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- PAGE HEADER -->
+  <section class="page-header">
+    <div class="container">
+      <h1>Game Projects</h1>
+      <p class="page-subtitle">Interactive audio systems, technical implementation, and immersive soundscapes for games</p>
+    </div>
+  </section>
+
+  <!-- FEATURED PROJECT: LAMBYRINTH -->
+  <section class="featured-project">
+    <div class="container">
+      <div class="featured-project-grid">
+        
+        <!-- Left: Video -->
+        <div class="featured-project-media">
+          <div class="project-video-container">
+            <video controls aria-label="Lambyrinth gameplay and audio showcase">
+              <source src="videos/lambyrinth-showcase.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+        
+        <!-- Right: Info -->
+        <div class="featured-project-info">
+          <div class="project-badge">Featured Project</div>
+          <h2>Lambyrinth</h2>
+          <p class="project-tagline">Horror Puzzle Game | Audio Lead & Technical Implementation</p>
+          
+          <p class="project-intro">A horror puzzle game where a lonely shepherd must rescue her lost sheep from a dark, maze-like forest before a lurking monster finds them. I led the complete audio direction, creating an immersive soundscape that builds tension through responsive voice systems and terrifying audio moments.</p>
+          
+          <div class="project-meta">
+            <div class="meta-item">
+              <strong>Role:</strong> Audio Lead
+            </div>
+            <div class="meta-item">
+              <strong>Tools:</strong> FMOD, Reaper
+            </div>
+            <div class="meta-item">
+              <strong>Duration:</strong> 4 months
+            </div>
+          </div>
+          
+          <div class="project-links">
+            <a href="https://blepcatgames.itch.io/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+              Play on itch.io
+            </a>
+            <a href="lambyrinth.html" class="btn btn-secondary">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                <circle cx="12" cy="12" r="3"></circle>
+              </svg>
+              Full Case Study
+            </a>
+          </div>
+        </div>
+        
+      </div>
+      
+      <!-- Expandable Details Section -->
+      <div class="project-details-expander">
+        <button class="expander-toggle" onclick="toggleExpander('lambyrinth-details')">
+          <span class="expander-title">Project Details & Technical Breakdown</span>
+          <svg class="expander-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
+        </button>
+        
+        <div id="lambyrinth-details" class="expander-content">
+          <div class="expander-content-inner">
+            
+            <!-- Key Features -->
+            <div class="detail-section">
+              <h3>Key Audio Features</h3>
+              <div class="features-grid">
+                <div class="feature-card">
+                  <div class="feature-icon">🎙️</div>
+                  <h4>Responsive VO System</h4>
+                  <p>Dynamic voice-over system that responds to player proximity to sheep, monster presence, and player inactivity, creating a deeply personal horror experience.</p>
+                </div>
+                
+                <div class="feature-card">
+                  <div class="feature-icon">👹</div>
+                  <h4>Voice Mimicry Mechanic</h4>
+                  <p>The monster captures and distorts the player's voice, playing it back from different locations to create psychological horror and disorientation.</p>
+                </div>
+                
+                <div class="feature-card">
+                  <div class="feature-icon">🌲</div>
+                  <h4>Atmospheric Soundscape</h4>
+                  <p>Layered forest ambience that shifts between vast openness and claustrophobic tension, using spatial audio to guide and mislead the player.</p>
+                </div>
+                
+                <div class="feature-card">
+                  <div class="feature-icon">⚙️</div>
+                  <h4>FMOD Integration</h4>
+                  <p>Complex parameter-driven audio events using FMOD, including real-time microphone input processing and 3D spatial positioning.</p>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Technical Implementation -->
+            <div class="detail-section">
+              <h3>Technical Implementation</h3>
+              <div class="tech-breakdown">
+                <div class="tech-item">
+                  <h4>Responsive VO System</h4>
+                  <p>Built using FMOD parameters tracking player location, object proximity, and monster state. The system triggers contextual dialogue based on multiple game variables, creating a character that feels alive and connected to the player's actions.</p>
+                  <ul>
+                    <li>Proximity-based dialogue triggers</li>
+                    <li>Emotional state transitions based on threat level</li>
+                    <li>Inactivity detection for ambient character moments</li>
+                  </ul>
+                </div>
+                
+                <div class="tech-item">
+                  <h4>Mimic Monster Audio</h4>
+                  <p>Captures microphone input, processes it with distortion and reverb effects in real-time, and triggers it as a 3D sound event from the monster's location. This creates one of the game's most memorable and terrifying moments.</p>
+                  <ul>
+                    <li>Real-time microphone input capture</li>
+                    <li>Dynamic audio processing (distortion, pitch shift, reverb)</li>
+                    <li>3D spatial audio positioning based on monster location</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Challenges & Solutions -->
+            <div class="detail-section">
+              <h3>Challenges & Solutions</h3>
+              <div class="challenge-solution">
+                <div class="challenge">
+                  <strong>Challenge:</strong> Creating a sense of dread in an open forest environment
+                </div>
+                <div class="solution">
+                  <strong>Solution:</strong> Layered ambience with dynamic mixing based on player location, using silence and subtle sounds to build tension rather than constant noise
+                </div>
+              </div>
+              
+              <div class="challenge-solution">
+                <div class="challenge">
+                  <strong>Challenge:</strong> Making the monster feel present without being visible
+                </div>
+                <div class="solution">
+                  <strong>Solution:</strong> Implemented directional audio cues, breathing sounds, and the voice mimicry system to create psychological presence
+                </div>
+              </div>
+            </div>
+            
+            <!-- Results -->
+            <div class="detail-section">
+              <h3>Results & Learnings</h3>
+              <p>Leading the audio direction for Lambyrinth taught me how to maintain a cohesive sonic vision while managing a wide range of assets. The voice mimicry mechanic became one of the most talked-about features, demonstrating the power of audio to create truly memorable gameplay moments. This project deepened my understanding of FMOD's parameter-driven systems and reinforced the importance of designing sound that shapes the player's emotional journey.</p>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+
+  <!-- PERSONAL PROJECTS SECTION -->
+  <section class="personal-projects-section">
+    <div class="container">
+      <h2>Personal Projects</h2>
+      <p class="section-intro">Experimental audio design and technical explorations</p>
+      
+      <div class="projects-grid">
+        
+        <!-- Personal Project 1 -->
+        <div class="project-card">
+          <div class="project-card-image">
+            <img src="images/projects/personal1.jpg" alt="Personal Project 1" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="image-placeholder-fallback">
+              <span>Project Image</span>
+            </div>
+          </div>
+          <div class="project-card-content">
+            <h3>Project Name 1</h3>
+            <p class="project-card-description">Brief description of the personal project, highlighting the audio techniques or systems explored.</p>
+            <div class="project-card-tags">
+              <span class="tag">FMOD</span>
+              <span class="tag">Unity</span>
+              <span class="tag">Procedural Audio</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Personal Project 2 -->
+        <div class="project-card">
+          <div class="project-card-image">
+            <img src="images/projects/personal2.jpg" alt="Personal Project 2" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="image-placeholder-fallback">
+              <span>Project Image</span>
+            </div>
+          </div>
+          <div class="project-card-content">
+            <h3>Project Name 2</h3>
+            <p class="project-card-description">Brief description of the personal project, highlighting the audio techniques or systems explored.</p>
+            <div class="project-card-tags">
+              <span class="tag">Wwise</span>
+              <span class="tag">Unreal Engine</span>
+              <span class="tag">Adaptive Music</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Personal Project 3 -->
+        <div class="project-card">
+          <div class="project-card-image">
+            <img src="images/projects/personal3.jpg" alt="Personal Project 3" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="image-placeholder-fallback">
+              <span>Project Image</span>
+            </div>
+          </div>
+          <div class="project-card-content">
+            <h3>Project Name 3</h3>
+            <p class="project-card-description">Brief description of the personal project, highlighting the audio techniques or systems explored.</p>
+            <div class="project-card-tags">
+              <span class="tag">Field Recording</span>
+              <span class="tag">Sound Design</span>
+              <span class="tag">Foley</span>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Edward Dai. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Expander toggle functionality
+    function toggleExpander(id) {
+      const content = document.getElementById(id);
+      const button = content.previousElementSibling;
+      const icon = button.querySelector('.expander-icon');
+      
+      if (content.classList.contains('expanded')) {
+        content.classList.remove('expanded');
+        button.classList.remove('active');
+      } else {
+        content.classList.add('expanded');
+        button.classList.add('active');
+      }
+    }
+  </script>
+
+</body>
+</html>
