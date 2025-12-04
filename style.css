@@ -707,9 +707,23 @@ footer {
   gap: 0;
 }
 
+.video-carousel {
+  position: relative;
+  width: 100%;
+  max-width: 720px;
+}
+
+.video-slide {
+  display: none;
+}
+
+.video-slide.active {
+  display: block;
+}
+
 .landing-reel video {
   width: 100%;
-  max-width: 640px;
+  max-width: 720px;
   border: 2px solid #2a5f42;
   border-radius: 12px 12px 0 0;
   background-color: #000;
@@ -723,17 +737,50 @@ footer {
   border-radius: 0 0 12px 12px;
   border: 2px solid #2a5f42;
   border-top: none;
-  max-width: 640px;
+  max-width: 720px;
   width: 100%;
   box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
 }
 
-.reel-caption h3 {
+.reel-title {
   color: #454ADE;
   margin: 0;
   font-size: 1.35em;
   font-weight: 600;
   letter-spacing: -0.3px;
+  text-align: center;
+  flex: 1;
+}
+
+.video-nav-btn {
+  background: transparent;
+  border: 2px solid #454ADE;
+  color: #454ADE;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 0;
+}
+
+.video-nav-btn:hover {
+  background: #454ADE;
+  color: #C9D7F8;
+  transform: scale(1.1);
+  box-shadow: 0 0 15px rgba(69, 74, 222, 0.5);
+}
+
+.video-nav-btn svg {
+  width: 20px;
+  height: 20px;
 }
 
 .landing-info {
