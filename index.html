@@ -38,14 +38,34 @@
   <section id="home" class="landing-section">
     <div class="container">
       <div class="landing-grid">
-        <!-- Left Column: Demo Reel -->
+        <!-- Left Column: Demo Reel Carousel -->
         <div class="landing-reel">
-          <video controls aria-label="Edward Dai sound design demo reel">
-            <source src="videos/demo-reel.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
+          <div class="video-carousel">
+            <div class="video-slide active">
+              <video controls aria-label="Edward Dai sound design demo reel">
+                <source src="videos/demo-reel.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div class="video-slide">
+              <video controls aria-label="Edward Dai tech demo">
+                <source src="videos/tech-demo.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
           <div class="reel-caption">
-            <h3>Demo Reel</h3>
+            <button class="video-nav-btn prev" aria-label="Previous video">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="15 18 9 12 15 6"></polyline>
+              </svg>
+            </button>
+            <h3 class="reel-title">Sound Design Demo Reel</h3>
+            <button class="video-nav-btn next" aria-label="Next video">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </button>
           </div>
         </div>
         
@@ -228,7 +248,44 @@
   </footer>
 
   <script>
-    // Carousel functionality - shows 3 cards at a time
+    // Video Carousel functionality
+    let currentVideoSlide = 0;
+    const videoSlides = document.querySelectorAll('.video-slide');
+    const reelTitle = document.querySelector('.reel-title');
+    const videoTitles = ['Sound Design Demo Reel', 'Tech Demo - Audio Implementation'];
+    const prevBtn = document.querySelector('.video-nav-btn.prev');
+    const nextBtn = document.querySelector('.video-nav-btn.next');
+
+    function updateVideoCarousel() {
+      // Hide all videos and pause them
+      videoSlides.forEach((slide, index) => {
+        const video = slide.querySelector('video');
+        if (index === currentVideoSlide) {
+          slide.classList.add('active');
+        } else {
+          slide.classList.remove('active');
+          video.pause();
+        }
+      });
+      
+      // Update title
+      reelTitle.textContent = videoTitles[currentVideoSlide];
+    }
+
+    prevBtn.addEventListener('click', () => {
+      currentVideoSlide = (currentVideoSlide - 1 + videoSlides.length) % videoSlides.length;
+      updateVideoCarousel();
+    });
+
+    nextBtn.addEventListener('click', () => {
+      currentVideoSlide = (currentVideoSlide + 1) % videoSlides.length;
+      updateVideoCarousel();
+    });
+
+    // Initialize
+    updateVideoCarousel();
+
+    // Project Carousel functionality - shows 3 cards at a time
     let currentSlide = 0;
     const cards = document.querySelectorAll('.carousel-card');
     const dots = document.querySelectorAll('.dot');
