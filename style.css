@@ -875,3 +875,68 @@ footer {
     justify-content: center;
   }
 }
+
+/* Technology Banner */
+.tech-banner {
+  background-color: #141a17;
+  padding: 40px 0;
+  border-top: 1px solid #2a3d35;
+  border-bottom: 1px solid #2a3d35;
+}
+
+.tech-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.tech-icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.tech-icon-wrapper:hover {
+  transform: scale(1.2);
+}
+
+.tech-icon {
+  height: 50px;
+  width: auto;
+  filter: brightness(0) invert(1);
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.tech-icon-wrapper:hover .tech-icon {
+  opacity: 1;
+  filter: brightness(0) invert(1) sepia(1) saturate(3) hue-rotate(140deg);
+}
+
+/* Responsive Tech Banner */
+@media (max-width: 768px) {
+  .tech-icons {
+    gap: 40px;
+  }
+
+  .tech-icon {
+    height: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .tech-banner {
+    padding: 30px 0;
+  }
+
+  .tech-icons {
+    gap: 30px;
+  }
+
+  .tech-icon {
+    height: 35px;
+  }
+}
