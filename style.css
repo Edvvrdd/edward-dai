@@ -17,56 +17,68 @@ html {
 header {
   background: #141a17;
   color: #fff;
-  padding: 20px;
-  text-align: center;
   border-bottom: 1px solid #2a3d35;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
-header h1 {
-  margin: 0;
-  color: #ffffff;
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 40px;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
-header p {
-  margin: 5px 0 15px;
-  color: #8fa99d;
+.nav-left {
+  display: flex;
+  gap: 20px;
+  align-items: center;
 }
 
-nav a {
-  margin: 0 15px;
+.nav-right {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+
+.nav-right a {
   text-decoration: none;
   color: #e8f0ed;
-  font-weight: bold;
+  font-weight: 500;
+  font-size: 0.95em;
   transition: color 0.3s ease;
 }
 
-nav a:hover {
+.nav-right a:hover {
   color: #4ecdc4;
-  text-decoration: underline;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  transition: transform 0.2s ease;
+}
+
+.social-link:hover {
+  transform: translateY(-2px);
+}
+
+.social-icon-small {
+  width: 22px;
+  height: 22px;
+  filter: brightness(0) invert(1);
+  transition: filter 0.2s ease;
+}
+
+.social-link:hover .social-icon-small {
+  filter: brightness(0) invert(1) sepia(1) saturate(5) hue-rotate(140deg);
 }
 
 section {
   padding: 60px 0;
-}
-
-/* Social Banner */
-.social-banner {
-  margin-top: 10px;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-}
-
-.social-icon {
-  width: 32px;
-  height: 32px;
-  filter: brightness(0) invert(1);
-  transition: transform 0.2s ease, filter 0.2s ease;
-}
-
-.social-icon:hover {
-  transform: scale(1.1);
-  filter: brightness(0) invert(1) sepia(1) saturate(5) hue-rotate(140deg);
 }
 
 /* Container */
@@ -809,5 +821,38 @@ footer {
 
   .contact-info h3 {
     font-size: 1.2em;
+  }
+}
+
+/* Responsive Navigation */
+@media (max-width: 968px) {
+  .main-nav {
+    padding: 12px 20px;
+  }
+
+  .nav-right {
+    gap: 15px;
+  }
+
+  .nav-right a {
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-nav {
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px 20px;
+  }
+
+  .nav-left {
+    order: 2;
+  }
+
+  .nav-right {
+    order: 1;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
