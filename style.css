@@ -1,12 +1,12 @@
 /* style.css */
-/* Global Styles */
+/* Global Styles - Dark Mode */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   line-height: 1.6;
-  background-color: #fafafa;
-  color: #333;
+  background-color: #0f0f0f;
+  color: #e0e0e0;
 }
 
 html {
@@ -15,18 +15,21 @@ html {
 
 /* Header */
 header {
-  background: #222;
+  background: #1a1a1a;
   color: #fff;
   padding: 20px;
   text-align: center;
+  border-bottom: 1px solid #333;
 }
 
 header h1 {
   margin: 0;
+  color: #ffffff;
 }
 
 header p {
   margin: 5px 0 15px;
+  color: #b0b0b0;
 }
 
 nav a {
@@ -34,14 +37,16 @@ nav a {
   text-decoration: none;
   color: #fff;
   font-weight: bold;
+  transition: color 0.3s ease;
 }
 
 nav a:hover {
+  color: #4a9eff;
   text-decoration: underline;
 }
 
 section {
-  padding-bottom: 280px 0;   /* vertical spacing */
+  padding: 60px 0;   /* Fixed: was padding-bottom with two values */
 }
 
 /* Social Banner */
@@ -72,57 +77,104 @@ section {
   padding: 0 20px;
 }
 
+.container h2 {
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.container p {
+  color: #d0d0d0;
+}
+
 /* Demo Reel */
 .reel {
   text-align: center;
   margin: 30px 0;
+  background-color: #0f0f0f;
 }
 
 .reel h2 {
   margin-bottom: 15px;
+  color: #ffffff;
 }
 
 .reel video {
   width: 100%;
   max-width: 800px;
-  border: 2px solid #ccc;
+  border: 2px solid #333;
   border-radius: 6px;
+  background-color: #000;
+}
+
+/* Projects Section */
+.project-item {
+  background-color: #1a1a1a;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: 1px solid #2a2a2a;
+}
+
+.project-item h3 {
+  color: #ffffff;
+  margin-top: 0;
+}
+
+.project-item p {
+  color: #b0b0b0;
+}
+
+.project-item a {
+  color: #4a9eff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.project-item a:hover {
+  color: #6bb3ff;
+  text-decoration: underline;
 }
 
 /* Contact Section */
 .contact {
-  background: #f0f0f0;
+  background: #1a1a1a;
   padding: 40px 20px;
   margin-top: 60px;
   text-align: center;
-  border-top: 2px solid #ddd;
+  border-top: 2px solid #333;
 }
 
 .contact h2 {
   margin-bottom: 15px;
+  color: #ffffff;
 }
 
 .contact p {
   margin: 5px 0;
+  color: #d0d0d0;
 }
 
 .contact a {
-  color: #0077b5;
+  color: #4a9eff;
   text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 .contact a:hover {
+  color: #6bb3ff;
   text-decoration: underline;
 }
 
 /* Footer */
 footer {
-  background: #222;
-  color: #fff;
+  background: #0a0a0a;
+  color: #b0b0b0;
   text-align: center;
   padding: 10px;
   margin-top: 20px;
   font-size: 0.9em;
+  border-top: 1px solid #222;
 }
 
 /* Responsive Design */
