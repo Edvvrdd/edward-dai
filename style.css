@@ -27,7 +27,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 12px 40px;
+  padding: 18px 40px;
   max-width: 1400px;
   margin: 0 auto;
 }
@@ -730,61 +730,59 @@ footer {
 .landing-info {
   display: flex;
   flex-direction: column;
-  gap: 40px;
-}
-
-.bio-section {
-  background-color: #141a17;
   padding: 30px;
-  border-radius: 12px;
-  border: 2px solid #2a3d35;
+  background-color: #0a0f0d;
 }
 
-.bio-section h2 {
+.landing-info h2 {
   color: #ffffff;
   margin-top: 0;
-  margin-bottom: 15px;
-  font-size: 1.6em;
+  margin-bottom: 20px;
+  font-size: 1.8em;
 }
 
-.bio-section p {
+.bio-text {
   color: #c5d5ce;
-  line-height: 1.7;
-  margin: 0;
+  line-height: 1.8;
+  margin: 0 0 30px 0;
+  font-size: 1.05em;
 }
 
-.contact-info {
-  background-color: #1a2420;
-  padding: 25px;
-  border-radius: 12px;
-  border: 2px solid #2a3d35;
-  border-left: 4px solid #4ecdc4;
+.line-separator {
+  height: 1px;
+  background: linear-gradient(90deg, transparent 0%, #4ecdc4 20%, #52b788 50%, #4ecdc4 80%, transparent 100%);
+  margin: 30px 0;
+  opacity: 0.6;
 }
 
-.contact-info h3 {
+.contact-info-inline {
+  margin-top: 10px;
+}
+
+.contact-info-inline h3 {
   color: #4ecdc4;
   margin-top: 0;
   margin-bottom: 15px;
   font-size: 1.3em;
 }
 
-.contact-info p {
+.contact-info-inline p {
   color: #c5d5ce;
   margin: 8px 0;
   line-height: 1.6;
 }
 
-.contact-info strong {
+.contact-info-inline strong {
   color: #e8f0ed;
 }
 
-.contact-info a {
+.contact-info-inline a {
   color: #5390d9;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
-.contact-info a:hover {
+.contact-info-inline a:hover {
   color: #4ecdc4;
   text-decoration: underline;
 }
@@ -813,7 +811,7 @@ footer {
   }
 
   .landing-info {
-    gap: 30px;
+    padding: 25px;
   }
 }
 
@@ -822,23 +820,19 @@ footer {
     padding: 40px 0;
   }
 
-  .bio-section {
+  .landing-info {
     padding: 20px;
   }
 
-  .contact-info {
-    padding: 20px;
+  .landing-reel h2 {
+    font-size: 1.5em;
   }
 
-  .reel-caption h3 {
-    font-size: 1.2em;
+  .landing-info h2 {
+    font-size: 1.5em;
   }
 
-  .bio-section h2 {
-    font-size: 1.4em;
-  }
-
-  .contact-info h3 {
+  .contact-info-inline h3 {
     font-size: 1.2em;
   }
 }
@@ -905,7 +899,7 @@ footer {
 }
 
 .tech-icon {
-  height: 32px;
+  height: 42px;
   width: auto;
   opacity: 0.85;
   transition: all 0.3s ease;
@@ -973,7 +967,7 @@ footer {
   }
 
   .tech-icon {
-    height: 28px;
+    height: 36px;
   }
 }
 
@@ -987,6 +981,6 @@ footer {
   }
 
   .tech-icon {
-    height: 24px;
+    height: 30px;
   }
 }
