@@ -1,16 +1,16 @@
 # Enable URL rewriting
 RewriteEngine On
+RewriteBase /
 
-# Remove .html extension from URLs
-# If the request is for a file that exists with .html extension, rewrite it
+# Redirect .html URLs to clean URLs (must come first)
+RewriteCond %{THE_REQUEST} \s/+(.+?)\.html[\s?] [NC]
+RewriteRule ^ /%1 [R=301,L,NE]
+
+# Serve .html files for clean URLs
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}.html -f
-RewriteRule ^(.+)$ $1.html [L,QSA]
-
-# Redirect .html URLs to clean URLs
-RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s([^.]+)\.html [NC]
-RewriteRule ^ %1 [R=301,L]
+RewriteRule ^(.+?)/?$ $1.html [L]
 
 # Handle index.html as root
 DirectoryIndex index.html
