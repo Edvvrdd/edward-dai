@@ -592,7 +592,8 @@ footer {
 /* Full Blog Post Page */
 .blog-full-post {
   max-width: 800px;
-  margin: 40px auto;
+  margin: 80px auto 40px auto;
+  padding-top: 20px;
 }
 
 .blog-post-full-header {
