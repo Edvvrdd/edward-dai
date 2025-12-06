@@ -1240,12 +1240,13 @@ footer {
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, #5a7fa3 0%, #d4915d 100%);
+  background-color: #5a7fa3;
   color: #ffffff;
   box-shadow: 0 4px 15px rgba(90, 127, 163, 0.3);
 }
 
 .btn-primary:hover {
+  background-color: #6c8fb1;
   box-shadow: 0 6px 25px rgba(90, 127, 163, 0.5);
   transform: translateY(-2px);
 }
