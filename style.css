@@ -810,11 +810,9 @@ footer {
 
 .video-nav-btn {
   background: transparent;
-  border: 2px solid #d4915d;
-  color: #d4915d;
+  border: none;
   width: 36px;
   height: 36px;
-  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
