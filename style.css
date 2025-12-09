@@ -179,7 +179,7 @@ section {
 }
 
 .project-item a:hover {
-  color: #d4915d_HOVER;
+  color: #d4915d;
   text-decoration: underline;
 }
 
@@ -992,7 +992,7 @@ footer {
 /* Technology Banner */
 .tech-banner {
   background: linear-gradient(135deg, #393836 0%, #393836 100%);
-  padding: 35px 0;
+  padding: 15px 0;
   border-top: 2px solid #2a282d;
   border-bottom: 2px solid #2a282d;
   box-shadow: inset 0 1px 0 rgba(78, 205, 196, 0.1);
