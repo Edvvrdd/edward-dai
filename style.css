@@ -245,7 +245,7 @@ footer {
 
 .carousel-track-container {
   overflow: hidden;
-  padding: 10px 0;
+  padding: 20px 10px;
 }
 
 .carousel-track {
@@ -262,7 +262,7 @@ footer {
   transition: all 0.3s ease;
   position: relative;
   border-radius: 12px;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .carousel-card::before {

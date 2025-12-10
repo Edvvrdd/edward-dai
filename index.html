@@ -299,13 +299,13 @@
             </svg>
             Get In Touch
           </a>
-          <a href="https://www.linkedin.com/in/edward-dai-49057a342/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+          <a href="resume.docx" download="Edward_Dai_Resume.docx" class="btn btn-secondary">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
-              <rect x="2" y="9" width="4" height="12"></rect>
-              <circle cx="4" cy="4" r="2"></circle>
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+              <polyline points="7 10 12 15 17 10"></polyline>
+              <line x1="12" y1="15" x2="12" y2="3"></line>
             </svg>
-            View LinkedIn
+            Download Resume
           </a>
         </div>
         
@@ -392,8 +392,14 @@
       updateCarousel();
     }, 5000);
 
-    // Update on window resize
-    window.addEventListener('resize', updateCarousel);
+    // Update on window resize without resetting position
+    let resizeTimeout;
+    window.addEventListener('resize', () => {
+      clearTimeout(resizeTimeout);
+      resizeTimeout = setTimeout(() => {
+        updateCarousel();
+      }, 250);
+    });
     
     // Initial update
     setTimeout(updateCarousel, 100);
