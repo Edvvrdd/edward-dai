@@ -226,8 +226,8 @@ footer {
 
 /* Image Carousel Section */
 .carousel-section {
-  background-color: #0f0f0f;
-  padding: 60px 0;
+  background-color: #3a311d;
+  padding: 20px 0;
 }
 
 .carousel-section h2 {
@@ -359,8 +359,8 @@ footer {
 
 /* Testimonials Section */
 .testimonials-section {
-  background-color: #1a1819;
-  padding: 60px 0;
+  background-color: #303442;
+  padding: 20px 0 70px 0;
   border-top: 1px solid #393836;
 }
 
@@ -422,7 +422,7 @@ footer {
   font-size: 64px;
   color: #d4915d;
   line-height: 1;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
   transition: all 0.3s ease;
   font-family: Georgia, serif;
   opacity: 0.4;
@@ -1080,9 +1080,8 @@ footer {
    =================================== */
 
 .skills-cta-section {
-  background: linear-gradient(180deg, #1d1d1d 0%, #29272c 100%);
+  background: #0f0f0f;
   padding: 80px 0;
-  margin-top: 60px;
   border-top: 2px solid #393836;
 }
 
@@ -1356,7 +1355,7 @@ footer {
 /* Featured Project Section */
 .featured-project {
   padding: 80px 0;
-  background: #0f0f0f;
+  background: #405170;
 }
 
 .featured-project-grid {
