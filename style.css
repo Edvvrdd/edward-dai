@@ -811,6 +811,8 @@ footer {
 .video-nav-btn {
   background: transparent;
   border: none;
+  border-radius: 50%;
+  color: #d4915d;
   width: 36px;
   height: 36px;
   display: flex;
@@ -823,6 +825,7 @@ footer {
 
 .video-nav-btn:hover {
   background: #d4915d;
+  border-radius: 50%;
   color: #1d1d1d;
   transform: scale(1.1);
   box-shadow: 0 0 20px rgba(212, 145, 93, 0.6);
@@ -1022,60 +1025,31 @@ footer {
   transition: all 0.3s ease;
 }
 
-/* Individual logo color tints */
-.tech-icon-wrapper:nth-child(1) .tech-icon {
-  filter: brightness(0.9) sepia(0.3) saturate(2) hue-rotate(180deg);
+
+/* Standard state for all icons: Opacity 0.7 (optional, makes them pop on hover) */
+.tech-icon {
+  opacity: 0.7; 
+  transition: opacity 0.2s ease;
 }
+
+/* Hover state for all icons: Full Opacity */
+.tech-icon-wrapper:hover .tech-icon {
+  opacity: 1;
+}
+
+
+/* --- SPECIAL RULE FOR WWISE (5th Icon) --- */
 
 .tech-icon-wrapper:nth-child(1):hover .tech-icon {
-  filter: brightness(1) sepia(0.5) saturate(3) hue-rotate(180deg);
-  opacity: 1;
+  content: url("images/tech/icon-reaper-hover.svg");
 }
-
-.tech-icon-wrapper:nth-child(2) .tech-icon {
-  filter: brightness(0.9) sepia(0.3) saturate(2) hue-rotate(200deg);
-}
-
 .tech-icon-wrapper:nth-child(2):hover .tech-icon {
-  filter: brightness(1) sepia(0.5) saturate(3) hue-rotate(200deg);
-  opacity: 1;
+  content: url("images/tech/protools_hover.svg");
 }
-
-.tech-icon-wrapper:nth-child(3) .tech-icon {
-  filter: brightness(0.9) sepia(0.3) saturate(2) hue-rotate(220deg);
-}
-
-.tech-icon-wrapper:nth-child(3):hover .tech-icon {
-  filter: brightness(1) sepia(0.5) saturate(3) hue-rotate(220deg);
-  opacity: 1;
-}
-
-.tech-icon-wrapper:nth-child(4) .tech-icon {
-  filter: brightness(0.9) sepia(0.3) saturate(2) hue-rotate(150deg);
-}
-
-.tech-icon-wrapper:nth-child(4):hover .tech-icon {
-  filter: brightness(1) sepia(0.5) saturate(3) hue-rotate(150deg);
-  opacity: 1;
-}
-
-.tech-icon-wrapper:nth-child(5) .tech-icon {
-  filter: brightness(0.9) sepia(0.3) saturate(2) hue-rotate(160deg);
-}
-
 .tech-icon-wrapper:nth-child(5):hover .tech-icon {
-  filter: brightness(1) sepia(0.5) saturate(3) hue-rotate(160deg);
-  opacity: 1;
+  content: url("images/tech/wwise_hover.svg"); 
 }
 
-.tech-icon-wrapper:nth-child(6) .tech-icon {
-  filter: brightness(0.9) sepia(0.3) saturate(2) hue-rotate(170deg);
-}
-
-.tech-icon-wrapper:nth-child(6):hover .tech-icon {
-  filter: brightness(1) sepia(0.5) saturate(3) hue-rotate(170deg);
-  opacity: 1;
-}
 
 /* Responsive Tech Banner */
 @media (max-width: 768px) {
