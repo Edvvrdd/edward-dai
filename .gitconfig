@@ -1,0 +1,10 @@
+[user]
+  name = Edward Dai
+  email = your-email@example.com
+
+[core]
+  editor = code --wait  # or "nano", "vim", etc.
+  autocrlf = input      # Good for cross-platform line endings
+
+[init]
+  defaultBranch = main
