@@ -71,8 +71,15 @@
         
         <!-- Right Column: Bio and Contact -->
         <div class="landing-info">
-          <h2>Hi, I'm Edward Dai</h2>
-          <p class="bio-text">I'm a technical sound designer specializing in interactive audio systems for games. With expertise in FMOD, Wwise, and game engines like Unreal Engine and Unity, I create emotionally resonant soundscapes through data-driven implementation and world-building sound design.</p>
+          <div class="intro-container">
+              <h2 class="static-text">I'm a</h2>
+              <div class="rotating-text-wrapper">
+                  <span class="rotating-text active">Technical Sound Artist</span>
+                  <span class="rotating-text">Solo Game Developer.</span>
+                  <span class="rotating-text">Interactive Audio Specialist.</span>
+              </div>
+          </div>
+          <p class="bio-text">My name is Edward. I am a sound designer who is passionate about creating immersive audio experiences for games. I bring to the table a lot more than </p>
           <a href="#contact" class="btn btn-primary contact-btn">Get In Touch</a>
         </div>
       </div>
@@ -324,6 +331,25 @@
   </footer>
 
   <script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const words = document.querySelectorAll(".rotating-text");
+        let currentIndex = 0;
+        const intervalTime = 3000; // 3 seconds per title
+
+        setInterval(() => {
+            // 1. Remove active class from current word
+            words[currentIndex].classList.remove("active");
+
+            // 2. Move to next index (loop back to 0 if at end)
+            currentIndex = (currentIndex + 1) % words.length;
+
+            // 3. Add active class to new word
+            words[currentIndex].classList.add("active");
+        }, intervalTime);
+    });
+
+
+
     // Video Carousel functionality
     let currentVideoSlide = 0;
     const videoSlides = document.querySelectorAll('.video-slide');

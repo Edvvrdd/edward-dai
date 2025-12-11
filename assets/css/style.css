@@ -224,6 +224,56 @@ footer {
   border-top: 1px solid #393836;
 }
 
+/* Container to align "I am a" with the rotating text */
+.intro-container {
+    display: flex;
+    flex-direction: row; /* Stacks on mobile */
+    align-items: baseline;   /* Centers everything */
+    font-family: sans-serif;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fcfcfc; /* Dark Grey */
+}
+
+/* Adjust for desktop to be side-by-side if you prefer */
+@media (min-width: 768px) {
+    .intro-container {
+        flex-direction: row;
+        gap: 10px;
+    }
+}
+
+.rotating-text-wrapper {
+    position: relative;
+    height: 2rem; /* Reserve height so layout doesn't jump */
+    display: flex;
+    align-items: center;
+}
+
+.rotating-text {
+    position: absolute;
+    font-size: 2rem;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+    transform: translateY(10px); /* Starts slightly lower */
+    white-space: nowrap;
+    
+    /* Highlight color for the role */
+    color: #007bff; /* Example: Blue */
+}
+
+/* The class that makes it visible */
+.rotating-text.active {
+    opacity: 1;
+    transform: translateY(0px);
+    z-index: 1;
+}
+
+
 /* Image Carousel Section */
 .carousel-section {
   background-color: #3a311d;
@@ -2514,4 +2564,5 @@ html {
   .contribute-box p {
     font-size: 1em;
   }
+
 }
