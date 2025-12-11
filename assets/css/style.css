@@ -255,15 +255,14 @@ footer {
 .rotating-text-wrapper {
     position: relative;
     height: 2rem; /* Reserve height so layout doesn't jump */
-    display: flex;
-    align-items: baseline;
+    display: inline-block;
     min-width: fit-content;
 }
 
 .rotating-text {
     position: absolute;
     font-size: 2rem;
-    top: 0;
+    bottom: 0;
     left: 0;
     transform: translateY(10px); /* Starts slightly lower */
     opacity: 0;
@@ -923,10 +922,12 @@ footer {
 
 .landing-info .contact-btn {
   margin-top: auto;
+  margin-bottom: 0;
   align-self: stretch;
-  width: 100%;
+  width: calc(100% + 0px);
   text-align: center;
   padding: 15px 30px;
+  border-radius: 8px;
 }
 
 .line-separator {
