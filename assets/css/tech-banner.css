@@ -1,0 +1,81 @@
+/* ===================================
+   TECHNOLOGY BANNER
+   =================================== */
+
+.tech-banner {
+  background: linear-gradient(135deg, var(--color-bg-card) 0%, var(--color-bg-elevated) 100%);
+  padding: 15px 0;
+  border-top: 2px solid var(--color-border);
+  border-bottom: 2px solid var(--color-border);
+  box-shadow: inset 0 1px 0 rgba(107, 140, 174, 0.08);
+  scroll-margin-top: 80px;
+}
+
+.tech-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.tech-icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.tech-icon-wrapper:hover {
+  transform: scale(1.05);
+}
+
+.tech-icon {
+  height: 80px;
+  width: auto;
+  transition: opacity 0.3s ease;
+}
+
+.tech-icon-base {
+  opacity: 0.7;
+}
+
+.tech-icon-hover {
+  position: absolute;
+  opacity: 0;
+}
+
+/* On hover: hide base, show hover */
+.tech-icon-wrapper:hover .tech-icon-base {
+  opacity: 0;
+}
+
+.tech-icon-wrapper:hover .tech-icon-hover {
+  opacity: 1;
+}
+
+/* Responsive Tech Banner */
+@media (max-width: 768px) {
+  .tech-icons {
+    gap: 40px;
+  }
+
+  .tech-icon {
+    height: 60px;
+  }
+}
+
+@media (max-width: 600px) {
+  .tech-banner {
+    padding: 25px 0;
+  }
+
+  .tech-icons {
+    gap: 30px;
+  }
+
+  .tech-icon {
+    height: 50px;
+  }
+}

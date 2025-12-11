@@ -1,0 +1,343 @@
+/* ===================================
+   CARD COMPONENTS
+   =================================== */
+
+/* Skill Cards */
+.skill-card {
+  background: rgba(37, 37, 37, 0.7);
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  padding: 30px 25px;
+  text-align: center;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.skill-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, var(--color-secondary) 0%, var(--color-primary) 100%);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.skill-card:hover::before {
+  transform: scaleX(1);
+}
+
+.skill-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--color-secondary);
+  background: rgba(37, 37, 37, 0.95);
+  box-shadow: 0 8px 24px rgba(107, 140, 174, 0.2);
+}
+
+.skill-icon {
+  color: var(--color-primary);
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.skill-card:hover .skill-icon {
+  transform: scale(1.1);
+  color: var(--color-secondary-bright);
+}
+
+.skill-card h3 {
+  color: var(--color-white);
+  font-size: 1.15em;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.skill-card p {
+  color: var(--color-text-muted);
+  font-size: 0.95em;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Feature Cards */
+.feature-card {
+  background: rgba(60, 50, 49, 0.6);
+  border: 2px solid #393836;
+  border-radius: 10px;
+  padding: 25px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.feature-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, #5a7fa3 0%, #d4915d 100%);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+  border-radius: 10px 10px 0 0;
+}
+
+.feature-card:hover::before {
+  transform: scaleX(1);
+}
+
+.feature-card:hover {
+  transform: translateY(-2px);
+  border-color: #5a7fa3;
+  box-shadow: 0 8px 20px rgba(90, 127, 163, 0.15);
+  background: rgba(60, 50, 49, 0.9);
+}
+
+.feature-icon {
+  font-size: 2.5em;
+  margin-bottom: 15px;
+}
+
+.feature-card h4 {
+  color: #d4915d;
+  font-size: 1.15em;
+  margin-bottom: 12px;
+}
+
+.feature-card p {
+  color: #656563;
+  font-size: 0.95em;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Project Cards */
+.project-card {
+  background: #2a2221;
+  border: 2px solid #393836;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.project-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, #d4915d 0%, #5a7fa3 100%);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+  z-index: 1;
+  border-radius: 12px 12px 0 0;
+}
+
+.project-card:hover::before {
+  transform: scaleX(1);
+}
+
+.project-card:hover {
+  transform: translateY(-2px);
+  border-color: #d4915d;
+  box-shadow: 0 8px 24px rgba(212, 145, 93, 0.2);
+}
+
+.project-thumbnail {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background-color: #1a1819;
+  overflow: hidden;
+}
+
+.project-thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover .project-thumbnail img {
+  transform: scale(1.05);
+}
+
+.project-info {
+  padding: 25px;
+}
+
+.project-info h3 {
+  color: #ffffff;
+  font-size: 1.4em;
+  margin: 0 0 10px 0;
+}
+
+.project-role {
+  color: #d4915d;
+  font-size: 0.95em;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+.project-description {
+  color: #656563;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+/* Testimonial Cards */
+.testimonial-card {
+  background-color: var(--color-bg-card);
+  border-radius: 12px;
+  padding: 35px;
+  border: 2px solid var(--color-border);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+.testimonial-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, var(--color-secondary) 0%, var(--color-primary) 100%);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+  z-index: 1;
+  border-radius: 12px 12px 0 0;
+}
+
+.testimonial-card:hover::before {
+  transform: scaleX(1);
+}
+
+.testimonial-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--color-secondary);
+  box-shadow: 0 8px 24px rgba(107, 140, 174, 0.25);
+  background-color: var(--color-bg-elevated);
+}
+
+.quote-icon {
+  font-size: 64px;
+  color: var(--color-primary);
+  line-height: 1;
+  margin-bottom: 5px;
+  transition: all 0.3s ease;
+  font-family: Georgia, serif;
+  opacity: 0.4;
+}
+
+.testimonial-card:hover .quote-icon {
+  color: var(--color-secondary-bright);
+  transform: scale(1.1);
+}
+
+.testimonial-quote {
+  color: var(--color-text-muted);
+  font-size: 1.05em;
+  line-height: 1.7;
+  margin: 0 0 25px 0;
+  flex-grow: 1;
+}
+
+.testimonial-divider {
+  width: 50px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--color-primary) 0%, transparent 100%);
+  margin-bottom: 20px;
+}
+
+.testimonial-author {
+  margin: 0;
+}
+
+.author-name {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 1.1em;
+  margin: 0 0 5px 0;
+}
+
+.author-role {
+  color: #55423e;
+  font-size: 0.95em;
+  margin: 0;
+}
+
+/* Freebie Cards */
+.freebie-card {
+  background: #2a2221;
+  border: 2px solid #393836;
+  border-radius: 12px;
+  padding: 30px;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.freebie-card:hover {
+  transform: translateY(-2px);
+  border-color: #d4915d;
+  box-shadow: 0 8px 24px rgba(212, 145, 93, 0.2);
+}
+
+.freebie-card h3 {
+  color: #ffffff;
+  font-size: 1.4em;
+  margin: 0 0 15px 0;
+}
+
+.freebie-description {
+  color: #656563;
+  line-height: 1.7;
+  margin-bottom: 20px;
+  flex-grow: 1;
+}
+
+/* Responsive Cards */
+@media (max-width: 768px) {
+  .testimonial-card {
+    padding: 25px;
+  }
+
+  .quote-icon {
+    font-size: 48px;
+  }
+
+  .skill-card {
+    padding: 25px 20px;
+  }
+
+  .skill-card h3 {
+    font-size: 1.05em;
+  }
+
+  .skill-card p {
+    font-size: 0.9em;
+  }
+
+  .freebie-card {
+    padding: 25px;
+  }
+
+  .freebie-card h3 {
+    font-size: 1.2em;
+  }
+}

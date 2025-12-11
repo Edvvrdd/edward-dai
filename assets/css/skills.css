@@ -1,0 +1,110 @@
+/* ===================================
+   SKILLS & CTA SECTION
+   =================================== */
+
+.skills-cta-section {
+  background: var(--color-bg-dark);
+  padding: 80px 0;
+  border-top: 2px solid var(--color-border);
+}
+
+/* Skills Grid */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  margin-bottom: 60px;
+}
+
+/* CTA Content */
+.cta-content {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 50px 30px;
+  background: rgba(37, 37, 37, 0.5);
+  border-radius: 16px;
+  border: 1px solid var(--color-border);
+}
+
+.cta-content h2,
+.cta-title {
+  font-size: 2.2em;
+  margin-bottom: 15px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.cta-subtitle {
+  color: var(--color-text-muted);
+  font-size: 1.15em;
+  margin-bottom: 35px;
+  line-height: 1.6;
+}
+
+/* CTA Contact Info */
+.cta-contact-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  font-size: 0.95em;
+  color: #656563;
+}
+
+.cta-contact-info a {
+  color: var(--color-secondary);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.cta-contact-info a:hover {
+  color: var(--color-primary-bright);
+  text-decoration: underline;
+}
+
+.cta-contact-info .separator {
+  color: #393836;
+  font-weight: bold;
+}
+
+/* Responsive Skills & CTA */
+@media (max-width: 768px) {
+  .skills-cta-section {
+    padding: 60px 0;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-bottom: 40px;
+  }
+
+  .cta-content {
+    padding: 40px 20px;
+  }
+
+  .cta-content h2 {
+    font-size: 1.75em;
+  }
+
+  .cta-subtitle {
+    font-size: 1em;
+  }
+
+  .cta-contact-info {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .cta-contact-info .separator {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .cta-content h2 {
+    font-size: 1.5em;
+  }
+}

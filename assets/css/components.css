@@ -1,0 +1,119 @@
+/* ===================================
+   SHARED COMPONENTS
+   =================================== */
+
+/* Landing Section */
+.landing-section {
+  background-color: var(--color-bg-dark);
+  padding: 60px 0;
+}
+
+.landing-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: start;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.landing-reel {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.landing-info {
+  display: flex;
+  flex-direction: column;
+  padding: 35px;
+  background-color: var(--color-bg-card);
+  border: 2px solid var(--color-border);
+  border-radius: 12px;
+  align-self: start;
+  justify-content: space-between;
+}
+
+.landing-info h2 {
+  color: #ffffff;
+  margin-top: 0;
+  margin-bottom: 25px;
+  font-size: 2em;
+  letter-spacing: -0.5px;
+}
+
+.bio-text {
+  color: var(--color-text-muted);
+  line-height: 1.9;
+  margin: 0 0 25px 0;
+  font-size: 1.08em;
+}
+
+.landing-info .contact-btn {
+  margin-top: auto;
+  margin-bottom: 0;
+  align-self: stretch;
+  width: calc(100% + 0px);
+  text-align: center;
+  padding: 15px 30px;
+  border-radius: 8px;
+}
+
+/* Line Separator */
+.line-separator {
+  height: 1px;
+  background: linear-gradient(90deg, transparent 0%, var(--color-primary) 20%, var(--color-secondary) 50%, var(--color-primary) 80%, transparent 100%);
+  margin: 30px 0;
+  opacity: 0.6;
+}
+
+/* Contact Info Inline */
+.contact-info-inline {
+  margin-top: 15px;
+}
+
+.contact-info-inline h3 {
+  color: var(--color-primary);
+  margin-top: 0;
+  margin-bottom: 18px;
+  font-size: 1.35em;
+}
+
+.contact-info-inline p {
+  color: var(--color-text-muted);
+  margin: 12px 0;
+  line-height: 1.7;
+  font-size: 1.02em;
+}
+
+.contact-info-inline strong {
+  color: var(--color-text);
+}
+
+.contact-info-inline a {
+  color: var(--color-secondary);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-info-inline a:hover {
+  color: var(--color-primary-bright);
+  text-decoration: underline;
+}
+
+/* About Full Section */
+.about-full {
+  padding: 60px 20px;
+}
+
+.about-full h2 {
+  color: #ffffff;
+  margin-bottom: 20px;
+  font-size: 1.8em;
+}
+
+.about-full p {
+  color: var(--color-text-muted);
+  line-height: 1.8;
+  font-size: 1.15em;
+}

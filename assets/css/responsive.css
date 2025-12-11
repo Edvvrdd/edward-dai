@@ -1,0 +1,131 @@
+/* ===================================
+   RESPONSIVE STYLES - ALL MEDIA QUERIES
+   =================================== */
+
+/* ===== TABLET & MOBILE BREAKPOINTS ===== */
+
+/* 1024px and below - Tablet */
+@media (max-width: 1024px) {
+  .hero-header {
+    height: 50vh;
+    min-height: 350px;
+  }
+  
+  .hero-title {
+    font-size: 3.5em;
+  }
+}
+
+/* 968px and below - Small Tablet */
+@media (max-width: 968px) {
+  .main-nav {
+    padding: 12px 20px;
+  }
+
+  .nav-right {
+    gap: 15px;
+  }
+
+  .nav-right a {
+    font-size: 0.9em;
+  }
+  
+  .landing-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .landing-info {
+    padding: 25px;
+  }
+}
+
+/* 768px and below - Mobile */
+@media (max-width: 768px) {
+  /* Navigation */
+  .main-nav {
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px 20px;
+  }
+
+  .nav-left {
+    order: 2;
+  }
+
+  .nav-right {
+    order: 1;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  /* Hero */
+  .hero-header {
+    height: 45vh;
+    min-height: 300px;
+  }
+  
+  .hero-title {
+    font-size: 2.5em;
+  }
+}
+
+/* 600px and below - Small Mobile */
+@media (max-width: 600px) {
+  /* Navigation */
+  nav a {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .reel video {
+    max-width: 100%;
+  }
+
+  .container {
+    padding: 0 15px;
+  }
+  
+  /* Landing Section */
+  .landing-section {
+    padding: 40px 0;
+  }
+
+  .landing-info {
+    padding: 20px;
+  }
+
+  .landing-reel h2 {
+    font-size: 1.5em;
+  }
+
+  .landing-info h2 {
+    font-size: 1.5em;
+  }
+
+  .contact-info-inline h3 {
+    font-size: 1.2em;
+  }
+}
+
+/* 480px and below - Extra Small Mobile */
+@media (max-width: 480px) {
+  .hero-header {
+    height: 40vh;
+    min-height: 280px;
+  }
+  
+  .hero-title {
+    font-size: 2em;
+    margin-bottom: 15px;
+  }
+}
+
+/* ===== REDUCED MOTION PREFERENCES ===== */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

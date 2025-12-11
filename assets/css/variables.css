@@ -1,0 +1,55 @@
+/* CSS Variables and Custom Properties */
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Syne:wght@400;500;600;700;800&display=swap');
+
+:root {
+  /* Modern Dark Theme Colors */
+  --color-primary: #c9965f; /* Worn antique gold */
+  --color-primary-bright: #d4a574; /* Brighter gold for hover states */
+  --color-secondary: #6b8cae; /* Greyish steel blue */
+  --color-secondary-bright: #7a9bc0; /* Brighter blue for hover states */
+  
+  /* Backgrounds */
+  --color-bg-dark: #0a0a0a; /* Deep black */
+  --color-bg-card: #1c1c1c; /* Dark charcoal for cards */
+  --color-bg-elevated: #252525; /* Slightly elevated surfaces */
+  --color-bg-darker: #161616; /* Darkest surface */
+  
+  /* Text Colors */
+  --color-text: #b0b0b0; /* Primary text - light gray */
+  --color-text-light: #c5c5c5; /* Lighter text */
+  --color-text-muted: #888888; /* Muted text */
+  --color-text-dim: #666666; /* Dim text */
+  --color-white: #f0f0f0; /* Soft white */
+  
+  /* Borders */
+  --color-border: #2a2a2a; /* Subtle border */
+  --color-border-light: #333333; /* Lighter border */
+  
+  /* Fonts */
+  --font-primary: 'Space Grotesk', sans-serif;
+  --font-heading: 'Syne', sans-serif;
+  
+  /* Spacing */
+  --spacing-xs: 8px;
+  --spacing-sm: 12px;
+  --spacing-md: 20px;
+  --spacing-lg: 40px;
+  --spacing-xl: 60px;
+  
+  /* Border Radius */
+  --radius-sm: 6px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  
+  /* Transitions */
+  --transition-fast: 0.2s ease;
+  --transition-standard: 0.3s ease;
+  --transition-slow: 0.5s ease;
+  
+  /* Effects */
+  --hover-lift: translateY(-2px);
+  --hover-scale: scale(1.05);
+  --shadow-sm: 0 4px 15px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 10px 40px rgba(0, 0, 0, 0.5);
+}

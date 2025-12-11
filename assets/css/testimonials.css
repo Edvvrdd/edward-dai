@@ -1,0 +1,39 @@
+/* ===================================
+   TESTIMONIALS SECTION
+   =================================== */
+
+.testimonials-section {
+  background-color: var(--color-bg-darker);
+  padding: 20px 0 70px 0;
+  border-top: 1px solid var(--color-border);
+}
+
+.testimonials-section h2 {
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 50px;
+  font-size: 2em;
+}
+
+.testimonials-columns {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Responsive Testimonials */
+@media (max-width: 1024px) {
+  .testimonials-columns {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .testimonials-columns {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
