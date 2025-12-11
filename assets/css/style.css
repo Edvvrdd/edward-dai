@@ -228,13 +228,20 @@ footer {
 .intro-container {
     display: flex;
     flex-direction: row; /* Stacks on mobile */
-    align-items: baseline;   /* Centers everything */
+    align-items: baseline;   /* Align text baselines */
     font-family: sans-serif;
     white-space: nowrap;
     overflow: hidden;
-    font-size: 1rem;
     font-weight: bold;
     color: #fcfcfc; /* Dark Grey */
+}
+
+/* Static text styling to match rotating text size */
+.static-text {
+    font-size: 2rem;
+    margin: 0;
+    color: #fcfcfc;
+    line-height: 1;
 }
 
 /* Adjust for desktop to be side-by-side if you prefer */
@@ -249,7 +256,8 @@ footer {
     position: relative;
     height: 2rem; /* Reserve height so layout doesn't jump */
     display: flex;
-    align-items: center;
+    align-items: baseline;
+    min-width: fit-content;
 }
 
 .rotating-text {
@@ -257,10 +265,11 @@ footer {
     font-size: 2rem;
     top: 0;
     left: 0;
+    transform: translateY(10px); /* Starts slightly lower */
     opacity: 0;
     transition: opacity 1s ease-in-out, transform 1s ease-in-out;
-    transform: translateY(10px); /* Starts slightly lower */
     white-space: nowrap;
+    line-height: 1;
     
     /* Highlight color for the role */
     color: #007bff; /* Example: Blue */
@@ -894,6 +903,7 @@ footer {
   border: 2px solid #393836;
   border-radius: 12px;
   align-self: start;
+  justify-content: space-between;
 }
 
 .landing-info h2 {
@@ -912,8 +922,11 @@ footer {
 }
 
 .landing-info .contact-btn {
-  margin-top: 10px;
-  align-self: flex-start;
+  margin-top: auto;
+  align-self: stretch;
+  width: 100%;
+  text-align: center;
+  padding: 15px 30px;
 }
 
 .line-separator {
