@@ -1041,13 +1041,13 @@ footer {
 /* --- SPECIAL RULE FOR WWISE (5th Icon) --- */
 
 .tech-icon-wrapper:nth-child(1):hover .tech-icon {
-  content: url("images/tech/icon-reaper-hover.svg");
+  content: url("../images/tech/icon-reaper-hover.svg");
 }
 .tech-icon-wrapper:nth-child(2):hover .tech-icon {
-  content: url("images/tech/protools_hover.svg");
+  content: url("../images/tech/protools_hover.svg");
 }
 .tech-icon-wrapper:nth-child(5):hover .tech-icon {
-  content: url("images/tech/wwise_hover.svg"); 
+  content: url("../images/tech/wwise_hover.svg"); 
 }
 
 
@@ -1334,7 +1334,7 @@ footer {
 /* Page Header */
 .page-header {
   background: linear-gradient(135deg, #29272c 0%, #3c3231 100%);
-  padding: 60px 0 40px;
+  padding: 20px 0 10px;
   border-bottom: 2px solid #393836;
   text-align: center;
 }
