@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!intervalId) intervalId = setInterval(next, intervalTime);
   }
 
-  // Pause/resume on hover + focus (keyboard users)
+  // Pause rotation when user is interacting with the element (mouse hover or keyboard focus)
   wrapper.addEventListener('mouseenter', pause);
   wrapper.addEventListener('mouseleave', resume);
   wrapper.addEventListener('focusin', pause);
