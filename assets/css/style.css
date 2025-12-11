@@ -2677,11 +2677,12 @@ html {
 }
 
 /* Scrolling Text Effect (Marquee-like) */
+/* Note: Text content is duplicated in HTML to create seamless infinite scroll */
 .scrolling-text {
   display: inline-flex;
   gap: 30px;
   white-space: nowrap;
-  animation: scroll-left 30s linear infinite;
+  animation: scroll-left 20s linear infinite;
   font-size: 1.4em;
   color: #d4915d;
   font-weight: 500;
@@ -2716,8 +2717,10 @@ html {
     justify-content: center;
   }
   
+  /* Hide duplicate spans (first 5 are unique: 4 titles + 4 bullets + 1 partial) */
+  /* Keeps first set visible: Sound Designer • Audio Specialist • Technical Sound Artist • Interactive Audio */
   .scrolling-text span:nth-child(n+6) {
-    display: none; /* Hide duplicate spans when motion is reduced */
+    display: none;
   }
   
   .hero-background-video {
