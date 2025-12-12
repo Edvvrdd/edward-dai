@@ -25,3 +25,6 @@ build/
 
 # VSCode settings (if you don’t want to share them)
 .vscode/
+# Large video files (linked externally)
+assets/videos/*.mp4
+*.mp4
