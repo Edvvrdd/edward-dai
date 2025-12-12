@@ -97,9 +97,11 @@
         </div>
         <div class="tech-icon-wrapper">
           <img src="assets/images/tech/unreal.svg" alt="Unreal Engine" class="tech-icon tech-icon-base">
+          <img src="assets/images/tech/unreal-hover.svg" alt="Unreal Engine" class="tech-icon tech-icon-hover">
         </div>
         <div class="tech-icon-wrapper">
           <img src="assets/images/tech/unity.svg" alt="Unity" class="tech-icon tech-icon-base">
+          <img src="assets/images/tech/unity_hover.svg" alt="Unity" class="tech-icon tech-icon-hover">
         </div>
         <div class="tech-icon-wrapper">
           <img src="assets/images/tech/wwise.svg" alt="Wwise" class="tech-icon tech-icon-base">
@@ -107,6 +109,7 @@
         </div>
         <div class="tech-icon-wrapper">
           <img src="assets/images/tech/fmod.svg" alt="FMOD" class="tech-icon tech-icon-base">
+          <img src="assets/images/tech/fmod_hover.svg" alt="FMOD" class="tech-icon tech-icon-hover">
         </div>
       </div>
     </div>
@@ -341,14 +344,17 @@
       const heroNextBtn = document.querySelector('.hero-next');
 
       function updateHeroVideoCarousel() {
-        // Hide all videos and pause them
+        // Hide all videos/iframes
         heroVideoSlides.forEach((slide, index) => {
-          const video = slide.querySelector('video');
           if (index === heroVideoIndex) {
             slide.classList.add('active');
           } else {
             slide.classList.remove('active');
-            video.pause();
+            // Pause video if it's a video element
+            const video = slide.querySelector('video');
+            if (video) {
+              video.pause();
+            }
           }
         });
         

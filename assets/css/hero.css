@@ -160,6 +160,7 @@
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
   border: 2px solid rgba(201, 150, 95, 0.25);
   transition: all 0.3s ease;
+  aspect-ratio: 16 / 9;
 }
 
 .hero-video-slides:hover {
@@ -168,19 +169,30 @@
 }
 
 .hero-video-slide {
-  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 1;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
 }
 
 .hero-video-slide.active {
-  display: block;
+  opacity: 1;
+  z-index: 2;
+  pointer-events: auto;
 }
 
 .hero-video-slide video,
 .hero-video-slide iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: auto;
-  aspect-ratio: 16 / 9;
+  height: 100%;
   display: block;
   background-color: #000;
   border: none;
