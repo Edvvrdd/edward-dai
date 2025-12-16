@@ -2,9 +2,18 @@
 RewriteEngine On
 RewriteBase /
 
+# Remove trailing slashes (except for root)
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI} (.+)/$
+RewriteRule ^ %1 [R=301,L]
+
 # Redirect .html URLs to clean URLs (must come first)
-RewriteCond %{THE_REQUEST} \s/+(.+?)\.html[\s?] [NC]
+RewriteCond %{THE_REQUEST} \s/+(.*?)(\.html|\.htm)[\s?/] [NC]
 RewriteRule ^ /%1 [R=301,L,NE]
+
+# Also catch direct .html access
+RewriteCond %{ENV:REDIRECT_STATUS} ^$
+RewriteRule ^(.+)\.html$ /$1 [R=301,L,NC]
 
 # Serve .html files for clean URLs
 RewriteCond %{REQUEST_FILENAME} !-f
