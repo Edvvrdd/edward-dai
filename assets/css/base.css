@@ -17,6 +17,11 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
 }
 
+p, li, span {
+  font-family: var(--font-body-light);
+  font-weight: 300;
+}
+
 section {
   padding: var(--spacing-xl) 0;
 }

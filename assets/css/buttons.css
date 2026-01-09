@@ -39,16 +39,18 @@
 }
 
 .btn-secondary {
-  background: transparent;
+  background: rgba(28, 28, 28, 0.9);
   color: var(--color-text-light);
-  border: 2px solid var(--color-border-light);
+  border: 2px solid rgba(201, 150, 95, 0.3);
+  backdrop-filter: blur(10px);
 }
 
 .btn-secondary:hover {
-  background: rgba(107, 140, 174, 0.1);
-  border-color: var(--color-secondary);
-  color: var(--color-secondary-bright);
+  background: rgba(28, 28, 28, 1);
+  border-color: rgba(201, 150, 95, 0.6);
+  color: var(--color-white);
   transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
 .btn-small {

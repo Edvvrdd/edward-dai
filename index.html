@@ -22,17 +22,13 @@
         <a href="https://blepcatgames.itch.io/" target="_blank" rel="noopener noreferrer" class="social-link">
           <img src="assets/images/social/itch-io-svg.svg" alt="itch.io" class="social-icon-small">
         </a>
-        <a href="https://bandcamp.com/" target="_blank" rel="noopener noreferrer" class="social-link">
-          <img src="assets/images/social/bandcamp-button-square-black.svg" alt="Bandcamp" class="social-icon-small">
-        </a>
       </div>
       
       <!-- Right: Page Links -->
       <div class="nav-right">
         <a href="/">Home</a>
-        <a href="pages/game-works">Interactive Audio</a>
-        <a href="pages/sound-design">Linear Audio</a>
-        <a href="pages/music">Music</a>
+        <a href="pages/game-works">Games</a>
+        <a href="pages/sound-design">Films</a>
         <a href="pages/blog">Blog</a>
       </div>
     </nav>
@@ -40,43 +36,25 @@
 
   <!-- HERO HEADER SECTION -->
   <section class="hero-header">
-    <div class="hero-background-accent"></div>
+    <!-- Hero Content -->
     <div class="hero-content">
-      <!-- <div class="hero-badge">Technical Sound Designer</div> -->
-      <h1 class="hero-title">Hi, I'm Edward Dai</h1>
-      <div class="hero-intro-container">
-        <h2 class="hero-static-text">I'm a</h2>
-        <div class="hero-rotating-wrapper">
-          <!-- Add more roles below as needed. Mark the first one with 'active' class -->
-          <span class="hero-rotating-text active">Technical Sound Artist</span>
-          <span class="hero-rotating-text">Solo Games Developer</span>
-          <span class="hero-rotating-text">Interactive Audio Specialist</span>
-          <!-- Example: <span class="hero-rotating-text">Game Audio Designer</span> -->
-        </div>
+      <h1 class="hero-title">EDWARD DAI</h1>
+      <div class="hero-roles">
+        <span class="hero-role">Technical Sound Designer</span>
+        <span class="hero-diamond">◆</span>
+        <span class="hero-role">Solo Games Developer</span>
       </div>
-      <!-- Hero Video Carousel -->
-      <div class="hero-video-carousel">
-        <div class="hero-video-slides">
-          <div class="hero-video-slide active">
-            <iframe src="https://www.youtube.com/embed/RrsEiN5ae5E" title="Azuki Elementals Sound Redesign" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-          </div>
-          <div class="hero-video-slide">
-            <iframe src="https://www.youtube.com/embed/Og6NbC8ZkpI" title="Edward Dai Sound Design Portfolio" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-          </div>
-        </div>
-        <div class="hero-carousel-controls">
-          <button class="hero-nav-btn hero-prev" aria-label="Previous video">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <polyline points="15 18 9 12 15 6"></polyline>
-            </svg>
-          </button>
-          <p class="hero-video-subtitle">Sound Design Demo Reel</p>
-          <button class="hero-nav-btn hero-next" aria-label="Next video">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <polyline points="9 18 15 12 9 6"></polyline>
-            </svg>
-          </button>
-        </div>
+      
+      <!-- Simple Embedded YouTube Video -->
+      <div class="hero-video-container">
+        <iframe 
+          src="https://www.youtube.com/embed/Og6NbC8ZkpI" 
+          title="Edward Dai Sound Design Portfolio" 
+          frameborder="0" 
+          allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+          referrerpolicy="strict-origin-when-cross-origin" 
+          allowfullscreen>
+        </iframe>
       </div>
       
       <div class="hero-cta">
@@ -121,11 +99,12 @@
   <!-- ABOUT (Full Version) -->
   <section class="container about-full">
     <h2>About Me</h2>
-    <p>I am a technical sound designer with a unique perspective shaped by completing multiple games independently across the full development lifecycle. This hands-on experience across programming, design, and audio has given me deep insight into how sound design integrates with every stage of production, enabling me to collaborate effectively with engineers, designers, and artists while anticipating technical requirements and creative opportunities.</p>
-    
-    <p>My expertise centers on creating interactive audio systems using FMOD, Wwise, and game engines including Unreal Engine and Unity. I specialize in designing responsive, data-driven soundscapes that adapt dynamically to player actions and environmental factors. Beyond implementation, I approach sound design as world-building—crafting emotionally resonant audio experiences through careful attention to subtle details that enhance immersion. I believe great game audio shouldn't just sound impressive in isolation; it should make players feel fully present in the game world.</p>
-    
-    <p>My technical knowledge allows me to push beyond traditional linear sound design, creating highly interactive and detailed audio that responds intelligently to gameplay. From field recording and original sound creation to optimizing audio pipelines and integrating middleware, I prioritize developing scalable solutions that serve both the creative vision and the practical needs of small to mid-sized teams. I am particularly drawn to studios where sound plays a defining role in the game's identity, and where experimentation and close collaboration are valued throughout the creative process.</p>
+    <div style="display: flex; gap: 2rem; align-items: flex-start;">
+      <div>
+        <p>Hi, I'm Edward Dai, a passionate sound designer and audio engineer for video games and visual media. </p>
+      </div>
+      <img src="https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?w=400&h=400&fit=crop" alt="Sound Designer" style="width: 300px; height: 300px; object-fit: cover; border-radius: 8px; flex-shrink: 0;">
+    </div>
   </section>
 
   <!-- PROJECTS CAROUSEL -->
@@ -175,7 +154,7 @@
               </div>
             </a>
 
-            <!-- Project 5 -->
+            <!-- Project 5
             <a href="pages/game-works" class="carousel-card">
               <div class="carousel-image-placeholder">
                 <img src="assets/images/projects/project5.jpg" alt="Project 5" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
@@ -185,15 +164,15 @@
               </div>
             </a>
 
-            <!-- Project 6 -->
-            <a href="pages/game-works" class="carousel-card">
+            Project 6 -->
+            <!-- <a href="pages/game-works" class="carousel-card">
               <div class="carousel-image-placeholder">
                 <img src="assets/images/projects/project6.jpg" alt="Project 6" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
                 <div class="image-placeholder-fallback">
                   <span>Project 6</span>
                 </div>
               </div>
-            </a>
+            </a> -->
           </div>
         </div>
       </div>
@@ -252,50 +231,35 @@
       <!-- Skills Grid -->
       <div class="skills-grid">
         <div class="skill-card">
-          <div class="skill-icon">
-            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-            </svg>
+          <div class="skill-overlay" style="background-image: url('https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?w=600&h=400&fit=crop');"></div>
+          <div class="skill-content">
+            <h3>Sound Design</h3>
+            <p>Maximizing player experience through intricate audio design and custom sound creation</p>
           </div>
-          <h3>Interactive Audio Design</h3>
-          <p>Maximizing player experience through intricate audio design</p>
         </div>
 
         <div class="skill-card">
-          <div class="skill-icon">
-            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
-              <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
-              <line x1="6" y1="6" x2="6.01" y2="6"></line>
-              <line x1="6" y1="18" x2="6.01" y2="18"></line>
-            </svg>
+          <div class="skill-overlay" style="background-image: url('https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=600&h=400&fit=crop');"></div>
+          <div class="skill-content">
+            <h3>Audio Tools Programming</h3>
+            <p>Advanced middleware implementation and custom tool development for efficient workflows</p>
           </div>
-          <h3>FMOD & Wwise Integration</h3>
-          <p>Advanced middleware implementation for efficient workflows</p>
         </div>
 
         <div class="skill-card">
-          <div class="skill-icon">
-            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"></path>
-              <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
-              <line x1="12" y1="19" x2="12" y2="22"></line>
-            </svg>
+          <div class="skill-overlay" style="background-image: url('https://images.unsplash.com/photo-1590602847861-f357a9332bbc?w=600&h=400&fit=crop');"></div>
+          <div class="skill-content">
+            <h3>Field Recording</h3>
+            <p>Original source recording skills paired with ability to iterate and generate custom content</p>
           </div>
-          <h3>Field Recording & Sound Design</h3>
-          <p>Original source recording skills paired with ability to iterate and generate custom content</p>
         </div>
 
         <div class="skill-card">
-          <div class="skill-icon">
-            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
-              <polyline points="2 17 12 22 22 17"></polyline>
-              <polyline points="2 12 12 17 22 12"></polyline>
-            </svg>
+          <div class="skill-overlay" style="background-image: url('https://images.unsplash.com/photo-1552820728-8b83bb6b773f?w=600&h=400&fit=crop');"></div>
+          <div class="skill-content">
+            <h3>Game Audio Consultation</h3>
+            <p>Wide knowledge coverage for seamless team integration and communication</p>
           </div>
-          <h3>Unreal Engine & Unity</h3>
-          <p>Wide knowledge coverage for seamless team integration and communication</p>
         </div>
       </div>
 
@@ -337,75 +301,6 @@
   </footer>
 
   <script>
-    // Hero Video Carousel functionality
-    (function() {
-      let heroVideoIndex = 0;
-      const heroVideoSlides = document.querySelectorAll('.hero-video-slide');
-      const heroVideoSubtitle = document.querySelector('.hero-video-subtitle');
-      const heroVideoTitles = ['Sound Design Demo Reel', 'Tech Demo - Audio Implementation'];
-      const heroPrevBtn = document.querySelector('.hero-prev');
-      const heroNextBtn = document.querySelector('.hero-next');
-
-      function updateHeroVideoCarousel() {
-        // Hide all videos/iframes
-        heroVideoSlides.forEach((slide, index) => {
-          if (index === heroVideoIndex) {
-            slide.classList.add('active');
-          } else {
-            slide.classList.remove('active');
-            // Pause video if it's a video element
-            const video = slide.querySelector('video');
-            if (video) {
-              video.pause();
-            }
-          }
-        });
-        
-        // Update subtitle
-        if (heroVideoSubtitle) {
-          heroVideoSubtitle.textContent = heroVideoTitles[heroVideoIndex];
-        }
-      }
-
-      if (heroPrevBtn) {
-        heroPrevBtn.addEventListener('click', () => {
-          heroVideoIndex = (heroVideoIndex - 1 + heroVideoSlides.length) % heroVideoSlides.length;
-          updateHeroVideoCarousel();
-        });
-      }
-
-      if (heroNextBtn) {
-        heroNextBtn.addEventListener('click', () => {
-          heroVideoIndex = (heroVideoIndex + 1) % heroVideoSlides.length;
-          updateHeroVideoCarousel();
-        });
-      }
-
-      // Initialize
-      updateHeroVideoCarousel();
-    })();
-
-    // Hero Rotating Text functionality
-    (function() {
-      const heroTextElements = document.querySelectorAll('.hero-rotating-text');
-      let heroCurrentIndex = 0;
-      
-      function rotateHeroText() {
-        // Remove active class from all
-        heroTextElements.forEach(el => el.classList.remove('active'));
-        
-        // Move to next index
-        heroCurrentIndex = (heroCurrentIndex + 1) % heroTextElements.length;
-        
-        // Add active class to current
-        heroTextElements[heroCurrentIndex].classList.add('active');
-      }
-      
-      // Rotate every 3 seconds
-      if (heroTextElements.length > 1) {
-        setInterval(rotateHeroText, 3000);
-      }
-    })();
 
     // Project Carousel functionality - shows 3 cards at a time
     let currentSlide = 0;
@@ -452,24 +347,5 @@
   </script>
 
   <script src="assets/js/rotating-text.js"></script>
-  
-  <script>
-    // Tech icon hover sound effect
-    (function() {
-      const hoverSound = new Audio('assets/Audio/Tech HOVER LOW Hum Short.wav');
-      hoverSound.volume = 0.3; // Set volume to 30%
-      
-      const techIconWrappers = document.querySelectorAll('.tech-icon-wrapper');
-      
-      techIconWrappers.forEach(wrapper => {
-        wrapper.addEventListener('mouseenter', () => {
-          // Clone the audio so multiple sounds can play simultaneously
-          const sound = hoverSound.cloneNode();
-          sound.volume = 0.3;
-          sound.play().catch(err => console.log('Audio play failed:', err));
-        });
-      });
-    })();
-  </script>
 </body>
 </html>
