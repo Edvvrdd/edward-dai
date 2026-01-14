@@ -58,25 +58,45 @@
 
 /* Responsive Tech Banner */
 @media (max-width: 768px) {
+  .tech-banner {
+    padding: 15px 0;
+  }
+  
   .tech-icons {
-    gap: 40px;
+    gap: 0;
+    position: relative;
+    height: 80px;
+    overflow: hidden;
+  }
+  
+  .tech-icon-wrapper {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+  
+  .tech-icon-wrapper.active {
+    opacity: 1;
   }
 
   .tech-icon {
-    height: 60px;
+    height: 70px;
   }
 }
 
 @media (max-width: 600px) {
   .tech-banner {
-    padding: 25px 0;
+    padding: 12px 0;
   }
 
   .tech-icons {
-    gap: 30px;
+    height: 60px;
   }
 
   .tech-icon {
-    height: 50px;
+    height: 55px;
   }
 }

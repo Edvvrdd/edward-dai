@@ -268,5 +268,39 @@
   </footer>
 
   <script src="assets/js/rotating-text.js"></script>
+  <script>
+    // Tech icon rotation for mobile
+    function initTechIconRotation() {
+      // Only run on mobile devices
+      if (window.innerWidth <= 768) {
+        const iconWrappers = document.querySelectorAll('.tech-icon-wrapper');
+        let currentIndex = 0;
+        
+        // Show first icon
+        if (iconWrappers.length > 0) {
+          iconWrappers[0].classList.add('active');
+        }
+        
+        // Rotate through icons every 2 seconds
+        setInterval(() => {
+          iconWrappers[currentIndex].classList.remove('active');
+          currentIndex = (currentIndex + 1) % iconWrappers.length;
+          iconWrappers[currentIndex].classList.add('active');
+        }, 2000);
+      }
+    }
+    
+    // Initialize on page load
+    initTechIconRotation();
+    
+    // Reinitialize on window resize
+    let resizeTimer;
+    window.addEventListener('resize', () => {
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(() => {
+        location.reload();
+      }, 250);
+    });
+  </script>
 </body>
 </html>
