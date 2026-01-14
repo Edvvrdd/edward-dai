@@ -1,5 +1,173 @@
 /* ===================================
-   CAROUSEL COMPONENTS
+   FEATURED PROJECTS SECTION
+   =================================== */
+
+.featured-projects {
+  background-color: var(--color-bg-elevated);
+  padding: 60px 0;
+}
+
+.featured-projects h2 {
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 50px;
+  font-size: 2.5em;
+}
+
+.featured-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.featured-card {
+  position: relative;
+  background: var(--color-bg-card);
+  border: 2px solid var(--color-border);
+  border-radius: 12px;
+  min-height: 350px;
+  padding: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.featured-card:hover {
+  border-color: var(--color-primary);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(201, 150, 95, 0.3);
+}
+
+/* Card Default Content */
+.card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  min-height: 290px;
+  transition: opacity 0.3s ease;
+}
+
+.project-title {
+  font-size: 2em;
+  color: #ffffff;
+  margin: 0 0 20px 0;
+  font-weight: 600;
+}
+
+.card-image {
+  width: 100%;
+  flex: 1;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #1a1819;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.card-footer {
+  color: var(--color-text-muted);
+  font-size: 1.1em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.card-footer svg {
+  opacity: 0.6;
+  transition: transform 0.3s ease;
+}
+
+.featured-card:hover .card-footer svg {
+  transform: translateY(-2px);
+}
+
+/* Testimonial Hover Overlay */
+.testimonial-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 30px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  backdrop-filter: blur(8px);
+  box-sizing: border-box;
+}
+
+.featured-card:hover .testimonial-hover {
+  opacity: 1;
+}
+
+.featured-card:hover .card-content {
+  opacity: 0;
+}
+
+.testimonial-hover .testimonial-title {
+  color: var(--color-primary);
+  font-size: 1.3em;
+  font-weight: 600;
+  margin: 0 0 15px 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.testimonial-hover .testimonial-text {
+  color: #ffffff;
+  font-size: 1em;
+  line-height: 1.7;
+  margin-bottom: 20px;
+  margin-right: 0;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+  text-align: left;
+  max-height: calc(100% - 60px);
+  overflow-y: auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.testimonial-hover .testimonial-author {
+  color: var(--color-primary);
+  font-size: 1em;
+  font-style: italic;
+  margin: 0;
+  flex-shrink: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .featured-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .featured-card {
+    min-height: 300px;
+  }
+}
+
+/* ===================================
+   OLD CAROUSEL COMPONENTS (LEGACY)
    =================================== */
 
 /* General Carousel Section */

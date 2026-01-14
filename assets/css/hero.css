@@ -22,8 +22,10 @@
   text-align: center;
   padding: 10px 20px 80px; /* ADJUST GAP: Change the last value to add space below CTA buttons */
   max-width: 1200px;
+  width: 100%;
   margin: 0 auto 0; /* ADJUST GAP: Change the last value to add space between hero and tech banner */
   animation: fadeInUp 1s ease-out;
+  box-sizing: border-box;
 }
 
 /* Hero Video Container */

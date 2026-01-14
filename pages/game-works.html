@@ -37,230 +37,105 @@
   <!-- PAGE HEADER -->
   <section class="page-header">
     <div class="container">
-      <h1>Interactive Audio Projects</h1>
-      <p class="page-subtitle">Interactive audio systems, technical implementation, and immersive soundscapes for games</p>
+      <h1>Game Audio Projects</h1>
+      <p class="page-subtitle">Interactive Audio Systems, Technical Sound Design, Audio Tooling</p>
     </div>
   </section>
 
-  <!-- FEATURED PROJECT: LAMBYRINTH -->
-  <section class="featured-project">
-    <div class="container">
-      <div class="featured-project-grid">
-        
-        <!-- Video Column -->
-        <div class="featured-project-media">
-          <div class="project-video-container">
-            <video controls aria-label="Lambyrinth showcase">
-              <source src="../assets/videos/lambyrinth-showcase.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-            </video>
-          </div>
+  <!-- HORIZONTAL TIMELINE SECTION -->
+  <section class="featured-project" id="horizontal-scroll">
+    <div class="featured-project-grid">
+      
+      <!-- 1. Video: Lambyrinth -->
+      <div class="featured-project-media">
+        <div class="project-video-container">
+          <video controls aria-label="Lambyrinth showcase">
+            <source src="../assets/videos/lambyrinth-showcase.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
         </div>
-        
-        <!-- Info Column -->
-        <div class="featured-project-info">
-          <div class="project-badge">Featured Project</div>
-          <h2>Lambyrinth</h2>
-          <p class="project-tagline">Horror Puzzle Game | Audio Lead & Technical Implementation</p>
-          
-          <p class="project-intro">A horror puzzle game where a lonely shepherd must rescue her lost sheep from a dark, maze-like forest before a lurking monster finds them. I led the complete audio direction, creating an immersive soundscape that builds tension through responsive voice systems and terrifying audio moments.</p>
-          
-          <div class="project-meta">
-            <div class="meta-item">
-              <strong>Role:</strong> Audio Lead
-            </div>
-            <div class="meta-item">
-              <strong>Tools:</strong> FMOD, Reaper
-            </div>
-            <div class="meta-item">
-              <strong>Duration:</strong> 4 months
-            </div>
-          </div>
-          
-          <div class="project-links">
-            <a href="https://blepcatgames.itch.io/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                <polyline points="15 3 21 3 21 9"></polyline>
-                <line x1="10" y1="14" x2="21" y2="3"></line>
-              </svg>
-              Play on itch.io
-            </a>
-            <a href="lambyrinth" class="btn btn-secondary">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-                <circle cx="12" cy="12" r="3"></circle>
-              </svg>
-              Full Case Study
-            </a>
-          </div>
-        </div>
-        
       </div>
       
-      <!-- Expandable Details Section -->
-      <div class="project-details-expander">
-        <button class="expander-toggle" onclick="toggleExpander('lambyrinth-details')">
-          <span class="expander-title">Project Details & Technical Breakdown</span>
-          <svg class="expander-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <polyline points="6 9 12 15 18 9"></polyline>
-          </svg>
-        </button>
+      <!-- 2. Text: Lambyrinth -->
+      <div class="featured-project-info">
+        <div class="project-badge">Featured Project</div>
+        <h2>Lambyrinth</h2>
+        <p class="project-description">A horror puzzle game where a lonely shepherd must rescue her lost sheep from a dark, maze-like forest before a lurking monster finds them. I led the complete audio direction, creating an immersive soundscape that builds tension through responsive voice systems and terrifying audio moments.</p>
         
-        <div id="lambyrinth-details" class="expander-content">
-          <div class="expander-content-inner">
-            
-            <!-- Key Features -->
-            <div class="detail-section">
-              <h3>Key Audio Features</h3>
-              <div class="features-grid">
-                <div class="feature-card">
-                  <div class="feature-icon">🎙️</div>
-                  <h4>Responsive VO System</h4>
-                  <p>Dynamic voice-over system that responds to player proximity to sheep, monster presence, and player inactivity, creating a deeply personal horror experience.</p>
-                </div>
-                
-                <div class="feature-card">
-                  <div class="feature-icon">👹</div>
-                  <h4>Voice Mimicry Mechanic</h4>
-                  <p>The monster captures and distorts the player's voice, playing it back from different locations to create psychological horror and disorientation.</p>
-                </div>
-                
-                <div class="feature-card">
-                  <div class="feature-icon">🌲</div>
-                  <h4>Atmospheric Soundscape</h4>
-                  <p>Layered forest ambience that shifts between vast openness and claustrophobic tension, using spatial audio to guide and mislead the player.</p>
-                </div>
-                
-                <div class="feature-card">
-                  <div class="feature-icon">⚙️</div>
-                  <h4>FMOD Integration</h4>
-                  <p>Complex parameter-driven audio events using FMOD, including real-time microphone input processing and 3D spatial positioning.</p>
-                </div>
-              </div>
-            </div>
-            
-            <!-- Technical Implementation -->
-            <div class="detail-section">
-              <h3>Technical Implementation</h3>
-              <div class="tech-breakdown">
-                <div class="tech-item">
-                  <h4>Responsive VO System</h4>
-                  <p>Built using FMOD parameters tracking player location, object proximity, and monster state. The system triggers contextual dialogue based on multiple game variables, creating a character that feels alive and connected to the player's actions.</p>
-                  <ul>
-                    <li>Proximity-based dialogue triggers</li>
-                    <li>Emotional state transitions based on threat level</li>
-                    <li>Inactivity detection for ambient character moments</li>
-                  </ul>
-                </div>
-                
-                <div class="tech-item">
-                  <h4>Mimic Monster Audio</h4>
-                  <p>Captures microphone input, processes it with distortion and reverb effects in real-time, and triggers it as a 3D sound event from the monster's location. This creates one of the game's most memorable and terrifying moments.</p>
-                  <ul>
-                    <li>Real-time microphone input capture</li>
-                    <li>Dynamic audio processing (distortion, pitch shift, reverb)</li>
-                    <li>3D spatial audio positioning based on monster location</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            
-            <!-- Challenges & Solutions -->
-            <div class="detail-section">
-              <h3>Challenges & Solutions</h3>
-              <div class="challenge-solution">
-                <div class="challenge">
-                  <strong>Challenge:</strong> Creating a sense of dread in an open forest environment
-                </div>
-                <div class="solution">
-                  <strong>Solution:</strong> Layered ambience with dynamic mixing based on player location, using silence and subtle sounds to build tension rather than constant noise
-                </div>
-              </div>
-              
-              <div class="challenge-solution">
-                <div class="challenge">
-                  <strong>Challenge:</strong> Making the monster feel present without being visible
-                </div>
-                <div class="solution">
-                  <strong>Solution:</strong> Implemented directional audio cues, breathing sounds, and the voice mimicry system to create psychological presence
-                </div>
-              </div>
-            </div>
-            
-            <!-- Results -->
-            <div class="detail-section">
-              <h3>Results & Learnings</h3>
-              <p>Leading the audio direction for Lambyrinth taught me how to maintain a cohesive sonic vision while managing a wide range of assets. The voice mimicry mechanic became one of the most talked-about features, demonstrating the power of audio to create truly memorable gameplay moments. This project deepened my understanding of FMOD's parameter-driven systems and reinforced the importance of designing sound that shapes the player's emotional journey.</p>
-            </div>
-            
+        <div class="project-meta">
+          <div class="meta-item">
+            <strong>Role:</strong> Audio Lead, Technical Sound Designer
+          </div>
+          <div class="meta-item">
+            <strong>Tools:</strong> FMOD, Reaper, Unity
+          </div>
+          <div class="meta-item">
+            <strong>Duration:</strong> 4 months
+          </div>
+        </div>
+        
+        <div class="project-links">
+          <a href="https://blepcatgames.itch.io/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+            Play on itch.io
+          </a>
+          <a href="lambyrinth" class="btn btn-secondary">
+            Full Case Study
+          </a>
+        </div>
+      </div>
+      
+      <!-- 3. Text: Procedural Audio -->
+      <div class="featured-project-info">
+        <div class="project-badge">Personal Project</div>
+        <h2>Procedural Audio Exploration</h2>
+        <p class="project-description">An experimental project exploring procedural audio generation and adaptive soundscapes. This personal exploration focused on creating dynamic audio systems that respond to environmental parameters and player behavior in real-time.</p>
+        
+        <div class="project-meta">
+          <div class="meta-item">
+            <strong>Role:</strong> Solo Developer
+          </div>
+          <div class="meta-item">
+            <strong>Tools:</strong> FMOD, Unity
+          </div>
+          <div class="meta-item">
+            <strong>Type:</strong> Personal Exploration
           </div>
         </div>
       </div>
       
-    </div>
-  </section>
-
-  <!-- PERSONAL PROJECTS SECTION -->
-  <section class="personal-projects-section">
-    <div class="container">
-      <h2>Personal Projects</h2>
-      <p class="section-intro">Solo explorations in procedural audio, adaptive music systems, and experimental sound design</p>
-      
-      <div class="projects-grid">
-        
-        <!-- Personal Project 1 -->
-        <div class="project-card">
-          <div class="project-thumbnail">
-            <img src="../assets/images/projects/personal1.jpg" alt="Personal Project 1" onerror="this.style.display='none';">
-          </div>
-          <div class="project-info">
-            <h3>Procedural Audio Exploration</h3>
-            <p class="project-role">Solo Developer | Experimental Systems</p>
-            <p class="project-description">An experimental project exploring procedural audio generation and adaptive soundscapes. This personal exploration focused on creating dynamic audio systems that respond to environmental parameters and player behavior in real-time.</p>
-            <div class="project-card-tags">
-              <span class="tag">FMOD</span>
-              <span class="tag">Unity</span>
-              <span class="tag">Procedural Audio</span>
-            </div>
-          </div>
+      <!-- 4. Video: Procedural Audio -->
+      <div class="featured-project-media">
+        <div class="project-video-container">
+          <img src="../assets/images/projects/personal1.jpg" alt="Procedural Audio" style="position: absolute; width: 100%; height: 100%; object-fit: cover;" onerror="this.style.display='none';">
         </div>
-        
-        <!-- Personal Project 2 -->
-        <div class="project-card">
-          <div class="project-thumbnail">
-            <img src="../assets/images/projects/personal2.jpg" alt="Personal Project 2" onerror="this.style.display='none';">
-          </div>
-          <div class="project-info">
-            <h3>Adaptive Music System</h3>
-            <p class="project-role">Solo Developer | Technical Exploration</p>
-            <p class="project-description">A deep dive into adaptive music systems using Wwise and Unreal Engine. This project explored vertical and horizontal re-orchestration techniques to create seamless musical transitions based on gameplay intensity.</p>
-            <div class="project-card-tags">
-              <span class="tag">Wwise</span>
-              <span class="tag">Unreal Engine</span>
-              <span class="tag">Adaptive Music</span>
-            </div>
-          </div>
-        </div>
-        
-        <!-- Personal Project 3 -->
-        <div class="project-card">
-          <div class="project-thumbnail">
-            <img src="../assets/images/projects/personal3.jpg" alt="Personal Project 3" onerror="this.style.display='none';">
-          </div>
-          <div class="project-info">
-            <h3>Spatial Audio Demo</h3>
-            <p class="project-role">Solo Developer | Audio Technology</p>
-            <p class="project-description">A technical demonstration of advanced spatial audio techniques, including HRTF implementation, reverb zone systems, and dynamic occlusion. Built to explore the intersection of audio and player immersion.</p>
-            <div class="project-card-tags">
-              <span class="tag">FMOD</span>
-              <span class="tag">Unity</span>
-              <span class="tag">Spatial Audio</span>
-            </div>
-          </div>
-        </div>
-        
       </div>
+      
+      <!-- 5. Video: Adaptive Music -->
+      <div class="featured-project-media">
+        <div class="project-video-container">
+          <img src="../assets/images/projects/personal2.jpg" alt="Adaptive Music" style="position: absolute; width: 100%; height: 100%; object-fit: cover;" onerror="this.style.display='none';">
+        </div>
+      </div>
+      
+      <!-- 6. Text: Adaptive Music -->
+      <div class="featured-project-info">
+        <div class="project-badge">Personal Project</div>
+        <h2>Adaptive Music System</h2>
+        <p class="project-description">A deep dive into adaptive music systems using Wwise and Unreal Engine. This project explored vertical and horizontal re-orchestration techniques to create seamless musical transitions based on gameplay intensity.</p>
+        
+        <div class="project-meta">
+          <div class="meta-item">
+            <strong>Role:</strong> Solo Developer
+          </div>
+          <div class="meta-item">
+            <strong>Tools:</strong> Wwise, Unreal Engine
+          </div>
+          <div class="meta-item">
+            <strong>Type:</strong> Technical Demo
+          </div>
+        </div>
+      </div>
+      
     </div>
   </section>
 
@@ -269,6 +144,29 @@
   </footer>
 
   <script>
+    // Horizontal scroll with mouse wheel (desktop only)
+    const horizontalSection = document.getElementById('horizontal-scroll');
+    
+    // Only enable horizontal scrolling on desktop (screen width > 768px)
+    if (window.innerWidth > 768) {
+      horizontalSection.addEventListener('wheel', (e) => {
+        // Prevent default vertical scroll
+        e.preventDefault();
+        
+        // Scroll horizontally based on vertical wheel movement (multiplied for faster scrolling)
+        horizontalSection.scrollLeft += e.deltaY * 2.5;
+      }, { passive: false });
+    }
+    
+    // Re-check on window resize
+    window.addEventListener('resize', () => {
+      // Reload page on resize to reapply scroll behavior
+      if ((window.innerWidth > 768 && !horizontalSection.hasAttribute('data-horizontal')) ||
+          (window.innerWidth <= 768 && horizontalSection.hasAttribute('data-horizontal'))) {
+        location.reload();
+      }
+    });
+
     // Expander toggle functionality
     function toggleExpander(id) {
       const content = document.getElementById(id);
