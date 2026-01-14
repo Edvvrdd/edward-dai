@@ -159,10 +159,24 @@
   .featured-grid {
     grid-template-columns: 1fr;
     gap: 20px;
+    padding: 0 15px;
   }
   
   .featured-card {
     min-height: 300px;
+    padding: 25px;
+  }
+  
+  .project-title {
+    font-size: 1.5em;
+  }
+  
+  .card-footer {
+    font-size: 0.95em;
+  }
+  
+  .testimonial-hover .testimonial-text {
+    font-size: 0.95em;
   }
 }
 
