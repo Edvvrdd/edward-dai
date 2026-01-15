@@ -12,7 +12,7 @@
   transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
-  min-height: 280px;
+  min-height: 120px;
   display: flex;
   flex-direction: column;
 }
@@ -29,19 +29,21 @@
   background-blend-mode: overlay;
   transition: opacity 0.4s ease;
   z-index: 1;
+  opacity: 0;
 }
 
 .skill-card:hover .skill-overlay {
-  opacity: 0;
+  opacity: 1;
 }
 
 .skill-content {
   position: relative;
   z-index: 2;
-  padding: 30px 25px;
+  padding: 15px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  align-items: flex-start;
   height: 100%;
 }
 
@@ -72,16 +74,18 @@
 
 .skill-card h3 {
   color: var(--color-white);
-  font-size: 1.3em;
-  margin-bottom: 15px;
+  font-size: 1.1em;
+  margin-bottom: 6px;
+  margin-top: 0;
   font-weight: 600;
 }
 
 .skill-card p {
   color: var(--color-text-muted);
-  font-size: 0.95em;
-  line-height: 1.6;
+  font-size: 0.85em;
+  line-height: 1.4;
   margin: 0;
+  text-align: left;
 }
 
 /* Feature Cards */
