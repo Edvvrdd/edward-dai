@@ -141,18 +141,42 @@
   </footer>
 
   <script>
-    // Horizontal scroll with mouse wheel (desktop only)
+    // Horizontal scroll with drag (desktop only)
     const horizontalSection = document.getElementById('horizontal-scroll');
     
-    // Only enable horizontal scrolling on desktop (screen width > 768px)
+    // Only enable draggable scrolling on desktop (screen width > 768px)
     if (window.innerWidth > 768) {
-      horizontalSection.addEventListener('wheel', (e) => {
-        // Prevent default vertical scroll
+      let isDown = false;
+      let startX;
+      let scrollLeft;
+      
+      horizontalSection.addEventListener('mousedown', (e) => {
+        isDown = true;
+        horizontalSection.style.cursor = 'grabbing';
+        startX = e.pageX - horizontalSection.offsetLeft;
+        scrollLeft = horizontalSection.scrollLeft;
+      });
+      
+      horizontalSection.addEventListener('mouseleave', () => {
+        isDown = false;
+        horizontalSection.style.cursor = 'grab';
+      });
+      
+      horizontalSection.addEventListener('mouseup', () => {
+        isDown = false;
+        horizontalSection.style.cursor = 'grab';
+      });
+      
+      horizontalSection.addEventListener('mousemove', (e) => {
+        if (!isDown) return;
         e.preventDefault();
-        
-        // Scroll horizontally based on vertical wheel movement (multiplied for faster scrolling)
-        horizontalSection.scrollLeft += e.deltaY * 2.5;
-      }, { passive: false });
+        const x = e.pageX - horizontalSection.offsetLeft;
+        const walk = (x - startX) * 2; // Multiply for faster scrolling
+        horizontalSection.scrollLeft = scrollLeft - walk;
+      });
+      
+      // Set initial cursor
+      horizontalSection.style.cursor = 'grab';
     }
     
     // Re-check on window resize

@@ -37,7 +37,10 @@
   -webkit-overflow-scrolling: touch;
   scrollbar-width: thin;
   scrollbar-color: var(--color-primary) var(--color-bg-card);
-  scroll-behavior: smooth;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
 }
 
 .featured-project::-webkit-scrollbar {
