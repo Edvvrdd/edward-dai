@@ -7,13 +7,20 @@
    width="512"
    height="512"
    viewBox="0 0 512 512"
+   sodipodi:docname="ableton-live-computer-icons-macos-digital-audio-workstation-keejan-music-school.jpg"
+   inkscape:export-filename="..\Documents\edward-dai\assets\images\tech\Ableton.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
   <defs
      id="defs1">
     <linearGradient
-       id="linearGradient1">
+       id="linearGradient1"
+       inkscape:collect="always">
       <stop
          style="stop-color:#000000;stop-opacity:1;"
          offset="0"
@@ -24,6 +31,7 @@
          id="stop2" />
     </linearGradient>
     <linearGradient
+       inkscape:collect="always"
        xlink:href="#linearGradient1"
        id="linearGradient2"
        x1="256.21103"
@@ -32,7 +40,28 @@
        y2="33.143108"
        gradientUnits="userSpaceOnUse" />
   </defs>
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#cccccc"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="1"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false">
+    <inkscape:page
+       x="0"
+       y="0"
+       width="512"
+       height="512"
+       id="page2"
+       margin="0"
+       bleed="0" />
+  </sodipodi:namedview>
   <g
+     inkscape:groupmode="layer"
+     inkscape:label="Image"
      id="g1">
     <rect
        style="fill:url(#linearGradient2);stroke:none;stroke-width:2.093;stroke-linecap:round;stroke-linejoin:round"
@@ -49,7 +78,8 @@
       <path
          style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.883443;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
          d="m 94.760099,741.83017 v -74.92168 l 22.265451,0.10552 -0.17764,128.63315 43.38952,0.13643 -0.0528,10.69518 v 10.27308 H 127.47238 94.760099 Z"
-         id="path4" />
+         id="path4"
+         sodipodi:nodetypes="cccccccccc" />
       <path
          style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.883443;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
          d="m 173.69167,769.89942 v -46.85243 h 10.34131 10.3413 v 46.85243 46.85243 h -10.3413 -10.34131 z"
@@ -61,7 +91,8 @@
       <path
          style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.883443;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
          d="m 252.42085,821.42216 -46.65003,-97.69741 23.52841,-0.12643 c 0,0 14.10654,35.39643 24.10445,51.36623 8.98241,-16.46103 16.20243,-34.11474 23.91364,-51.28442 h 23.75396 l -47.71148,97.89919 c -0.44186,0.90665 -0.50825,0.74484 -0.93895,-0.15716 z"
-         id="path7" />
+         id="path7"
+         sodipodi:nodetypes="sccsccss" />
       <path
          style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.883443;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
          d="m 342.8361,818.84723 c -15.06443,-1.69325 -27.76343,-11.75337 -34.08106,-26.99892 -2.42037,-5.84079 -3.42545,-10.87166 -3.66825,-18.36109 -0.18144,-5.59693 -0.0708,-7.62135 0.64628,-11.82106 1.97674,-11.57774 6.408,-20.75476 13.68009,-28.33111 7.8937,-8.22397 17.14806,-12.23473 30.19228,-13.08507 13.95853,-0.90993 26.74704,5.06549 35.2118,16.45269 6.12255,8.23635 8.32726,16.126 9.42404,33.72437 l 0.25648,4.11542 h -34.22312 -34.22312 l 0.20564,0.94971 c 1.60201,7.39855 3.8435,12.68676 7.12901,16.81903 2.18805,2.75197 6.19619,5.57325 9.29114,6.53993 2.94808,0.92081 12.13827,1.28263 15.5702,0.61301 5.34276,-1.04244 11.12499,-5.07792 15.40983,-10.75468 1.06252,-1.40768 2.07345,-2.72225 2.24651,-2.92127 0.33919,-0.39006 14.82586,7.7001 16.21938,9.05779 0.84058,0.81897 0.83982,0.82482 -0.41808,3.22737 -1.635,3.12281 -8.1829,9.93522 -12.25561,12.75068 -6.08751,4.20829 -12.79935,6.7464 -20.03651,7.57685 -5.66781,0.65038 -13.00424,0.84792 -16.57693,0.44635 z m 27.18803,-62.31651 c 2.20954,-0.23094 2.47381,-0.36028 2.47381,-1.21076 0,-1.54264 -3.64742,-8.37598 -5.67391,-10.62992 -3.84711,-4.27892 -9.61061,-6.24307 -17.33021,-5.90599 -7.37513,0.32205 -12.23442,2.55432 -16.04989,7.37303 -2.1466,2.71104 -4.69771,7.5814 -5.12112,9.77681 l -0.2779,1.44089 19.7527,-0.29275 c 10.86399,-0.16101 20.86592,-0.4091 22.22652,-0.55131 z"
