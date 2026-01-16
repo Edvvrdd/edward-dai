@@ -72,6 +72,7 @@
   min-width: 600px;
   height: 100%;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 3rem;
@@ -99,6 +100,30 @@
   height: 100%;
   object-fit: cover;
   border: none;
+}
+
+.project-thumbnails {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  justify-content: center;
+}
+
+.project-thumbnails img {
+  width: calc(33.333% - 0.667rem);
+  max-width: 250px;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 2px solid rgba(107, 140, 174, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.project-thumbnails img:hover {
+  border-color: var(--color-primary);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(107, 140, 174, 0.3);
 }
 
 .featured-project-info {
