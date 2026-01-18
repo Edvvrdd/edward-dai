@@ -66,23 +66,16 @@
   }
   
   .tech-icons {
-    gap: 0;
-    position: relative;
-    height: 80px;
-    overflow: hidden;
+    gap: 40px;
+    justify-content: center;
   }
   
   .tech-icon-wrapper {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0;
-    transition: opacity 0.5s ease;
+    display: none;
   }
   
-  .tech-icon-wrapper.active {
-    opacity: 1;
+  .tech-icon-wrapper.mobile-show {
+    display: flex;
   }
 
   .tech-icon {

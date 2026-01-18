@@ -322,10 +322,6 @@
 
 /* Responsive Hero Design */
 @media (max-width: 768px) {
-  .hero-header {
-    min-height: 100vh;
-  }
-  
   .hero-content {
     padding: 40px 20px 60px;
   }
