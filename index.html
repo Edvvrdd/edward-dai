@@ -40,15 +40,16 @@
     <div class="hero-content">
       <h1 class="hero-title">EDWARD DAI</h1>
       <div class="hero-roles">
-        <span class="hero-role">Technical Sound Designer</span>
+        <button class="hero-role active" data-video="https://www.youtube.com/embed/RrsEiN5ae5E">Sound Designer</button>
         <span class="hero-diamond">◆</span>
-        <span class="hero-role">Solo Games Developer</span>
+        <button class="hero-role" data-video="https://www.youtube.com/embed/Og6NbC8ZkpI">Game Developer</button>
       </div>
       
       <!-- Simple Embedded YouTube Video -->
       <div class="hero-video-container">
         <iframe 
-          src="https://www.youtube.com/embed/Og6NbC8ZkpI" 
+          id="heroVideo"
+          src="https://www.youtube.com/embed/RrsEiN5ae5E" 
           title="Edward Dai Sound Design Portfolio" 
           frameborder="0" 
           allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
@@ -296,6 +297,24 @@
     
     // Initialize on page load
     initTechIconRotation();
+
+    // Hero video switcher
+    const heroRoleButtons = document.querySelectorAll('.hero-role');
+    const heroVideo = document.getElementById('heroVideo');
+
+    heroRoleButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        // Remove active class from all buttons
+        heroRoleButtons.forEach(btn => btn.classList.remove('active'));
+        
+        // Add active class to clicked button
+        button.classList.add('active');
+        
+        // Switch video source
+        const videoUrl = button.getAttribute('data-video');
+        heroVideo.src = videoUrl;
+      });
+    });
   </script>
   </script>
 </body>
