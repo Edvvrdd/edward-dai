@@ -63,11 +63,11 @@
   .hero-header {
     height: auto;
     min-height: auto;
-    padding-bottom: 40px;
+    padding-bottom: 60px;
   }
   
   .hero-content {
-    padding: 30px 20px;
+    padding: 30px 20px 40px;
   }
   
   .hero-title {
