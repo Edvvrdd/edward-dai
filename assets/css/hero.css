@@ -11,7 +11,7 @@
   justify-content: center;
   overflow: hidden;
   background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
-  padding: 50px 20px 0; /* ADJUST GAP: Change the last value (0) to add space below hero section */
+  padding: 50px 20px 40px; /* ADJUST GAP: Change the last value (80px) to add space below hero section */
   margin-bottom: 0; /* ADJUST GAP: Change this value to add space between hero and tech banner */
 }
 
