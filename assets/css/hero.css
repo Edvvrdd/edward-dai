@@ -264,12 +264,18 @@
 
 /* Hero CTA Buttons */
 .hero-cta {
-  display: flex;
+  display: inline-flex;
   gap: 20px;
   justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
   margin-top: 35px;
   margin-bottom: 0; /* ADJUST GAP: Change this value to add space between CTA buttons and tech banner */
+}
+
+.hero-cta .btn {
+  font-size: 1.4em;
+  padding: 0.6rem 1.5rem;
 }
 
 /* Focus Mode Active State */
