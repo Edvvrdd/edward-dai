@@ -113,7 +113,7 @@
 }
 
 .about-full p {
-  color: var(--color-text-muted);
+  color: #e0e0e0;
   line-height: 1.8;
   font-size: 1.15em;
 }

@@ -3,7 +3,7 @@
    =================================== */
 
 .tech-banner {
-  background: linear-gradient(135deg, rgba(30, 30, 30, 0.95) 0%, rgba(40, 40, 40, 0.95) 100%);
+  background: linear-gradient(135deg, rgba(45, 45, 45, 0.95) 0%, rgba(55, 55, 55, 0.95) 100%);
   padding: 15px 0;
   margin-top: 0; /* ADJUST GAP: Change this value to add space above tech banner */
   border-top: 2px solid var(--color-border);

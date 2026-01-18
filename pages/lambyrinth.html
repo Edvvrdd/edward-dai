@@ -13,14 +13,20 @@
     <nav class="main-nav">
       <!-- Left: Social Links -->
       <div class="nav-left">
-        <a href="https://www.linkedin.com/in/edward-dai-49057a342/" target="_blank" rel="noopener noreferrer" class="social-link">
+        <a href="https://www.linkedin.com/in/edward-dai-sfx/" target="_blank" rel="noopener noreferrer" class="social-link">
           <img src="../assets/images/social/linkedin-svgrepo-com.svg" alt="LinkedIn" class="social-icon-small">
         </a>
         <a href="https://www.youtube.com/@SoundDevEd" target="_blank" rel="noopener noreferrer" class="social-link">
           <img src="../assets/images/social/youtube-color-svgrepo-com.svg" alt="YouTube" class="social-icon-small">
         </a>
-        <a href="https://blepcatgames.itch.io/" target="_blank" rel="noopener noreferrer" class="social-link">
+        <a href="https://edvvrddev.itch.io/" target="_blank" rel="noopener noreferrer" class="social-link">
           <img src="../assets/images/social/itch-io-svg.svg" alt="itch.io" class="social-icon-small">
+        </a>
+        <a href="../#contact" class="social-link">
+          <svg class="social-icon-small" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+            <polyline points="22,6 12,13 2,6"></polyline>
+          </svg>
         </a>
       </div>
       
@@ -93,6 +99,111 @@
   <footer>
     <p>&copy; 2025 Edward Dai. All rights reserved.</p>
   </footer>
+
+  <!-- Contact Modal -->
+  <div class="modal-overlay" id="contactModalOverlay"></div>
+  <div class="modal-container" id="contactModal">
+    <button class="modal-close" id="closeModal">&times;</button>
+    <div class="modal-cta-content">
+      <h2>Let's Create Together</h2>
+      <p class="cta-subtitle">I'm currently available for full-time opportunities and freelance sound design projects</p>
+      
+      <!-- Skills Grid -->
+      <div class="modal-skills-grid">
+        <div class="skill-card">
+          <div class="skill-overlay" style="background-image: url('../assets/images/Skills/SoundDesign.svg');"></div>
+          <div class="skill-content">
+            <h3>Sound Design</h3>
+            <p>Original sound design and advanced audio editing services</p>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-overlay" style="background-image: url('../assets/images/Skills/Programming.svg');"></div>
+          <div class="skill-content">
+            <h3>Audio Tools Programming</h3>
+            <p>Advanced middleware implementation and custom dev tools for efficient workflows</p>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-overlay" style="background-image: url('../assets/images/Skills/Recording.svg'); background-position: center 70%;"></div>
+          <div class="skill-content">
+            <h3>Field Recording</h3>
+            <p>Original source recording and original foley performances</p>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-overlay" style="background-image: url('../assets/images/Skills/consultation.svg');"></div>
+          <div class="skill-content">
+            <h3>Game Audio Consultation</h3>
+            <p>Guidance and advice for designing audio for game projects</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Contact Form -->
+      <form class="modal-contact-form contact-form" action="https://formspree.io/f/xwvvpbkq" method="POST">
+        <div class="form-row">
+          <div class="form-group">
+            <input type="text" name="name" placeholder="Your Name" required>
+          </div>
+          <div class="form-group">
+            <input type="email" name="email" placeholder="Your Email" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <textarea name="message" rows="4" placeholder="Tell me about your project..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+            <polyline points="22,6 12,13 2,6"></polyline>
+          </svg>
+          Send Message
+        </button>
+      </form>
+      
+      <div class="modal-cta-contact-info">
+        <a href="../assets/downloads/resume.docx" download="Edward_Dai_Resume.docx">Download Resume</a>
+        <span class="separator">•</span>
+        <a href="https://www.linkedin.com/in/edward-dai-sfx/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Contact Modal Functionality
+    const contactModalOverlay = document.getElementById('contactModalOverlay');
+    const contactModal = document.getElementById('contactModal');
+    const closeModalBtn = document.getElementById('closeModal');
+    const openModalLinks = document.querySelectorAll('a[href="../#contact"]');
+
+    // Open modal
+    openModalLinks.forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        contactModalOverlay.classList.add('active');
+        contactModal.classList.add('active');
+        document.body.classList.add('modal-open');
+      });
+    });
+
+    // Close modal
+    function closeContactModal() {
+      contactModalOverlay.classList.remove('active');
+      contactModal.classList.remove('active');
+      document.body.classList.remove('modal-open');
+    }
+
+    closeModalBtn.addEventListener('click', closeContactModal);
+    contactModalOverlay.addEventListener('click', closeContactModal);
+
+    // Close on ESC key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && contactModal.classList.contains('active')) {
+        closeContactModal();
+      }
+    });
+  </script>
 
 </body>
 </html>

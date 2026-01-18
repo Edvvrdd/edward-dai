@@ -1,0 +1,175 @@
+/* ===================================
+   MODAL / POPUP STYLES
+   =================================== */
+
+/* Modal Overlay */
+.modal-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.85);
+  z-index: 9998;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.modal-overlay.active {
+  display: block;
+  opacity: 1;
+}
+
+/* Modal Container */
+.modal-container {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.9);
+  width: 90%;
+  max-width: 700px;
+  max-height: 90vh;
+  overflow-y: auto;
+  background: var(--color-bg-dark);
+  border-radius: 16px;
+  border: 2px solid var(--color-border);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.modal-container.active {
+  display: block;
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+/* Modal Close Button */
+.modal-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: transparent;
+  border: none;
+  color: var(--color-text-muted);
+  font-size: 2em;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+
+.modal-close:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--color-white);
+  transform: rotate(90deg);
+}
+
+/* Modal CTA Content */
+.modal-cta-content {
+  padding: 50px 40px 40px;
+}
+
+.modal-cta-content h2 {
+  font-size: 2.2em;
+  margin-bottom: 15px;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+}
+
+.modal-cta-content .cta-subtitle {
+  color: var(--color-text-muted);
+  font-size: 1.15em;
+  margin-bottom: 35px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* Modal Skills Grid */
+.modal-skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+/* Modal Contact Form */
+.modal-contact-form {
+  max-width: 600px;
+  margin: 0 auto 30px;
+}
+
+/* Modal Contact Info */
+.modal-cta-contact-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  font-size: 0.95em;
+  color: #656563;
+}
+
+.modal-cta-contact-info a {
+  color: var(--color-secondary);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.modal-cta-contact-info a:hover {
+  color: var(--color-primary-bright);
+  text-decoration: underline;
+}
+
+.modal-cta-contact-info .separator {
+  color: #393836;
+  font-weight: bold;
+}
+
+/* Responsive Modal */
+@media (max-width: 768px) {
+  .modal-container {
+    width: 95%;
+    max-height: 95vh;
+  }
+
+  .modal-cta-content {
+    padding: 50px 25px 30px;
+  }
+
+  .modal-cta-content h2 {
+    font-size: 1.75em;
+  }
+
+  .modal-cta-content .cta-subtitle {
+    font-size: 1em;
+  }
+
+  .modal-skills-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    margin-bottom: 30px;
+  }
+
+  .modal-close {
+    top: 15px;
+    right: 15px;
+    width: 35px;
+    height: 35px;
+    font-size: 1.5em;
+  }
+}
+
+/* Prevent body scroll when modal is open */
+body.modal-open {
+  overflow: hidden;
+}

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="600"
+   height="400"
+   viewBox="0 0 158.75 105.83333"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1">
+    <filter
+       height="6.3234386"
+       y="-2.6617193"
+       width="2.1749932"
+       x="-0.58749661"
+       style="color-interpolation-filters:sRGB"
+       id="filter1557">
+      <feTurbulence
+         type="turbulence"
+         result="result0"
+         seed="57"
+         numOctaves="2"
+         baseFrequency="0.1 0.015"
+         id="feTurbulence1553" />
+      <feComposite
+         result="result1"
+         operator="over"
+         in2="result0"
+         in="result0"
+         id="feComposite1553" />
+      <feComposite
+         result="fbSourceGraphic"
+         in="SourceGraphic"
+         operator="arithmetic"
+         in2="result1"
+         k1="1"
+         id="feComposite1554"
+         k2="0"
+         k3="0"
+         k4="0" />
+      <feGaussianBlur
+         stdDeviation="10"
+         result="result8"
+         in="fbSourceGraphic"
+         id="feGaussianBlur1554" />
+      <feComposite
+         in2="result8"
+         result="result6"
+         operator="xor"
+         in="result8"
+         id="feComposite1555" />
+      <feDisplacementMap
+         xChannelSelector="A"
+         yChannelSelector="A"
+         scale="100"
+         result="result4"
+         in="result1"
+         in2="result6"
+         id="feDisplacementMap1555" />
+      <feComposite
+         in2="result4"
+         result="result2"
+         operator="arithmetic"
+         k1="1"
+         in="SourceGraphic"
+         id="feComposite1556"
+         k2="0"
+         k3="0"
+         k4="0" />
+      <feComposite
+         operator="out"
+         in="SourceGraphic"
+         in2="result2"
+         id="feComposite1557" />
+    </filter>
+  </defs>
+  <g
+     id="layer1">
+    <rect
+       style="fill:#000000;fill-opacity:0.968627;stroke-width:1.04445;stroke-linecap:round;stroke-linejoin:round"
+       id="rect1"
+       width="158.75"
+       height="105.83334"
+       x="-1.7763568e-15"
+       y="-1.7763568e-15"
+       ry="0" />
+    <path
+       style="opacity:0.829787;fill:none;fill-opacity:0.968627;stroke:#787878;stroke-width:3.76607;stroke-linecap:square;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+       d="m 107.39008,71.77474 64.17714,38.59909"
+       id="path1557" />
+    <rect
+       style="opacity:1;fill:#999999;fill-opacity:0.968627;stroke-width:0.553773;stroke-linecap:round;stroke-linejoin:round;filter:url(#filter1557)"
+       id="rect1547"
+       width="40.851299"
+       height="9.0167284"
+       x="74.847641"
+       y="87.274567"
+       ry="4.2323422"
+       transform="rotate(-12.460983,-4.6138828,59.342581)" />
+  </g>
+</svg>

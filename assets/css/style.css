@@ -15,6 +15,7 @@
 @import 'components.css';
 @import 'buttons.css';
 @import 'cards.css';
+@import 'modal.css';
 
 /* 5. Feature Sections */
 @import 'carousel.css';
