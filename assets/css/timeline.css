@@ -19,22 +19,17 @@
 }
 
 .timeline-year-marker {
-  position: relative;
-  padding-left: 4rem;
+  position: sticky;
+  top: 5rem;
+  padding-left: 0;
+  z-index: 10;
+  background: var(--color-bg-dark);
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .timeline-year-marker::before {
-  content: '';
-  position: absolute;
-  left: 1.5rem;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 16px;
-  height: 16px;
-  background: linear-gradient(135deg, var(--color-secondary), var(--color-primary));
-  border-radius: 50%;
-  box-shadow: 0 0 0 4px var(--color-bg-dark), 0 0 0 6px var(--color-secondary);
-  z-index: 2;
+  display: none;
 }
 
 .year-label {
@@ -51,43 +46,20 @@
 /* Timeline Item */
 .timeline-item {
   position: relative;
-  padding-left: 4rem;
+  padding-left: 0;
   margin-bottom: 4rem;
 }
 
 .timeline-item::before {
-  content: '';
-  position: absolute;
-  left: 1.75rem;
-  top: 0;
-  bottom: -4rem;
-  width: 2px;
-  background: linear-gradient(180deg, 
-    var(--color-secondary) 0%, 
-    rgba(107, 140, 174, 0.3) 50%,
-    rgba(107, 140, 174, 0.1) 100%
-  );
+  display: none;
 }
 
 .timeline-item:last-child::before {
-  background: linear-gradient(180deg, 
-    var(--color-secondary) 0%, 
-    rgba(107, 140, 174, 0.1) 100%
-  );
+  background: var(--color-secondary);
 }
 
 .timeline-item::after {
-  content: '';
-  position: absolute;
-  left: 1.5rem;
-  top: 2rem;
-  width: 12px;
-  height: 12px;
-  background: var(--color-bg-card);
-  border: 3px solid var(--color-secondary);
-  border-radius: 50%;
-  z-index: 1;
-  transition: all 0.3s ease;
+  display: none;
 }
 
 .timeline-item:hover::after {
