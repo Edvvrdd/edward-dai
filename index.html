@@ -317,6 +317,16 @@
         heroVideo.src = videoUrl;
       });
     });
+
+    // Hero title scroll to about section
+    const heroTitle = document.querySelector('.hero-title');
+    const aboutSection = document.getElementById('about');
+
+    if (heroTitle && aboutSection) {
+      heroTitle.addEventListener('click', () => {
+        aboutSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+    }
   </script>
 </body>
 </html>
