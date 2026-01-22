@@ -24,8 +24,8 @@
   color: var(--color-text);
   max-width: 700px;
   margin: 0 auto;
-  white-space: nowrap;
   text-align: center;
+  line-height: 1.6;
 }
 
 /* Featured Project Section */
