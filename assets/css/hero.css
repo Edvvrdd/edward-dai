@@ -5,14 +5,12 @@
 .hero-header {
   position: relative;
   width: 100%;
-  min-height: auto; /* ADJUST GAP: Set to '100vh' for full viewport height, or 'auto' to fit content */
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
   overflow: hidden;
   background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
-  padding: 50px 20px 40px; /* ADJUST GAP: Change the last value (80px) to add space below hero section */
-  margin-bottom: 0; /* ADJUST GAP: Change this value to add space between hero and tech banner */
+  padding: 60px 20px;
 }
 
 /* Hero Content */
@@ -20,10 +18,9 @@
   position: relative;
   z-index: 10;
   text-align: center;
-  padding: 10px 20px 80px; /* ADJUST GAP: Change the last value to add space below CTA buttons */
-  max-width: 1200px;
+  max-width: 1000px;
   width: 100%;
-  margin: 0 auto 0; /* ADJUST GAP: Change the last value to add space between hero and tech banner */
+  margin: 0 auto;
   animation: fadeInUp 1s ease-out;
   box-sizing: border-box;
 }
@@ -31,8 +28,8 @@
 /* Hero Video Container */
 .hero-video-container {
   width: 100%;
-  max-width: 1000px;
-  margin: 40px auto;
+  max-width: 900px;
+  margin: 30px auto 0;
   aspect-ratio: 16 / 9;
   border-radius: 8px;
   overflow: hidden;
@@ -57,41 +54,14 @@
   }
 }
 
-/* Hero Badge */
-.hero-badge {
-  display: inline-block;
-  padding: 8px 20px;
-  background: rgba(201, 150, 95, 0.15);
-  border: 1px solid rgba(201, 150, 95, 0.35);
-  border-radius: 50px;
-  color: var(--color-primary);
-  font-size: 0.9em;
-  font-weight: 500;
-  letter-spacing: 0.5px;
-  margin-bottom: 25px;
-  text-transform: uppercase;
-  font-family: 'Syne', sans-serif;
-}
-
 .hero-title {
-  font-size: 6.5em;
+  font-size: 3em;
   font-weight: 700;
   color: #ffffff;
-  margin: 0 0 10px 0;
-  letter-spacing: -2px;
-  line-height: 1.1;
+  margin: 0;
+  letter-spacing: 2px;
+  text-transform: uppercase;
   font-family: var(--font-heading);
-  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.8), 0 2px 10px rgba(0, 0, 0, 0.6);
-  cursor: pointer;
-  transition: all 0.6s ease;
-}
-
-.hero-title:hover {
-  background: linear-gradient(135deg, var(--color-secondary), var(--color-primary));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-shadow: none;
 }
 
 /* Hero Rotating Text Container */

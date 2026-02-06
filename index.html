@@ -30,40 +30,69 @@
         </a>
       </div>
       
+      <!-- Center: EDSD Logo -->
+      <div class="nav-center">
+        <a href="/" class="nav-logo" aria-label="Edward Dai - Home">
+          <img src="assets/images/EDSDlogo.svg" alt="EDSD Logo">
+        </a>
+      </div>
+      
       <!-- Right: Page Links -->
       <div class="nav-right">
         <a href="/">Home</a>
-        <a href="pages/game-works">Games</a>
-        <a href="pages/sound-design">Films</a>
+        <a href="pages/projects">Projects</a>
         <a href="pages/blog">Blog</a>
       </div>
+      
+      <!-- Mobile Menu Button -->
+      <button class="nav-hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
     </nav>
+    
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu">
+      <div class="mobile-menu-links">
+        <a href="/">Home</a>
+        <a href="pages/projects">Projects</a>
+        <a href="pages/blog">Blog</a>
+      </div>
+      <div class="mobile-menu-social">
+        <a href="https://www.linkedin.com/in/edward-dai-sfx/" target="_blank" rel="noopener noreferrer">
+          <img src="assets/images/social/linkedin-svgrepo-com.svg" alt="LinkedIn">
+        </a>
+        <a href="https://www.youtube.com/@SoundDevEd" target="_blank" rel="noopener noreferrer">
+          <img src="assets/images/social/youtube-color-svgrepo-com.svg" alt="YouTube">
+        </a>
+        <a href="https://edvvrddev.itch.io/" target="_blank" rel="noopener noreferrer">
+          <img src="assets/images/social/itch-io-svg.svg" alt="itch.io">
+        </a>
+        <a href="#contact">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+            <polyline points="22,6 12,13 2,6"></polyline>
+          </svg>
+        </a>
+      </div>
+    </div>
   </header>
 
   <!-- HERO HEADER SECTION -->
   <section class="hero-header">
-    <!-- Hero Content -->
     <div class="hero-content">
-      <h1 class="hero-title">EDWARD DAI</h1>
-      <div class="hero-roles">
-        <button class="hero-role active" data-video="https://www.youtube.com/embed/RrsEiN5ae5E">Sound Designer</button>
-        <span class="hero-diamond">◆</span>
-        <button class="hero-role" data-video="https://www.youtube.com/embed/Og6NbC8ZkpI">Game Developer</button>
-      </div>
-      
-      <!-- Simple Embedded YouTube Video -->
+      <h1 class="hero-title">Demo Reel</h1>
       <div class="hero-video-container">
         <iframe 
-          id="heroVideo"
           src="https://www.youtube.com/embed/RrsEiN5ae5E" 
-          title="Edward Dai Sound Design Portfolio" 
+          title="Edward Dai Demo Reel" 
           frameborder="0" 
           allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
           referrerpolicy="strict-origin-when-cross-origin" 
           allowfullscreen>
         </iframe>
       </div>
-
     </div>
   </section>
 
@@ -71,7 +100,7 @@
   <section id="about" class="tech-banner">
     <div class="container">
       <div class="tech-icons">
-        <div class="tech-icon-wrapper mobile-show">
+        <div class="tech-icon-wrapper">
           <img src="assets/images/tech/icon-reaper-base.svg" alt="Reaper" class="tech-icon tech-icon-base">
           <img src="assets/images/tech/icon-reaper-hover.svg" alt="Reaper" class="tech-icon tech-icon-hover">
         </div>
@@ -87,7 +116,7 @@
           <img src="assets/images/tech/unreal.svg" alt="Unreal Engine" class="tech-icon tech-icon-base">
           <img src="assets/images/tech/unreal-hover.svg" alt="Unreal Engine" class="tech-icon tech-icon-hover">
         </div>
-        <div class="tech-icon-wrapper mobile-show">
+        <div class="tech-icon-wrapper">
           <img src="assets/images/tech/unity.svg" alt="Unity" class="tech-icon tech-icon-base">
           <img src="assets/images/tech/unity_hover.svg" alt="Unity" class="tech-icon tech-icon-hover">
         </div>
@@ -95,11 +124,11 @@
           <img src="assets/images/tech/Godot.svg" alt="Godot Engine" class="tech-icon tech-icon-base">
           <img src="assets/images/tech/Godot_Hover.svg" alt="Godot Engine" class="tech-icon tech-icon-hover">
         </div>
-        <div class="tech-icon-wrapper" style="transform: scale(0.95);">
+        <div class="tech-icon-wrapper">
           <img src="assets/images/tech/wwise.svg" alt="Wwise" class="tech-icon tech-icon-base">
           <img src="assets/images/tech/wwise_hover.svg" alt="Wwise" class="tech-icon tech-icon-hover">
         </div>
-        <div class="tech-icon-wrapper mobile-show">
+        <div class="tech-icon-wrapper">
           <img src="assets/images/tech/fmod.svg" alt="FMOD" class="tech-icon tech-icon-base">
           <img src="assets/images/tech/fmod_hover.svg" alt="FMOD" class="tech-icon tech-icon-hover">
         </div>
@@ -123,76 +152,47 @@
     </div>
   </section>
 
-  <!-- FEATURED PROJECTS GRID -->
-  <section class="featured-projects">
+  <!-- OTHER REELS SECTION -->
+  <section class="other-reels">
     <div class="container">
-      <h2>Featured Projects</h2>
-      <div class="featured-grid">
-        
-        <!-- Project 1 -->
-        <a href="pages/lambyrinth.html" class="featured-card">
-          <div class="card-content">
-            <h3 class="project-title">Lambyrinth</h3>
-            <div class="card-image">
-              <img src="assets/images/projects/LambyrinthProjectIcon.png" alt="Lambyrinth" onerror="this.style.display='none';">
-            </div>
-            <div class="card-footer">
-              Horror game with dynamic audio and context-driven dialogue
-            </div>
-          </div>
-          <div class="testimonial-hover">            <h4 class="testimonial-title">Testimonial</h4>            <p class="testimonial-text">Working with Edward Dai on my horror game project, Lambyrinth, was an amazing experience. He was professional, easy to communicate with, and picked up our vision very quickly. Edward is extremely technically skilled, and our game’s audio (which included a lot of context-driven dialogue based on player actions) ended up being a major highlight of the final experience. I’d love to work with Edward again and would recommend him to any team looking for a wizard of a technical sound designer.</p>
-            <p class="testimonial-author">— Brendon Chia, Level Designer</p>
-          </div>
-        </a>
-        
-        <!-- Project 2 -->
-        <div class="featured-card">
-          <div class="card-content">
-            <h3 class="project-title">Game Audio Project</h3>
-            <div class="card-footer">
-              Interactive sound design and audio implementation
-            </div>
-          </div>
-          <div class="testimonial-hover">
-            <h4 class="testimonial-title">Testimonial</h4>
-            <p class="testimonial-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-            <p class="testimonial-author">— Sarah Johnson, Lead Developer</p>
-          </div>
+      <h2>Other Reels</h2>
+      
+      <div class="reel-item">
+        <div class="reel-text">
+          <h3>Implementation Reel</h3>
+          <p>Interactive sound design and audio implementation showcasing dynamic systems, adaptive audio, and immersive gameplay experiences.</p>
         </div>
-        
-        <!-- Project 3 -->
-        <div class="featured-card">
-          <div class="card-content">
-            <h3 class="project-title">BG3 Cinematic Sound Redesign</h3>
-            <div class="card-footer">
-              Cinematic sound redesign and audio post-production
-            </div>
-          </div>
-          <div class="testimonial-hover">
-            <h4 class="testimonial-title">Testimonial</h4>
-            <p class="testimonial-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-            <p class="testimonial-author">— Michael Chen, Game Director</p>
-          </div>
+        <div class="reel-video">
+          <iframe 
+            src="https://www.youtube.com/embed/Og6NbC8ZkpI" 
+            title="Implementation Reel"
+            frameborder="0" 
+            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            allowfullscreen>
+          </iframe>
         </div>
-        
-        <!-- Project 4 -->
-        <div class="featured-card">
-          <div class="card-content">
-            <h3 class="project-title">Film Project</h3>
-            <div class="card-footer">
-              Film sound design and foley work
-            </div>
-          </div>
-          <div class="testimonial-hover">
-            <h4 class="testimonial-title">Testimonial</h4>
-            <p class="testimonial-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-            <p class="testimonial-author">— Emma Wilson, Producer</p>
-          </div>
-        </div>
-
       </div>
+      
+      <div class="reel-item">
+        <div class="reel-text">
+          <h3>Audio Tools Showcase</h3>
+          <p>Cinematic sound design and audio post-production for narrative-driven visual storytelling and film projects.</p>
+        </div>
+        <div class="reel-video">
+          <iframe 
+            src="https://www.youtube.com/embed/RrsEiN5ae5E" 
+            title="Audio Tools Showcase"
+            frameborder="0" 
+            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+      
     </div>
   </section>
+
+  
 
   <!-- SKILLS & CTA SECTION -->
   <section id="contact" class="skills-cta-section">
@@ -276,55 +276,26 @@
 
   <script src="assets/js/rotating-text.js"></script>
   <script>
-    // Tech icon rotation for mobile
-    function initTechIconRotation() {
-      // Only run on mobile devices
-      if (window.innerWidth <= 768) {
-        const iconWrappers = document.querySelectorAll('.tech-icon-wrapper');
-        let currentIndex = 0;
-        
-        // Show first icon
-        if (iconWrappers.length > 0) {
-          iconWrappers[0].classList.add('active');
-        }
-        
-        // Rotate through icons every 2 seconds
-        setInterval(() => {
-          iconWrappers[currentIndex].classList.remove('active');
-          currentIndex = (currentIndex + 1) % iconWrappers.length;
-          iconWrappers[currentIndex].classList.add('active');
-        }, 2000);
-      }
-    }
+    // Mobile menu toggle
+    const hamburger = document.querySelector('.nav-hamburger');
+    const mobileMenu = document.querySelector('.mobile-menu');
     
-    // Initialize on page load
-    initTechIconRotation();
-
-    // Hero video switcher
-    const heroRoleButtons = document.querySelectorAll('.hero-role');
-    const heroVideo = document.getElementById('heroVideo');
-
-    heroRoleButtons.forEach(button => {
-      button.addEventListener('click', () => {
-        // Remove active class from all buttons
-        heroRoleButtons.forEach(btn => btn.classList.remove('active'));
-        
-        // Add active class to clicked button
-        button.classList.add('active');
-        
-        // Switch video source
-        const videoUrl = button.getAttribute('data-video');
-        heroVideo.src = videoUrl;
+    if (hamburger && mobileMenu) {
+      hamburger.addEventListener('click', () => {
+        const isOpen = hamburger.classList.toggle('active');
+        mobileMenu.classList.toggle('active');
+        hamburger.setAttribute('aria-expanded', isOpen);
+        document.body.style.overflow = isOpen ? 'hidden' : '';
       });
-    });
-
-    // Hero title scroll to about section
-    const heroTitle = document.querySelector('.hero-title');
-    const aboutSection = document.getElementById('about');
-
-    if (heroTitle && aboutSection) {
-      heroTitle.addEventListener('click', () => {
-        aboutSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      
+      // Close menu when clicking a link
+      mobileMenu.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+          hamburger.classList.remove('active');
+          mobileMenu.classList.remove('active');
+          hamburger.setAttribute('aria-expanded', 'false');
+          document.body.style.overflow = '';
+        });
       });
     }
   </script>

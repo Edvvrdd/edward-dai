@@ -19,8 +19,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 50px;
-  flex-wrap: wrap;
+  gap: 40px;
+  flex-wrap: nowrap;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .tech-icon-wrapper {
@@ -36,7 +38,7 @@
 }
 
 .tech-icon {
-  height: 80px;
+  height: clamp(50px, 10vw, 80px);
   width: auto;
   transition: opacity 0.3s ease;
 }
@@ -66,20 +68,14 @@
   }
   
   .tech-icons {
-    gap: 40px;
-    justify-content: center;
-  }
-  
-  .tech-icon-wrapper {
-    display: none;
-  }
-  
-  .tech-icon-wrapper.mobile-show {
-    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    padding: 0 16px;
+    max-width: 320px;
   }
 
   .tech-icon {
-    height: 70px;
+    height: clamp(45px, 12vw, 60px);
   }
 }
 
@@ -89,10 +85,10 @@
   }
 
   .tech-icons {
-    height: 60px;
+    gap: 20px;
   }
 
   .tech-icon {
-    height: 55px;
+    height: clamp(40px, 11vw, 55px);
   }
 }

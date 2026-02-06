@@ -1,12 +1,5 @@
 /* CSS Variables and Custom Properties */
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Syne:wght@400;500;600;700;800&display=swap');
-
-/* BBH Bogle Font */
-.bbh-bogle-regular {
-  font-family: "BBH Bogle", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
+@import url('https://fonts.googleapis.com/css2?family=Capriola&family=Do+Hyeon&family=Space+Grotesk:wght@300;400;500;600;700&family=Syne:wght@400;500;600;700;800&display=swap');
 
 :root {
   /* Modern Dark Theme Colors */
@@ -33,9 +26,9 @@
   --color-border-light: #333333; /* Lighter border */
   
   /* Fonts */
-  --font-primary: 'BBH Bogle', 'Space Grotesk', sans-serif;
-  --font-heading: 'BBH Bogle', 'Syne', sans-serif;
-  --font-body-light: 'Space Grotesk', sans-serif;
+  --font-primary: 'Capriola', 'Space Grotesk', sans-serif;
+  --font-heading: 'Do Hyeon', 'Syne', sans-serif;
+  --font-body-light: 'Capriola', 'Space Grotesk', sans-serif;
   
   /* Spacing */
   --spacing-xs: 8px;

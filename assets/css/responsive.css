@@ -6,14 +6,8 @@
 
 /* 1024px and below - Tablet */
 @media (max-width: 1024px) {
-  .hero-header {
-    height: auto;
-    min-height: auto;
-    padding-bottom: 80px;
-  }
-  
   .hero-title {
-    font-size: 3.5em;
+    font-size: 2.5em;
   }
 }
 
@@ -43,63 +37,54 @@
 
 /* 768px and below - Mobile */
 @media (max-width: 768px) {
-  /* Navigation */
+  /* Navigation - Show hamburger, hide links */
   .main-nav {
-    flex-direction: column;
-    gap: 15px;
-    padding: 15px 20px;
-  }
-
-  .nav-left {
-    order: 2;
-  }
-
-  .nav-right {
-    order: 1;
-    flex-wrap: wrap;
+    flex-direction: row;
     justify-content: center;
+    padding: 12px 20px;
+  }
+
+  .nav-left,
+  .nav-right {
+    display: none;
+  }
+  
+  .nav-center {
+    position: static;
+    transform: none;
+  }
+  
+  .nav-hamburger {
+    display: flex;
+    position: absolute;
+    right: 20px;
+  }
+  
+  .mobile-menu {
+    display: flex;
   }
   
   /* Hero */
   .hero-header {
-    height: auto;
-    min-height: auto;
-    padding-bottom: 60px;
+    padding: 40px 0;
   }
   
   .hero-content {
-    padding: 30px 20px 40px;
+    padding: 0 16px;
+    max-width: 100%;
+    box-sizing: border-box;
   }
   
   .hero-title {
-    font-size: 2.5em;
-    margin-bottom: 15px;
-  }
-  
-  .hero-roles {
-    flex-wrap: wrap;
-    gap: 10px;
-  }
-  
-  .hero-role {
-    font-size: 1.4em;
-    padding: 0.4rem 1rem;
+    font-size: 2em;
+    text-align: center;
   }
   
   .hero-video-container {
-    width: calc(100% - 40px);
-    margin: 30px 20px;
-  }
-  
-  .hero-cta {
-    flex-direction: column;
-    gap: 15px;
-    margin-top: 25px;
-  }
-  
-  .hero-cta .btn {
     width: 100%;
-    max-width: 300px;
+    max-width: 100%;
+    margin: 20px 0 0;
+    box-sizing: border-box;
   }
   
   /* Tech Banner */
@@ -148,11 +133,7 @@
   
   /* Hero adjustments */
   .hero-title {
-    font-size: 2em;
-  }
-  
-  .hero-roles {
-    font-size: 0.85em;
+    font-size: 1.8em;
   }
   
   /* Landing Section */
@@ -184,19 +165,8 @@
 
 /* 480px and below - Extra Small Mobile */
 @media (max-width: 480px) {
-  .hero-header {
-    height: auto;
-    min-height: auto;
-    padding-bottom: 80px;
-  }
-  
-  .hero-content {
-    padding: 30px 20px 60px;
-  }
-  
   .hero-title {
-    font-size: 2em;
-    margin-bottom: 15px;
+    font-size: 1.5em;
   }
 }
 

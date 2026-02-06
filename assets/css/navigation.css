@@ -12,9 +12,10 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 18px 40px;
-  max-width: 1400px;
+  padding: 24px 40px;
+  max-width: 900px;
   margin: 0 auto;
+  position: relative;
 }
 
 .nav-left {
@@ -23,10 +24,23 @@ header {
   align-items: center;
 }
 
+.nav-center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 .nav-right {
   display: flex;
   gap: 25px;
   align-items: center;
+}
+
+.nav-logo img {
+  height: 48px;
+  width: auto;
+  display: block;
+  filter: invert(1);
 }
 
 .nav-right a {
@@ -60,5 +74,107 @@ header {
 }
 
 .social-link:hover .social-icon-small {
+  filter: brightness(0) invert(1) sepia(1) saturate(5) hue-rotate(140deg);
+}
+
+/* Hamburger Menu Button */
+.nav-hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 32px;
+  height: 32px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  z-index: 1001;
+}
+
+.hamburger-line {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: var(--color-text);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.nav-hamburger.active .hamburger-line:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.nav-hamburger.active .hamburger-line:nth-child(2) {
+  opacity: 0;
+}
+
+.nav-hamburger.active .hamburger-line:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+/* Mobile Menu Overlay */
+.mobile-menu {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: var(--color-bg-card);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  z-index: 999;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.mobile-menu.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.mobile-menu-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.mobile-menu-links a {
+  font-family: var(--font-heading);
+  font-size: 1.5em;
+  font-weight: 600;
+  color: var(--color-text);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.mobile-menu-links a:hover {
+  color: var(--color-primary);
+}
+
+.mobile-menu-social {
+  display: flex;
+  gap: 20px;
+}
+
+.mobile-menu-social a {
+  display: flex;
+  align-items: center;
+}
+
+.mobile-menu-social img,
+.mobile-menu-social svg {
+  width: 28px;
+  height: 28px;
+  filter: brightness(0) invert(1);
+  transition: filter 0.2s ease;
+}
+
+.mobile-menu-social a:hover img,
+.mobile-menu-social a:hover svg {
   filter: brightness(0) invert(1) sepia(1) saturate(5) hue-rotate(140deg);
 }

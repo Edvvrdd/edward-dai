@@ -30,14 +30,53 @@
         </a>
       </div>
       
+      <!-- Center: EDSD Logo -->
+      <div class="nav-center">
+        <a href="/" class="nav-logo" aria-label="Edward Dai - Home">
+          <img src="../assets/images/EDSDlogo.svg" alt="EDSD Logo">
+        </a>
+      </div>
+      
       <!-- Right: Page Links -->
       <div class="nav-right">
         <a href="/">Home</a>
-        <a href="game-works">Games</a>
-        <a href="sound-design">Films</a>
+        <a href="projects">Projects</a>
         <a href="blog">Blog</a>
       </div>
+      
+      <!-- Mobile Menu Button -->
+      <button class="nav-hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
     </nav>
+    
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu">
+      <div class="mobile-menu-links">
+        <a href="/">Home</a>
+        <a href="projects">Projects</a>
+        <a href="blog">Blog</a>
+      </div>
+      <div class="mobile-menu-social">
+        <a href="https://www.linkedin.com/in/edward-dai-sfx/" target="_blank" rel="noopener noreferrer">
+          <img src="../assets/images/social/linkedin-svgrepo-com.svg" alt="LinkedIn">
+        </a>
+        <a href="https://www.youtube.com/@SoundDevEd" target="_blank" rel="noopener noreferrer">
+          <img src="../assets/images/social/youtube-color-svgrepo-com.svg" alt="YouTube">
+        </a>
+        <a href="https://edvvrddev.itch.io/" target="_blank" rel="noopener noreferrer">
+          <img src="../assets/images/social/itch-io-svg.svg" alt="itch.io">
+        </a>
+        <a href="../#contact">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+            <polyline points="22,6 12,13 2,6"></polyline>
+          </svg>
+        </a>
+      </div>
+    </div>
   </header>
 
   <!-- PAGE HEADER -->
@@ -45,6 +84,77 @@
     <div class="container">
       <h1>Game Audio Projects</h1>
       <p class="page-subtitle">Interactive Audio Systems, Technical Sound Design, Audio Tooling</p>
+    </div>
+  </section>
+
+  <!-- FEATURED PROJECTS GRID -->
+  <section class="featured-projects">
+    <div class="container">
+      <h2>Other Reels</h2>
+      <div class="featured-grid">
+        
+        <!-- Project 1 -->
+        <a href="pages/lambyrinth.html" class="featured-card">
+          <div class="card-content">
+            <h3 class="project-title">Lambyrinth</h3>
+            <div class="card-image">
+              <img src="assets/images/projects/LambyrinthProjectIcon.png" alt="Lambyrinth" onerror="this.style.display='none';">
+            </div>
+            <div class="card-footer">
+              Horror game with dynamic audio and context-driven dialogue
+            </div>
+          </div>
+          <div class="testimonial-hover">            <h4 class="testimonial-title">Testimonial</h4>            <p class="testimonial-text">Working with Edward Dai on my horror game project, Lambyrinth, was an amazing experience. He was professional, easy to communicate with, and picked up our vision very quickly. Edward is extremely technically skilled, and our game’s audio (which included a lot of context-driven dialogue based on player actions) ended up being a major highlight of the final experience. I’d love to work with Edward again and would recommend him to any team looking for a wizard of a technical sound designer.</p>
+            <p class="testimonial-author">— Brendon Chia, Level Designer</p>
+          </div>
+        </a>
+        
+        <!-- Project 2 -->
+        <div class="featured-card">
+          <div class="card-content">
+            <h3 class="project-title">Game Audio Project</h3>
+            <div class="card-footer">
+              Interactive sound design and audio implementation
+            </div>
+          </div>
+          <div class="testimonial-hover">
+            <h4 class="testimonial-title">Testimonial</h4>
+            <p class="testimonial-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+            <p class="testimonial-author">— Sarah Johnson, Lead Developer</p>
+          </div>
+        </div>
+        
+        <!-- Project 3 -->
+        <div class="featured-card">
+          <div class="card-content">
+            <h3 class="project-title">BG3 Cinematic Sound Redesign</h3>
+            <div class="card-footer">
+              Cinematic sound redesign and audio post-production
+            </div>
+          </div>
+          <div class="testimonial-hover">
+            <h4 class="testimonial-title">Testimonial</h4>
+            <p class="testimonial-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+            <p class="testimonial-author">— Michael Chen, Game Director</p>
+          </div>
+        </div>
+        
+        <!-- Project 4 -->
+        <div class="featured-card">
+          <div class="card-content">
+            <h3 class="project-title">Film Project</h3>
+            <div class="card-footer">
+              Film sound design and foley work
+            </div>
+          </div>
+          <div class="testimonial-hover">
+            <h4 class="testimonial-title">Testimonial</h4>
+            <p class="testimonial-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+            <p class="testimonial-author">— Emma Wilson, Producer</p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 
@@ -368,6 +478,29 @@
   </div>
 
   <script>
+    // Mobile menu toggle
+    const hamburger = document.querySelector('.nav-hamburger');
+    const mobileMenu = document.querySelector('.mobile-menu');
+    
+    if (hamburger && mobileMenu) {
+      hamburger.addEventListener('click', () => {
+        const isOpen = hamburger.classList.toggle('active');
+        mobileMenu.classList.toggle('active');
+        hamburger.setAttribute('aria-expanded', isOpen);
+        document.body.style.overflow = isOpen ? 'hidden' : '';
+      });
+      
+      // Close menu when clicking a link
+      mobileMenu.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+          hamburger.classList.remove('active');
+          mobileMenu.classList.remove('active');
+          hamburger.setAttribute('aria-expanded', 'false');
+          document.body.style.overflow = '';
+        });
+      });
+    }
+
     // Contact Modal Functionality
     const contactModalOverlay = document.getElementById('contactModalOverlay');
     const contactModal = document.getElementById('contactModal');
