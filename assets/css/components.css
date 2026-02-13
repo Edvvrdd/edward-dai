@@ -115,7 +115,9 @@
 .about-full p {
   color: #e0e0e0;
   line-height: 1.8;
-  font-size: 1.15em;
+  font-size: 1.25em;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
 }
 /* Promo Banner */
 .promo-banner {

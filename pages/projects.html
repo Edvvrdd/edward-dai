@@ -16,8 +16,8 @@
         <a href="https://www.linkedin.com/in/edward-dai-sfx/" target="_blank" rel="noopener noreferrer" class="social-link">
           <img src="../assets/images/social/linkedin-svgrepo-com.svg" alt="LinkedIn" class="social-icon-small">
         </a>
-        <a href="https://www.youtube.com/@SoundDevEd" target="_blank" rel="noopener noreferrer" class="social-link">
-          <img src="../assets/images/social/youtube-color-svgrepo-com.svg" alt="YouTube" class="social-icon-small">
+        <a href="https://github.com/IntonationStudio" target="_blank" rel="noopener noreferrer" class="social-link">
+          <img src="../assets/images/social/Github.svg" alt="GitHub" class="social-icon-small">
         </a>
         <a href="https://edvvrddev.itch.io/" target="_blank" rel="noopener noreferrer" class="social-link">
           <img src="../assets/images/social/itch-io-svg.svg" alt="itch.io" class="social-icon-small">
@@ -63,9 +63,6 @@
         <a href="https://www.linkedin.com/in/edward-dai-sfx/" target="_blank" rel="noopener noreferrer">
           <img src="../assets/images/social/linkedin-svgrepo-com.svg" alt="LinkedIn">
         </a>
-        <a href="https://www.youtube.com/@SoundDevEd" target="_blank" rel="noopener noreferrer">
-          <img src="../assets/images/social/youtube-color-svgrepo-com.svg" alt="YouTube">
-        </a>
         <a href="https://edvvrddev.itch.io/" target="_blank" rel="noopener noreferrer">
           <img src="../assets/images/social/itch-io-svg.svg" alt="itch.io">
         </a>
@@ -93,46 +90,46 @@
       <div class="projects-grid">
         
         <!-- Project 1: Lambyrinth -->
-        <a href="lambyrinth.html" class="project-grid-item">
+        <div class="project-grid-item" data-modal="modal-lambyrinth" style="cursor:pointer;">
           <div class="project-grid-image">
             <img src="../assets/images/projects/LambyrinthProjectIcon.png" alt="Lambyrinth">
           </div>
-        </a>
+        </div>
         
-        <!-- Project 2: BG3 Sound Redesign -->
-        <a href="https://github.com/IntonationStudio/FmodHotkeys" class="project-grid-item">
+        <!-- Project 2: FMOD Hotkeys -->
+        <div class="project-grid-item" data-modal="modal-fmod-hotkeys" style="cursor:pointer;">
           <div class="project-grid-image">
-            <img src="../assets/images/projects/FMODhotkeyCover.jpg" alt="BG3 Cinematic Sound Redesign">
+            <img src="../assets/images/projects/FMODhotkeyCover.jpg" alt="FMOD Hotkeys">
           </div>
-        </a>
+        </div>
         
-        <!-- Project 3: The Last Talent Show -->
-        <a href="https://www.youtube.com/@SoundDevEd" class="project-grid-item">
+        <!-- Project 3: BG3 Sound Redesign -->
+        <div class="project-grid-item" data-modal="modal-bg3" style="cursor:pointer;">
           <div class="project-grid-image">
-            <img src="../assets/images/projects/BG3redesignCover.png" alt="The Last Talent Show">
+            <img src="../assets/images/projects/BG3redesignCover.png" alt="BG3 Cinematic Sound Redesign">
           </div>
-        </a>
+        </div>
         
         <!-- Project 4: Game Audio Demo -->
-        <a href="#" class="project-grid-item">
+        <div class="project-grid-item" data-modal="modal-game-audio" style="cursor:pointer;">
           <div class="project-grid-image">
             <img src="../assets/images/projects/project1.jpg" alt="Game Audio Project">
           </div>
-        </a>
+        </div>
         
-        <!-- Project 5: Film Sound Design -->
-        <a href="https://vimeo.com/1096631590/a5deb256c4?share=copy" class="project-grid-item">
+        <!-- Project 5: The Last Talent Show -->
+        <div class="project-grid-item" data-modal="modal-talent-show" style="cursor:pointer;">
           <div class="project-grid-image">
-            <img src="../assets/images/projects/TheLastTalentShowCover.jpg" alt="Film Sound Design">
+            <img src="../assets/images/projects/TheLastTalentShowCover.jpg" alt="The Last Talent Show">
           </div>
-        </a>
+        </div>
         
         <!-- Project 6: Not Raised By Wolves -->
-        <a href="not-raised-by-wolves.html" class="project-grid-item">
+        <div class="project-grid-item" data-modal="modal-wolves" style="cursor:pointer;">
           <div class="project-grid-image">
             <img src="../assets/images/projects/project1.jpg" alt="Not Raised By Wolves">
           </div>
-        </a>
+        </div>
         
       </div>
     </div>
@@ -141,6 +138,105 @@
   <footer>
     <p>&copy; 2025 Edward Dai. All rights reserved.</p>
   </footer>
+
+  <!-- PROJECT MODALS -->
+
+  <!-- Modal Overlay -->
+  <div class="modal-overlay" id="projectModalOverlay"></div>
+
+  <!-- Modal: Lambyrinth -->
+  <div class="modal-container" id="modal-lambyrinth">
+    <button class="modal-close" aria-label="Close modal">&times;</button>
+    <div class="project-modal-content">
+      <img src="../assets/images/projects/LambyrinthProjectIcon.png" alt="Lambyrinth" class="modal-project-image">
+      <h2>Lambyrinth</h2>
+      <div class="project-modal-tags">
+        <span class="project-modal-tag">Game Audio</span>
+        <span class="project-modal-tag">Sound Design</span>
+        <span class="project-modal-tag">Unity</span>
+      </div>
+      <p>Lambyrinth is an immersive puzzle-adventure game featuring a fully custom sound design palette. Every footstep, environmental ambience, and interactive element was crafted to enhance the player's sense of exploration and discovery within the labyrinth.</p>
+      <a href="lambyrinth.html" class="project-modal-link">View Full Project &rarr;</a>
+    </div>
+  </div>
+
+  <!-- Modal: FMOD Hotkeys -->
+  <div class="modal-container" id="modal-fmod-hotkeys">
+    <button class="modal-close" aria-label="Close modal">&times;</button>
+    <div class="project-modal-content">
+      <img src="../assets/images/projects/FMODhotkeyCover.jpg" alt="FMOD Hotkeys" class="modal-project-image">
+      <h2>FMOD Hotkeys</h2>
+      <div class="project-modal-tags">
+        <span class="project-modal-tag">Tool Development</span>
+        <span class="project-modal-tag">FMOD</span>
+        <span class="project-modal-tag">Open Source</span>
+      </div>
+      <p>An open-source tool that adds customizable keyboard shortcuts to the FMOD Studio workflow. Designed to speed up the sound design pipeline by reducing repetitive mouse-driven interactions and streamlining common tasks.</p>
+      <a href="https://github.com/IntonationStudio/FmodHotkeys" target="_blank" rel="noopener noreferrer" class="project-modal-link">View on GitHub &rarr;</a>
+    </div>
+  </div>
+
+  <!-- Modal: BG3 Sound Redesign -->
+  <div class="modal-container" id="modal-bg3">
+    <button class="modal-close" aria-label="Close modal">&times;</button>
+    <div class="project-modal-content">
+      <img src="../assets/images/projects/BG3redesignCover.png" alt="BG3 Cinematic Sound Redesign" class="modal-project-image">
+      <h2>BG3 Cinematic Sound Redesign</h2>
+      <div class="project-modal-tags">
+        <span class="project-modal-tag">Sound Redesign</span>
+        <span class="project-modal-tag">Cinematic</span>
+        <span class="project-modal-tag">Game Audio</span>
+      </div>
+      <p>A complete sound redesign of a cinematic sequence from Baldur's Gate 3. This project demonstrates detailed Foley work, atmospheric layering, and dramatic impact design to elevate the narrative experience of the scene.</p>
+      <a href="https://www.youtube.com/@SoundDevEd" target="_blank" rel="noopener noreferrer" class="project-modal-link">Watch on YouTube &rarr;</a>
+    </div>
+  </div>
+
+  <!-- Modal: Game Audio Demo -->
+  <div class="modal-container" id="modal-game-audio">
+    <button class="modal-close" aria-label="Close modal">&times;</button>
+    <div class="project-modal-content">
+      <img src="../assets/images/projects/project1.jpg" alt="Game Audio Project" class="modal-project-image">
+      <h2>Game Audio Demo</h2>
+      <div class="project-modal-tags">
+        <span class="project-modal-tag">Game Audio</span>
+        <span class="project-modal-tag">Implementation</span>
+      </div>
+      <p>A showcase of interactive game audio systems including adaptive music, dynamic sound effects, and real-time audio parameter control. Built to demonstrate proficiency in game engine audio pipelines and middleware integration.</p>
+    </div>
+  </div>
+
+  <!-- Modal: The Last Talent Show -->
+  <div class="modal-container" id="modal-talent-show">
+    <button class="modal-close" aria-label="Close modal">&times;</button>
+    <div class="project-modal-content">
+      <img src="../assets/images/projects/TheLastTalentShowCover.jpg" alt="The Last Talent Show" class="modal-project-image">
+      <h2>The Last Talent Show</h2>
+      <div class="project-modal-tags">
+        <span class="project-modal-tag">Film</span>
+        <span class="project-modal-tag">Sound Design</span>
+        <span class="project-modal-tag">Post-Production</span>
+      </div>
+      <p>A short film sound design project featuring full post-production audio — from dialogue editing and Foley recording to final mix. The film's quirky tone called for creative, character-driven sound choices throughout.</p>
+      <a href="https://vimeo.com/1096631590/a5deb256c4?share=copy" target="_blank" rel="noopener noreferrer" class="project-modal-link">Watch on Vimeo &rarr;</a>
+    </div>
+  </div>
+
+  <!-- Modal: Not Raised By Wolves -->
+  <div class="modal-container" id="modal-wolves">
+    <button class="modal-close" aria-label="Close modal">&times;</button>
+    <div class="project-modal-content">
+      <img src="../assets/images/projects/project1.jpg" alt="Not Raised By Wolves" class="modal-project-image">
+      <h2>Not Raised By Wolves</h2>
+      <div class="project-modal-tags">
+        <span class="project-modal-tag">Film</span>
+        <span class="project-modal-tag">Sound Design</span>
+        <span class="project-modal-tag">Mixing</span>
+      </div>
+      <p>Sound design and audio post-production for the short film "Not Raised By Wolves." This project involved creating tension-building soundscapes, detailed Foley, and a polished final mix to support the film's dramatic narrative.</p>
+      <a href="not-raised-by-wolves.html" class="project-modal-link">View Full Project &rarr;</a>
+    </div>
+  </div>
 
   <script>
     // Mobile menu toggle
@@ -165,6 +261,49 @@
         });
       });
     }
+
+    // ---- Project Modal Logic ----
+    const overlay = document.getElementById('projectModalOverlay');
+    const projectItems = document.querySelectorAll('.project-grid-item[data-modal]');
+    let activeModal = null;
+
+    function openModal(modalId) {
+      const modal = document.getElementById(modalId);
+      if (!modal) return;
+      activeModal = modal;
+      overlay.classList.add('active');
+      modal.classList.add('active');
+      document.body.classList.add('modal-open');
+    }
+
+    function closeModal() {
+      if (activeModal) {
+        activeModal.classList.remove('active');
+        overlay.classList.remove('active');
+        document.body.classList.remove('modal-open');
+        activeModal = null;
+      }
+    }
+
+    // Open modal on project click
+    projectItems.forEach(item => {
+      item.addEventListener('click', () => {
+        openModal(item.getAttribute('data-modal'));
+      });
+    });
+
+    // Close on overlay click
+    overlay.addEventListener('click', closeModal);
+
+    // Close on X button click
+    document.querySelectorAll('.modal-close').forEach(btn => {
+      btn.addEventListener('click', closeModal);
+    });
+
+    // Close on Escape key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeModal();
+    });
   </script>
 </body>
 </html>
