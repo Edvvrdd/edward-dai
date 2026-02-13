@@ -1,4 +1,21 @@
-/* Navigation Styles */
+/* ========================================
+   NAVBAR SPACING — edit these to adjust
+   ======================================== */
+header {
+  --nav-padding-top: 24px;        /* top padding of navbar */
+  --nav-padding-bottom: 24px;     /* bottom padding of navbar */
+  --nav-padding-left: 45px;       /* left padding of navbar */
+  --nav-padding-right: 40px;      /* right padding of navbar */
+  --nav-max-width: 900px;         /* max content width */
+
+  --nav-left-offset: 18px;        /* push social icons right */
+  --nav-left-gap: 20px;           /* gap between social icons */
+
+  --nav-right-gap: 15px;          /* gap between right-side links */
+
+  --nav-logo-height: 48px;        /* logo size */
+}
+
 header {
   background: var(--color-bg-card);
   color: var(--color-white);
@@ -12,16 +29,17 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 24px 40px;
-  max-width: 900px;
+  padding: var(--nav-padding-top) var(--nav-padding-right) var(--nav-padding-bottom) var(--nav-padding-left);
+  max-width: var(--nav-max-width);
   margin: 0 auto;
   position: relative;
 }
 
 .nav-left {
   display: flex;
-  gap: var(--spacing-md);
+  gap: var(--nav-left-gap);
   align-items: center;
+  margin-left: var(--nav-left-offset);
 }
 
 .nav-center {
@@ -32,12 +50,12 @@ header {
 
 .nav-right {
   display: flex;
-  gap: 25px;
+  gap: var(--nav-right-gap);
   align-items: center;
 }
 
 .nav-logo img {
-  height: 48px;
+  height: var(--nav-logo-height);
   width: auto;
   display: block;
   filter: invert(1);
