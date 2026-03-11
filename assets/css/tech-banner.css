@@ -4,7 +4,7 @@
 
 .tech-banner {
   background: linear-gradient(135deg, rgba(45, 45, 45, 0.95) 0%, rgba(55, 55, 55, 0.95) 100%);
-  padding: 15px 0;
+  padding: 8px 0;
   margin-top: 0; /* ADJUST GAP: Change this value to add space above tech banner */
   border-top: 2px solid var(--color-border);
   border-bottom: 2px solid var(--color-border);
@@ -62,33 +62,33 @@
 }
 
 /* Responsive Tech Banner */
+
+/* Medium: 2 rows of 4 icons */
 @media (max-width: 768px) {
   .tech-banner {
-    padding: 15px 0;
+    padding: 10px 0;
   }
-  
+
   .tech-icons {
     flex-wrap: wrap;
-    gap: 24px;
-    padding: 0 16px;
-    max-width: 320px;
+    gap: 20px 32px;
+    padding: 0 20px;
+    max-width: 500px;
+  }
+
+  .tech-icon-wrapper {
+    flex: 0 0 calc(25% - 24px);
+    justify-content: center;
   }
 
   .tech-icon {
-    height: clamp(45px, 12vw, 60px);
+    height: clamp(40px, 10vw, 55px);
   }
 }
 
-@media (max-width: 600px) {
+/* Narrow: hide banner entirely */
+@media (max-width: 480px) {
   .tech-banner {
-    padding: 12px 0;
-  }
-
-  .tech-icons {
-    gap: 20px;
-  }
-
-  .tech-icon {
-    height: clamp(40px, 11vw, 55px);
+    display: none;
   }
 }

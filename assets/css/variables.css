@@ -1,5 +1,5 @@
 /* CSS Variables and Custom Properties */
-@import url('https://fonts.googleapis.com/css2?family=Capriola&family=Do+Hyeon&family=Space+Grotesk:wght@300;400;500;600;700&family=Syne:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
 
 :root {
   /* Modern Dark Theme Colors */
@@ -26,9 +26,9 @@
   --color-border-light: #333333; /* Lighter border */
   
   /* Fonts */
-  --font-primary: 'Capriola', 'Space Grotesk', sans-serif;
-  --font-heading: 'Do Hyeon', 'Syne', sans-serif;
-  --font-body-light: 'Capriola', 'Space Grotesk', sans-serif;
+  --font-primary: 'Crimson Text', Georgia, serif;
+  --font-heading: 'Cinzel', 'Georgia', serif;
+  --font-body-light: 'Crimson Text', Georgia, serif;
   
   /* Spacing */
   --spacing-xs: 8px;
