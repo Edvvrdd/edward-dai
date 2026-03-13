@@ -53,7 +53,7 @@
   flex: 1.3;
   min-width: 0;
   aspect-ratio: 16 / 9;
-  border-radius: 8px;
+  border-radius: 0;
   overflow: hidden;
   background: #1a1819;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
@@ -110,7 +110,7 @@
   position: relative;
   background: var(--color-bg-card);
   border: 2px solid var(--color-border);
-  border-radius: 12px;
+  border-radius: 0;
   min-height: 350px;
   padding: 30px;
   overflow: hidden;
@@ -140,7 +140,7 @@
   width: 100%;
   flex: 1;
   margin-bottom: 20px;
-  border-radius: 8px;
+  border-radius: 0;
   overflow: hidden;
   background: #1a1819;
 }
@@ -274,7 +274,7 @@
   display: block;
   transition: all 0.3s ease;
   position: relative;
-  border-radius: 12px;
+  border-radius: 0;
   overflow: hidden;
   border: 2px solid var(--color-border);
   background-color: var(--color-bg-card);
@@ -354,7 +354,7 @@
 .dot {
   width: 12px;
   height: 12px;
-  border-radius: 50%;
+  border-radius: 0;
   background-color: var(--color-border-light);
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.2s ease;
@@ -389,7 +389,7 @@
   width: 100%;
   max-width: 720px;
   border: 2px solid #393836;
-  border-radius: 12px;
+  border-radius: 0;
   background-color: #000;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
   display: block;
@@ -422,7 +422,7 @@
 .video-nav-btn {
   background: transparent;
   border: none;
-  border-radius: 50%;
+  border-radius: 0;
   color: #d4915d;
   width: 36px;
   height: 36px;
@@ -436,7 +436,7 @@
 
 .video-nav-btn:hover {
   background: #d4915d;
-  border-radius: 50%;
+  border-radius: 0;
   color: #1d1d1d;
   transform: scale(1.05);
   box-shadow: 0 0 20px rgba(212, 145, 93, 0.6);

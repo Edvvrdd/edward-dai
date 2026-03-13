@@ -23,7 +23,7 @@
   margin: 0 auto;
   padding: 40px 25px;
   background: rgba(37, 37, 37, 0.5);
-  border-radius: 16px;
+  border-radius: 0;
   border: 1px solid var(--color-border);
 }
 
@@ -65,7 +65,7 @@
   padding: 14px 18px;
   background: rgba(28, 28, 28, 0.8);
   border: 1px solid var(--color-border);
-  border-radius: 8px;
+  border-radius: 0;
   color: var(--color-white);
   font-family: 'Syne', sans-serif;
   font-size: 0.95em;
