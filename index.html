@@ -41,9 +41,9 @@
       
       <!-- Right: Page Links -->
       <div class="nav-right">
-        <a href="/">Home</a>
-        <a href="pages/projects">Projects</a>
-        <a href="pages/blog">Blog</a>
+        <a href="#reel">Reel</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
       </div>
       
       <!-- Mobile Menu Button -->
@@ -57,9 +57,9 @@
     <!-- Mobile Menu Overlay -->
     <div class="mobile-menu">
       <div class="mobile-menu-links">
-        <a href="/">Home</a>
-        <a href="pages/projects">Projects</a>
-        <a href="pages/blog">Blog</a>
+        <a href="#reel">Reel</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
       </div>
       <div class="mobile-menu-social">
         <a href="https://www.linkedin.com/in/edward-dai-sfx/" target="_blank" rel="noopener noreferrer">
@@ -82,7 +82,7 @@
   </header>
 
   <!-- HERO HEADER SECTION -->
-  <section class="hero-header">
+  <section class="hero-header" id="reel">
     <div class="hero-content">
       <h1 class="hero-title">Edward Dai</h1>
       <p class="hero-subtitle">Technical Sound Designer</p>
@@ -155,60 +155,99 @@
     </div>
   </section>
 
-  <!-- OTHER REELS SECTION -->
-  <section class="other-reels">
+  <!-- PROJECTS SECTION -->
+  <section class="other-reels" id="projects">
     <div class="container">
-      <h2>Other Reels</h2>
-      
-      <div class="reel-item">
-        <div class="reel-text">
-          <h3>Sound Design Reel</h3>
-          <p>A collection of sound redesigns for game cinematic and animation clips</p>
+      <h2>Projects</h2>
+
+      <div class="projects-grid">
+
+        <!-- Project: Gasp Away -->
+        <div class="project-grid-item" data-modal="modal-gasp-away" style="cursor:pointer;">
+          <div class="project-grid-image">
+            <img src="assets/images/projects/GaspAwayIcon.png" alt="Gasp Away">
+          </div>
         </div>
-        <div class="reel-video">
-          <iframe 
-            src="https://www.youtube.com/embed/DrL1JrhyYKA" 
-            title="Edward Dai Sound Design Reel"
-            frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen>
-          </iframe>
+
+        <!-- Project: Lambyrinth -->
+        <div class="project-grid-item" data-modal="modal-lambyrinth" style="cursor:pointer;">
+          <div class="project-grid-image">
+            <img src="assets/images/projects/LambyrinthProjectIcon.png" alt="Lambyrinth">
+          </div>
         </div>
+
+        <!-- Project: Broken Hero -->
+        <div class="project-grid-item" data-modal="modal-broken-hero" style="cursor:pointer;">
+          <div class="project-grid-image">
+            <img src="assets/images/projects/TheBrokenHero-Logo.png" alt="Broken Hero">
+          </div>
+        </div>
+
+        <!-- Project: Gone Astray -->
+        <div class="project-grid-item" data-modal="modal-gone-astray" style="cursor:pointer;">
+          <div class="project-grid-image">
+            <img src="assets/images/projects/GoneAstray.png" alt="Gone Astray">
+          </div>
+        </div>
+
+        <!-- Project: FMOD Hotkeys -->
+        <div class="project-grid-item" data-modal="modal-fmod-hotkeys" style="cursor:pointer;">
+          <div class="project-grid-image">
+            <img src="assets/images/projects/FmodHotKeysLogo.png" alt="FMOD Hotkeys">
+          </div>
+        </div>
+
+        <!-- Project: GrainWhoosh -->
+        <div class="project-grid-item" data-modal="modal-grain-whoosh" style="cursor:pointer;">
+          <div class="project-grid-image" style="background:#1a1a1a;">
+            <img src="assets/images/projects/GranularWhooshTool.png" alt="GrainWhoosh" style="object-fit:contain;">
+          </div>
+        </div>
+
+        <!-- Project: Unify Audio -->
+        <div class="project-grid-item" data-modal="modal-unify-audio" style="cursor:pointer;">
+          <div class="project-grid-image">
+            <img src="assets/images/projects/UnifyAudio.png" alt="Unify Audio">
+          </div>
+        </div>
+
+        <!-- Project: BG3 Sound Redesign -->
+        <div class="project-grid-item" data-modal="modal-bg3-redesign" style="cursor:pointer;">
+          <div class="project-grid-image">
+            <img src="assets/images/projects/BG3redesignCover.png" alt="BG3 Cinematic Sound Redesign">
+          </div>
+        </div>
+
+        <!-- Project: Azuki Sound Redesign -->
+        <div class="project-grid-item" data-modal="modal-azuki-redesign" style="cursor:pointer;">
+          <div class="project-grid-image">
+            <img src="assets/images/projects/AzukiSDThumbnail.png" alt="Azuki Sound Redesign">
+          </div>
+        </div>
+
+        <!-- Project: Möbius Fish -->
+        <div class="project-grid-item" data-modal="modal-mobius-fish" style="cursor:pointer;">
+          <div class="project-grid-image">
+            <img src="assets/images/projects/MobiusFish.png" alt="Möbius Fish">
+          </div>
+        </div>
+
+        <!-- Project: Prom Night Mayhem -->
+        <div class="project-grid-item" data-modal="modal-prom-night-mayhem" style="cursor:pointer;">
+          <div class="project-grid-image">
+            <img src="assets/images/projects/PromNightMayhem.png" alt="Prom Night Mayhem">
+          </div>
+        </div>
+
+        <!-- Project: Hooky -->
+        <div class="project-grid-item" data-modal="modal-hooky" style="cursor:pointer;">
+          <div class="project-grid-image">
+            <img src="assets/images/projects/Hooky.png" alt="Hooky">
+          </div>
+        </div>
+
       </div>
-      
-      <!-- <div class="reel-item">
-        <div class="reel-text">
-          <h3>Audio Tools Showcase</h3>
-          <p>Cinematic sound design and audio post-production for narrative-driven visual storytelling and film projects.</p>
-        </div>
-        <div class="reel-video">
-          <iframe 
-            src="https://www.youtube.com/embed/RrsEiN5ae5E" 
-            title="Audio Tools Showcase"
-            frameborder="0" 
-            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-            allowfullscreen>
-          </iframe>
-        </div>
-      </div>
-      
-      <div class="reel-item">
-        <div class="reel-text">
-          <h3>Game Jam Projects Showcase</h3>
-          <p>A showcase of sound design and audio implementation work from various game jam projects.</p>
-        </div>
-        <div class="reel-video">
-          <iframe 
-            src="" 
-            title="Game Jam Projects Showcase"
-            frameborder="0" 
-            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-            allowfullscreen>
-          </iframe>
-        </div>
-      </div> -->
-      
+
     </div>
   </section>
 
@@ -228,32 +267,28 @@
           <div class="skill-card">
             <div class="skill-overlay" style="background-image: url('assets/images/Skills/SoundDesign.svg');"></div>
             <div class="skill-content">
-              <h3 style="color: #89b8d6;">Sound Design</h3>
-              <p>Original sound design and advanced audio editing services</p>
+              <h3 style="color: #89b8d6;">Bespoke Sound Design</h3>
             </div>
           </div>
 
           <div class="skill-card">
             <div class="skill-overlay" style="background-image: url('assets/images/Skills/Programming.svg');"></div>
             <div class="skill-content">
-              <h3 style="color: #8cc9a1;">Audio Tools Programming</h3>
-              <p>Advanced middleware implementation and custom dev tools for efficient workflows</p>
+              <h3 style="color: #8cc9a1;">Custom Audio Tools</h3>
             </div>
           </div>
 
           <div class="skill-card">
             <div class="skill-overlay" style="background-image: url('assets/images/Skills/Recording.svg'); background-position: center 70%;"></div>
             <div class="skill-content">
-              <h3 style="color: #d4c07a;">Field Recording</h3>
-              <p>Recording and editing original source material and foley performances</p>
+              <h3 style="color: #d4c07a;">High Resolution Recording</h3>
             </div>
           </div>
 
           <div class="skill-card">
             <div class="skill-overlay" style="background-image: url('assets/images/Skills/consultation.svg');"></div>
             <div class="skill-content">
-              <h3 style="color: #b89ad4;">Game Audio Consultation</h3>
-              <p>Guidance & consultation for problem solving audio for game projects</p>
+              <h3 style="color: #b89ad4;">Game Audio Design & implementation</h3>
             </div>
           </div>
         </div>
@@ -294,6 +329,203 @@
     <p>&copy; 2025 Edward Dai. All rights reserved.</p>
   </footer>
 
+  <!-- PROJECT MODALS -->
+
+  <!-- Modal Overlay -->
+  <div class="modal-overlay" id="projectModalOverlay"></div>
+
+  <!-- Modal: Lambyrinth -->
+  <div class="modal-container" id="modal-lambyrinth">
+    <button class="modal-close" aria-label="Close modal">&times;</button>
+    <div class="project-modal-content">
+      <img src="assets/images/projects/LambyrinthProjectIcon.png" alt="Lambyrinth" class="modal-project-image">
+      <h2>Lambyrinth</h2>
+      <div class="project-modal-tags">
+        <span class="project-modal-tag">Game Audio</span>
+        <span class="project-modal-tag">Sound Design</span>
+        <span class="project-modal-tag">Unity</span>
+      </div>
+      <p>Lambyrinth is an immersive puzzle-adventure game featuring a fully custom sound design palette. Every footstep, environmental ambience, and interactive element was crafted to enhance the player's sense of exploration and discovery within the labyrinth.</p>
+      <a href="pages/lambyrinth.html" class="project-modal-link">View Full Project &rarr;</a>
+    </div>
+  </div>
+
+  <!-- Modal: Gasp Away -->
+  <div class="modal-container" id="modal-gasp-away">
+    <button class="modal-close" aria-label="Close modal">&times;</button>
+    <div class="project-modal-content">
+      <img src="assets/images/projects/GaspAwayIcon.png" alt="Gasp Away" class="modal-project-image">
+      <h2>Gasp Away!</h2>
+      <div class="project-modal-tags">
+        <span class="project-modal-tag">Game Audio</span>
+        <span class="project-modal-tag">Sound Design</span>
+        <span class="project-modal-tag">Godot</span>
+        <span class="project-modal-tag">Ludum Dare 59</span>
+      </div>
+      <p>Play as a castaway stranded on a deserted island. Send Morse Code through Smoke Signals by blowing on your trusty campfire. A rhythm-comedy game made in 72 hours for Ludum Dare 59. Contributed all sound design.</p>
+      <a href="https://tiny-bot.itch.io/gasp-away" target="_blank" rel="noopener noreferrer" class="project-modal-link">Play on itch.io &rarr;</a>
+    </div>
+  </div>
+
+  <!-- Modal: The Broken Hero -->
+  <div class="modal-container" id="modal-broken-hero">
+    <button class="modal-close" aria-label="Close modal">&times;</button>
+    <div class="project-modal-content">
+      <img src="assets/images/projects/TheBrokenHero-Logo.png" alt="The Broken Hero" class="modal-project-image">
+      <h2>The Broken Hero</h2>
+      <div class="project-modal-tags">
+        <span class="project-modal-tag">Game Audio</span>
+        <span class="project-modal-tag">Technical Sound Design</span>
+        <span class="project-modal-tag">Unity</span>
+      </div>
+      <p>A single-player, 3D, fixed cinematic camera platformer about a Greek soldier reborn from an ancient fresco. Navigate between 3D physical ruins and 2D fresco worlds, avoiding the mythic Minotaur to escape a crumbling temple. Contributed as Technical Sound Designer on the audio implementation and sound design.</p>
+      <a href="https://vfs-gdpg.itch.io/the-broken-hero" target="_blank" rel="noopener noreferrer" class="project-modal-link">Play on itch.io &rarr;</a>
+    </div>
+  </div>
+
+  <!-- Modal: Gone Astray -->
+  <div class="modal-container" id="modal-gone-astray">
+    <button class="modal-close" aria-label="Close modal">&times;</button>
+    <div class="project-modal-content">
+      <img src="assets/images/projects/GoneAstray.png" alt="Gone Astray" class="modal-project-image">
+      <h2>Gone Astray</h2>
+      <div class="project-modal-tags">
+        <span class="project-modal-tag">Game Audio</span>
+        <span class="project-modal-tag">Sound Design</span>
+        <span class="project-modal-tag">Composition</span>
+        <span class="project-modal-tag">Stealth Horror</span>
+      </div>
+      <p>A single-player, 3D, first-person stealth horror game. Play as Vyncent Roan, an urban explorer searching for your missing friend in an abandoned Hydro plant overrun by cultists and a disturbing Lovecraftian horror. Survive by hiding, running, and outsmarting your pursuers. Contributed as Sound Designer and Composer.</p>
+      <a href="https://vfs-gdpg.itch.io/gone-astray" target="_blank" rel="noopener noreferrer" class="project-modal-link">Play on itch.io &rarr;</a>
+    </div>
+  </div>
+
+  <!-- Modal: FMOD Hotkeys -->
+  <div class="modal-container" id="modal-fmod-hotkeys">
+    <button class="modal-close" aria-label="Close modal">&times;</button>
+    <div class="project-modal-content">
+      <img src="assets/images/projects/FmodHotKeysLogo.png" alt="FMOD Hotkeys" class="modal-project-image">
+      <h2>FMOD Hotkeys</h2>
+      <div class="project-modal-tags">
+        <span class="project-modal-tag">Tool Development</span>
+        <span class="project-modal-tag">FMOD</span>
+        <span class="project-modal-tag">Open Source</span>
+      </div>
+      <p>An open-source tool that adds customizable keyboard shortcuts to the FMOD Studio workflow. Designed to speed up the sound design pipeline by reducing repetitive mouse-driven interactions and streamlining common tasks.</p>
+      <a href="https://github.com/EdvvrdDev/FmodHotkeys" target="_blank" rel="noopener noreferrer" class="project-modal-link">View on GitHub &rarr;</a>
+    </div>
+  </div>
+
+  <!-- Modal: GrainWhoosh -->
+  <div class="modal-container" id="modal-grain-whoosh">
+    <button class="modal-close" aria-label="Close modal">&times;</button>
+    <div class="project-modal-content">
+      <img src="assets/images/projects/GranularWhooshTool.png" alt="GrainWhoosh" class="modal-project-image" style="object-fit:contain; background:#1a1a1a;">
+      <h2>GrainWhoosh</h2>
+      <div class="project-modal-tags">
+        <span class="project-modal-tag">Tool Development</span>
+        <span class="project-modal-tag">Audio Processing</span>
+        <span class="project-modal-tag">Open Source</span>
+      </div>
+      <p>A granular synthesis tool for creating dynamic whoosh sound effects. Designed for sound designers to generate unique, customizable audio textures through granular processing techniques.</p>
+      <a href="https://github.com/Edvvrdd/GrainWhoosh" target="_blank" rel="noopener noreferrer" class="project-modal-link">View on GitHub &rarr;</a>
+    </div>
+  </div>
+
+  <!-- Modal: Unify Audio -->
+  <div class="modal-container" id="modal-unify-audio">
+    <button class="modal-close" aria-label="Close modal">&times;</button>
+    <div class="project-modal-content">
+      <img src="assets/images/projects/UnifyAudio.png" alt="Unify Audio" class="modal-project-image">
+      <h2>Unify Audio</h2>
+      <div class="project-modal-tags">
+        <span class="project-modal-tag">Tool Development</span>
+        <span class="project-modal-tag">Audio Utility</span>
+        <span class="project-modal-tag">Open Source</span>
+      </div>
+      <p>An audio tool designed to streamline sound design workflows. Unify Audio provides utilities for organizing, processing, and managing audio assets efficiently.</p>
+      <a href="https://github.com/Edvvrdd/UnifyAudio" target="_blank" rel="noopener noreferrer" class="project-modal-link">View on GitHub &rarr;</a>
+    </div>
+  </div>
+
+  <!-- Modal: BG3 Cinematic Sound Redesign -->
+  <div class="modal-container" id="modal-bg3-redesign">
+    <button class="modal-close" aria-label="Close modal">&times;</button>
+    <div class="project-modal-content">
+      <img src="assets/images/projects/BG3redesignCover.png" alt="BG3 Cinematic Sound Redesign" class="modal-project-image">
+      <h2>BG3 Cinematic Sound Redesign</h2>
+      <div class="project-modal-tags">
+        <span class="project-modal-tag">Sound Redesign</span>
+        <span class="project-modal-tag">Game Cinematic</span>
+      </div>
+      <p>A complete sound redesign of a Baldur's Gate 3 cinematic, replacing the original audio with entirely original sound design.</p>
+      <a href="https://youtu.be/EgPaq9KveW4" target="_blank" rel="noopener noreferrer" class="project-modal-link">Watch on YouTube &rarr;</a>
+    </div>
+  </div>
+
+  <!-- Modal: Azuki Sound Redesign -->
+  <div class="modal-container" id="modal-azuki-redesign">
+    <button class="modal-close" aria-label="Close modal">&times;</button>
+    <div class="project-modal-content">
+      <img src="assets/images/projects/AzukiSDThumbnail.png" alt="Azuki Sound Redesign" class="modal-project-image">
+      <h2>Azuki Sound Redesign</h2>
+      <div class="project-modal-tags">
+        <span class="project-modal-tag">Sound Redesign</span>
+        <span class="project-modal-tag">Animation</span>
+      </div>
+      <p>A complete sound redesign for an Azuki animated short, reimagining the soundtrack with entirely original sound design.</p>
+      <a href="https://www.youtube.com/watch?v=RrsEiN5ae5E" target="_blank" rel="noopener noreferrer" class="project-modal-link">Watch on YouTube &rarr;</a>
+    </div>
+  </div>
+
+  <!-- Modal: Möbius Fish -->
+  <div class="modal-container" id="modal-mobius-fish">
+    <button class="modal-close" aria-label="Close modal">&times;</button>
+    <div class="project-modal-content">
+      <img src="assets/images/projects/MobiusFish.png" alt="Möbius Fish" class="modal-project-image">
+      <h2>Möbius Fish</h2>
+      <div class="project-modal-tags">
+        <span class="project-modal-tag">Game Audio</span>
+        <span class="project-modal-tag">Technical Sound Design</span>
+        <span class="project-modal-tag">Tower Defense</span>
+      </div>
+      <p>A top-down 3D tower defense roguelike where you helm a small boat down the treacherous rivers of the great Möbius Fish, fending off hordes of killer fish while upgrading your towers' tiers and stats. Contributed as Technical Sound Designer.</p>
+      <a href="https://vfs-gdpg.itch.io/mbius-fish" target="_blank" rel="noopener noreferrer" class="project-modal-link">Play on itch.io &rarr;</a>
+    </div>
+  </div>
+
+  <!-- Modal: Prom Night Mayhem -->
+  <div class="modal-container" id="modal-prom-night-mayhem">
+    <button class="modal-close" aria-label="Close modal">&times;</button>
+    <div class="project-modal-content">
+      <img src="assets/images/projects/PromNightMayhem.png" alt="Prom Night Mayhem" class="modal-project-image">
+      <h2>Prom Night Mayhem</h2>
+      <div class="project-modal-tags">
+        <span class="project-modal-tag">Game Audio</span>
+        <span class="project-modal-tag">Technical Sound Design</span>
+        <span class="project-modal-tag">Top-Down Shooter</span>
+      </div>
+      <p>A 3D top-down shooter starring Rebecca, a sassy prom queen whose big night is ruined when vampires invade her high school. Armed with a confetti cannon and explosive beakers, she fights through comedically gory chaos to save her king. Contributed as Technical Sound Designer.</p>
+      <a href="https://vfs-gdpg.itch.io/prom-night-mayhem" target="_blank" rel="noopener noreferrer" class="project-modal-link">Play on itch.io &rarr;</a>
+    </div>
+  </div>
+
+  <!-- Modal: Hooky -->
+  <div class="modal-container" id="modal-hooky">
+    <button class="modal-close" aria-label="Close modal">&times;</button>
+    <div class="project-modal-content">
+      <img src="assets/images/projects/Hooky.png" alt="Hooky" class="modal-project-image">
+      <h2>Hooky</h2>
+      <div class="project-modal-tags">
+        <span class="project-modal-tag">Game Audio</span>
+        <span class="project-modal-tag">Co-op</span>
+        <span class="project-modal-tag">Game Jam</span>
+      </div>
+      <p>A cozy co-op fishing game where you and your friends take to the seas, harpoon fish, and haul in the catch together — complete with proximity voice chat for high-seas banter. Built with a small team for Comfy Jam Summer 2026.</p>
+      <a href="https://mooncako.itch.io/hooky" target="_blank" rel="noopener noreferrer" class="project-modal-link">Play on itch.io &rarr;</a>
+    </div>
+  </div>
+
   <script src="assets/js/rotating-text.js"></script>
   <script>
     // Mobile menu toggle
@@ -318,6 +550,51 @@
         });
       });
     }
+  </script>
+
+  <script>
+    // ---- Project Modal Logic ----
+    const overlay = document.getElementById('projectModalOverlay');
+    const projectItems = document.querySelectorAll('.project-grid-item[data-modal]');
+    let activeModal = null;
+
+    function openModal(modalId) {
+      const modal = document.getElementById(modalId);
+      if (!modal) return;
+      activeModal = modal;
+      overlay.classList.add('active');
+      modal.classList.add('active');
+      document.body.classList.add('modal-open');
+    }
+
+    function closeModal() {
+      if (activeModal) {
+        activeModal.classList.remove('active');
+        overlay.classList.remove('active');
+        document.body.classList.remove('modal-open');
+        activeModal = null;
+      }
+    }
+
+    // Open modal on project click
+    projectItems.forEach(item => {
+      item.addEventListener('click', () => {
+        openModal(item.getAttribute('data-modal'));
+      });
+    });
+
+    // Close on overlay click
+    overlay.addEventListener('click', closeModal);
+
+    // Close on X button click
+    document.querySelectorAll('.modal-close').forEach(btn => {
+      btn.addEventListener('click', closeModal);
+    });
+
+    // Close on Escape key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeModal();
+    });
   </script>
 </body>
 </html>
