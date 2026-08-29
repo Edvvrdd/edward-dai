@@ -23,6 +23,9 @@ build/
 .env
 .env.local
 
+# Local development preview server (not part of the deployed site)
+tools/
+
 # VSCode settings (if you don’t want to share them)
 .vscode/
 # Large video files (linked externally)
