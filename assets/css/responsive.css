@@ -2,8 +2,6 @@
    RESPONSIVE STYLES - ALL MEDIA QUERIES
    =================================== */
 
-/* ===== TABLET & MOBILE BREAKPOINTS ===== */
-
 /* 1024px and below - Tablet */
 @media (max-width: 1024px) {
   .hero-title {
@@ -24,15 +22,6 @@
   .nav-right a {
     font-size: 0.9em;
   }
-  
-  .landing-grid {
-    grid-template-columns: 1fr;
-    gap: 40px;
-  }
-
-  .landing-info {
-    padding: 25px;
-  }
 }
 
 /* 768px and below - Mobile */
@@ -48,62 +37,62 @@
   .nav-right {
     display: none;
   }
-  
+
   .nav-center {
     position: static;
     transform: none;
   }
-  
+
   .nav-hamburger {
     display: flex;
     position: absolute;
     right: 20px;
   }
-  
+
   .mobile-menu {
     display: flex;
   }
-  
+
   /* Hero */
   .hero-header {
     padding: 40px 0;
   }
-  
+
   .hero-content {
     padding: 0 16px;
     max-width: 100%;
     box-sizing: border-box;
   }
-  
+
   .hero-title {
     font-size: 2em;
     text-align: center;
   }
-  
+
   .hero-video-container {
     width: 100%;
     max-width: 100%;
     margin: 20px 0 0;
     box-sizing: border-box;
   }
-  
+
   /* About Section */
   .about-full {
     padding: 40px 20px;
   }
-  
+
   .about-full > div {
     flex-direction: column !important;
     gap: 1.5rem !important;
   }
-  
+
   .about-full img {
     width: 100% !important;
     max-width: 400px !important;
     height: auto !important;
     margin: 0 auto;
   }
-  
+
   .about-full p {
     font-size: 1em;
   }
@@ -111,47 +100,14 @@
 
 /* 600px and below - Small Mobile */
 @media (max-width: 600px) {
-  /* Navigation */
-  nav a {
-    display: block;
-    margin: 10px 0;
-  }
-
-  .reel video {
-    max-width: 100%;
-  }
-
   .container {
     padding: 0 15px;
   }
-  
-  /* Hero adjustments */
+
   .hero-title {
     font-size: 1.8em;
   }
-  
-  /* Landing Section */
-  .landing-section {
-    padding: 40px 0;
-  }
 
-  .landing-info {
-    padding: 20px;
-  }
-
-  .landing-reel h2 {
-    font-size: 1.5em;
-  }
-
-  .landing-info h2 {
-    font-size: 1.5em;
-  }
-
-  .contact-info-inline h3 {
-    font-size: 1.2em;
-  }
-  
-  /* About section */
   .about-full h2 {
     font-size: 1.5em;
   }

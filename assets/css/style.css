@@ -19,15 +19,12 @@
 
 /* 5. Feature Sections */
 @import 'carousel.css';
-@import 'testimonials.css';
 @import 'skills.css';
 @import 'tech-banner.css';
 
 /* 6. Page-Specific Styles */
 @import 'projects.css';
-@import 'timeline.css';
 @import 'blog.css';
-@import 'freebies.css';
 
 /* 7. Responsive Styles */
 @import 'responsive.css';
