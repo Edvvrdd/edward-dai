@@ -2,18 +2,18 @@
    NAVBAR SPACING — edit these to adjust
    ======================================== */
 header {
-  --nav-padding-top: 24px;        /* top padding of navbar */
-  --nav-padding-bottom: 24px;     /* bottom padding of navbar */
-  --nav-padding-left: 45px;       /* left padding of navbar */
-  --nav-padding-right: 40px;      /* right padding of navbar */
-  --nav-max-width: 900px;         /* max content width */
+  --nav-padding-top: 1.5rem;        /* top padding of navbar */
+  --nav-padding-bottom: 1.5rem;     /* bottom padding of navbar */
+  --nav-padding-left: 2.8125rem;       /* left padding of navbar */
+  --nav-padding-right: 2.5rem;      /* right padding of navbar */
+  --nav-max-width: 56.25rem;         /* max content width */
 
-  --nav-left-offset: 18px;        /* push social icons right */
-  --nav-left-gap: 20px;           /* gap between social icons */
+  --nav-left-offset: 1.125rem;        /* push social icons right */
+  --nav-left-gap: 1.25rem;           /* gap between social icons */
 
-  --nav-right-gap: 15px;          /* gap between right-side links */
+  --nav-right-gap: 0.9375rem;          /* gap between right-side links */
 
-  --nav-logo-height: 48px;        /* logo size */
+  --nav-logo-height: 3rem;        /* logo size */
 }
 
 header {
@@ -85,8 +85,8 @@ header {
 }
 
 .social-icon-small {
-  width: 22px;
-  height: 22px;
+  width: 1.375rem;
+  height: 1.375rem;
   filter: brightness(0) invert(1);
   transition: filter var(--transition-standard);
 }
@@ -100,13 +100,13 @@ header {
   display: none;
   flex-direction: column;
   justify-content: center;
-  gap: 5px;
-  width: 32px;
-  height: 32px;
+  gap: 0.3125rem;
+  width: 2rem;
+  height: 2rem;
   background: none;
   border: none;
   cursor: pointer;
-  padding: 4px;
+  padding: 0.25rem;
   z-index: 1001;
 }
 
@@ -119,7 +119,7 @@ header {
 }
 
 .nav-hamburger.active .hamburger-line:nth-child(1) {
-  transform: translateY(7px) rotate(45deg);
+  transform: translateY(0.4375rem) rotate(45deg);
 }
 
 .nav-hamburger.active .hamburger-line:nth-child(2) {
@@ -127,7 +127,7 @@ header {
 }
 
 .nav-hamburger.active .hamburger-line:nth-child(3) {
-  transform: translateY(-7px) rotate(-45deg);
+  transform: translateY(-0.4375rem) rotate(-45deg);
 }
 
 /* Mobile Menu Overlay */
@@ -142,7 +142,7 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 40px;
+  gap: 2.5rem;
   z-index: 999;
   opacity: 0;
   pointer-events: none;
@@ -158,7 +158,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 24px;
+  gap: 1.5rem;
 }
 
 .mobile-menu-links a {
@@ -176,7 +176,7 @@ header {
 
 .mobile-menu-social {
   display: flex;
-  gap: 20px;
+  gap: 1.25rem;
 }
 
 .mobile-menu-social a {
@@ -186,8 +186,8 @@ header {
 
 .mobile-menu-social img,
 .mobile-menu-social svg {
-  width: 28px;
-  height: 28px;
+  width: 1.75rem;
+  height: 1.75rem;
   filter: brightness(0) invert(1);
   transition: filter 0.2s ease;
 }

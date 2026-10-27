@@ -5,8 +5,8 @@
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
-  max-width: 1200px;
+  gap: 1.5rem;
+  max-width: 75rem;
   margin: 0 auto;
 }
 
@@ -21,7 +21,7 @@
 }
 
 .project-grid-item:hover {
-  transform: translateY(-4px);
+  transform: translateY(-0.25rem);
   border-color: var(--color-primary);
 }
 
@@ -49,14 +49,14 @@
 @media (max-width: 900px) {
   .projects-grid {
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    gap: 1.25rem;
   }
 }
 
 @media (max-width: 600px) {
   .projects-grid {
     grid-template-columns: 1fr;
-    gap: 16px;
+    gap: 1rem;
   }
 
   .project-grid-item {

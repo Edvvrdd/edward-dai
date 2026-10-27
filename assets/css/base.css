@@ -11,8 +11,11 @@ body {
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 100px; /* keep anchored sections clear of the sticky header */
+  scroll-padding-top: 6.25rem; /* keep anchored sections clear of the sticky header */
   overflow-x: hidden;
+  /* ponytail: fluid root scale — everything is rem-based, so this one line scales the
+     whole site. 16px (unchanged look) below ~1500px viewport, 20px at 2560px+ (1440p). */
+  font-size: clamp(16px, 10px + 0.4vw, 20px);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -31,8 +34,8 @@ section {
 }
 
 .container {
-  max-width: 1200px;
-  margin: 20px auto;
+  max-width: 75rem;
+  margin: 1.25rem auto;
   padding: 0 var(--spacing-md);
 }
 

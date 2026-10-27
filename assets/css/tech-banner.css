@@ -4,25 +4,25 @@
 
 .tech-banner {
   background: linear-gradient(135deg, rgba(45, 45, 45, 0.95) 0%, rgba(55, 55, 55, 0.95) 100%);
-  padding: 8px 0;
+  padding: 0.5rem 0;
   margin-top: 0; /* ADJUST GAP: Change this value to add space above tech banner */
   border-top: 2px solid var(--color-border);
   border-bottom: 2px solid var(--color-border);
   box-shadow: 
-    0 -8px 16px rgba(0, 0, 0, 0.4),
-    0 8px 16px rgba(0, 0, 0, 0.4),
+    0 -0.5rem 1rem rgba(0, 0, 0, 0.4),
+    0 0.5rem 1rem rgba(0, 0, 0, 0.4),
     inset 0 1px 0 rgba(107, 140, 174, 0.08);
-  scroll-margin-top: 80px;
+  scroll-margin-top: 5rem;
 }
 
 .tech-icons {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 64px;
+  gap: 4rem;
   flex-wrap: nowrap;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 1.25rem;
 }
 
 .tech-icon-wrapper {
@@ -38,7 +38,7 @@
 }
 
 .tech-icon {
-  height: clamp(50px, 10vw, 80px);
+  height: clamp(3.125rem, 10vw, 5rem);
   width: auto;
   transition: opacity 0.3s ease;
 }
@@ -66,23 +66,23 @@
 /* Medium: 2 rows of 4 icons */
 @media (max-width: 768px) {
   .tech-banner {
-    padding: 10px 0;
+    padding: 0.625rem 0;
   }
 
   .tech-icons {
     flex-wrap: wrap;
-    gap: 20px 32px;
-    padding: 0 20px;
-    max-width: 500px;
+    gap: 1.25rem 2rem;
+    padding: 0 1.25rem;
+    max-width: 31.25rem;
   }
 
   .tech-icon-wrapper {
-    flex: 0 0 calc(25% - 24px);
+    flex: 0 0 calc(25% - 1.5rem);
     justify-content: center;
   }
 
   .tech-icon {
-    height: clamp(40px, 10vw, 55px);
+    height: clamp(2.5rem, 10vw, 3.4375rem);
   }
 }
 

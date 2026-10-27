@@ -12,11 +12,11 @@
 /* 968px and below - Small Tablet */
 @media (max-width: 968px) {
   .main-nav {
-    padding: 12px 20px;
+    padding: 0.75rem 1.25rem;
   }
 
   .nav-right {
-    gap: 15px;
+    gap: 0.9375rem;
   }
 
   .nav-right a {
@@ -30,7 +30,7 @@
   .main-nav {
     flex-direction: row;
     justify-content: center;
-    padding: 12px 20px;
+    padding: 0.75rem 1.25rem;
   }
 
   .nav-left,
@@ -46,7 +46,7 @@
   .nav-hamburger {
     display: flex;
     position: absolute;
-    right: 20px;
+    right: 1.25rem;
   }
 
   .mobile-menu {
@@ -55,11 +55,11 @@
 
   /* Hero */
   .hero-header {
-    padding: 40px 0;
+    padding: 2.5rem 0;
   }
 
   .hero-content {
-    padding: 0 16px;
+    padding: 0 1rem;
     max-width: 100%;
     box-sizing: border-box;
   }
@@ -72,13 +72,13 @@
   .hero-video-container {
     width: 100%;
     max-width: 100%;
-    margin: 20px 0 0;
+    margin: 1.25rem 0 0;
     box-sizing: border-box;
   }
 
   /* About Section */
   .about-full {
-    padding: 40px 20px;
+    padding: 2.5rem 1.25rem;
   }
 
   .about-full > div {
@@ -88,7 +88,7 @@
 
   .about-full img {
     width: 100% !important;
-    max-width: 400px !important;
+    max-width: 25rem !important;
     height: auto !important;
     margin: 0 auto;
   }
@@ -101,7 +101,7 @@
 /* 600px and below - Small Mobile */
 @media (max-width: 600px) {
   .container {
-    padding: 0 15px;
+    padding: 0 0.9375rem;
   }
 
   .hero-title {
