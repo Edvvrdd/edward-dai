@@ -3,12 +3,6 @@
    =================================== */
 
 /* 1024px and below - Tablet */
-@media (max-width: 1024px) {
-  .hero-title {
-    font-size: 2.5em;
-  }
-}
-
 /* 968px and below - Small Tablet */
 @media (max-width: 968px) {
   .main-nav {
@@ -64,11 +58,6 @@
     box-sizing: border-box;
   }
 
-  .hero-title {
-    font-size: 2em;
-    text-align: center;
-  }
-
   .hero-video-container {
     width: 100%;
     max-width: 100%;
@@ -104,18 +93,7 @@
     padding: 0 0.9375rem;
   }
 
-  .hero-title {
-    font-size: 1.8em;
-  }
-
   .about-full h2 {
-    font-size: 1.5em;
-  }
-}
-
-/* 480px and below - Extra Small Mobile */
-@media (max-width: 480px) {
-  .hero-title {
     font-size: 1.5em;
   }
 }
