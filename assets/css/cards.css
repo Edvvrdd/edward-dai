@@ -46,7 +46,7 @@
   font-size: 1.1em;
   margin-bottom: 0.375rem;
   margin-top: 0;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .skill-card p {
@@ -177,7 +177,7 @@
   color: #d4915d;
   font-size: 0.95em;
   margin-bottom: 0.9375rem;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 .project-description {
@@ -231,7 +231,7 @@
   line-height: 1;
   margin-bottom: 0.3125rem;
   transition: all 0.3s ease;
-  font-family: Georgia, serif;
+  font-family: var(--font-primary);
   opacity: 0.4;
 }
 

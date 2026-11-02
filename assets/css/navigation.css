@@ -12,8 +12,6 @@ header {
   --nav-left-gap: 1.25rem;           /* gap between social icons */
 
   --nav-right-gap: 0.9375rem;          /* gap between right-side links */
-
-  --nav-logo-height: 3rem;        /* logo size */
 }
 
 header {
@@ -54,18 +52,21 @@ header {
   align-items: center;
 }
 
-.nav-logo img {
-  height: var(--nav-logo-height);
-  width: auto;
-  display: block;
-  filter: invert(1);
+.nav-logo {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1.4rem;
+  letter-spacing: 0.05em;
+  color: var(--color-text);
+  white-space: nowrap;
+  user-select: none;
 }
 
 .nav-right a {
   text-decoration: none;
   color: var(--color-text);
   font-family: var(--font-heading);
-  font-weight: 500;
+  font-weight: 700;
   font-size: 0.95em;
   transition: color var(--transition-standard);
 }
@@ -164,7 +165,7 @@ header {
 .mobile-menu-links a {
   font-family: var(--font-heading);
   font-size: 1.5em;
-  font-weight: 600;
+  font-weight: 700;
   color: var(--color-text);
   text-decoration: none;
   transition: color 0.2s ease;

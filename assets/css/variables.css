@@ -1,5 +1,4 @@
 /* CSS Variables and Custom Properties */
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
 
 :root {
   /* Modern Dark Theme Colors */
@@ -26,9 +25,9 @@
   --color-border-light: #333333; /* Lighter border */
   
   /* Fonts */
-  --font-primary: 'Crimson Text', Georgia, serif;
-  --font-heading: 'Cinzel', 'Georgia', serif;
-  --font-body-light: 'Crimson Text', Georgia, serif;
+  --font-primary: 'PT Sans', Helvetica, Arial, sans-serif;
+  --font-heading: 'PT Sans', Helvetica, Arial, sans-serif;
+  --font-body-light: 'PT Sans', Helvetica, Arial, sans-serif;
   
   /* Spacing */
   --spacing-xs: 0.5rem;
