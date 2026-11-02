@@ -9,7 +9,7 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+  background: linear-gradient(135deg, #0d1117 0%, #161b22 100%);
   padding: 1.875rem 1.25rem 3.75rem;
 }
 
@@ -31,7 +31,7 @@
   aspect-ratio: 16 / 9;
   overflow: hidden;
   box-shadow: 0 0.625rem 2.5rem rgba(0, 0, 0, 0.5);
-  border: 2px solid rgba(201, 150, 95, 0.2);
+  border: 2px solid rgba(74, 222, 128, 0.2);
 }
 
 .hero-video-container iframe,

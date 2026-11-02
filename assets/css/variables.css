@@ -1,28 +1,28 @@
 /* CSS Variables and Custom Properties */
 
 :root {
-  /* Modern Dark Theme Colors */
-  --color-primary: #c9965f; /* Worn antique gold */
-  --color-primary-bright: #d4a574; /* Brighter gold for hover states */
-  --color-secondary: #6b8cae; /* Greyish steel blue */
-  --color-secondary-bright: #7a9bc0; /* Brighter blue for hover states */
+  /* Modern Dark Theme — green & blue accents */
+  --color-primary: #4ade80; /* Fresh green */
+  --color-primary-bright: #86efac; /* Brighter green for hover states */
+  --color-secondary: #60a5fa; /* Clear sky blue */
+  --color-secondary-bright: #93c5fd; /* Brighter blue for hover states */
   
   /* Backgrounds */
-  --color-bg-dark: #0a0a0a; /* Deep black */
-  --color-bg-card: #1c1c1c; /* Dark charcoal for cards */
-  --color-bg-elevated: #252525; /* Slightly elevated surfaces */
-  --color-bg-darker: #161616; /* Darkest surface */
+  --color-bg-dark: #0d1117; /* Deep slate */
+  --color-bg-card: #161b22; /* Dark slate for cards */
+  --color-bg-elevated: #1c2431; /* Slightly elevated surfaces */
+  --color-bg-darker: #090c10; /* Darkest surface */
   
   /* Text Colors */
-  --color-text: #b0b0b0; /* Primary text - light gray */
-  --color-text-light: #c5c5c5; /* Lighter text */
-  --color-text-muted: #888888; /* Muted text */
-  --color-text-dim: #666666; /* Dim text */
-  --color-white: #f0f0f0; /* Soft white */
+  --color-text: #c9d1d9; /* Primary text - light gray */
+  --color-text-light: #e2e8f0; /* Lighter text */
+  --color-text-muted: #8b98a5; /* Muted text */
+  --color-text-dim: #6a7683; /* Dim text */
+  --color-white: #f0f6fc; /* Soft white */
   
   /* Borders */
-  --color-border: #2a2a2a; /* Subtle border */
-  --color-border-light: #333333; /* Lighter border */
+  --color-border: #21262d; /* Subtle border */
+  --color-border-light: #30363d; /* Lighter border */
   
   /* Fonts */
   --font-primary: 'PT Sans', Helvetica, Arial, sans-serif;
