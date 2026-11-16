@@ -77,8 +77,13 @@
   }
 
   .tech-icon-wrapper {
-    flex: 0 0 calc(25% - 1.5rem);
+    flex: 0 0 calc(33.333% - 1.5rem);
     justify-content: center;
+  }
+
+  /* Priority system: lowest priority hidden first (3 = first to go) */
+  .tech-p3 {
+    display: none;
   }
 
   .tech-icon {
@@ -86,9 +91,19 @@
   }
 }
 
-/* Narrow: hide banner entirely */
+/* Narrow: keep banner, show only priority-1 icons (Reaper, Unity, FMOD) */
 @media (max-width: 480px) {
-  .tech-banner {
+  .tech-p2,
+  .tech-p3 {
     display: none;
+  }
+
+  .tech-icons {
+    flex-wrap: nowrap;
+    max-width: none;
+  }
+
+  .tech-icon-wrapper {
+    flex: 0 0 auto;
   }
 }

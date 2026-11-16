@@ -35,7 +35,6 @@
 
 .btn-primary:hover {
   background: var(--color-primary-bright);
-  box-shadow: 0 0.25rem 0.9375rem rgba(74, 222, 128, 0.25);
   transform: translateY(-2px);
 }
 

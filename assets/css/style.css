@@ -2,30 +2,30 @@
 /* Import all CSS modules in order */
 
 /* 1. Variables & Configuration */
-@import 'variables.css';
+@import 'variables.css?v=202611161041';
 
 /* 2. Base & Reset Styles */
-@import 'base.css';
+@import 'base.css?v=202611161041';
 
 /* 3. Layout Components */
-@import 'navigation.css';
-@import 'hero.css';
+@import 'navigation.css?v=202611161041';
+@import 'hero.css?v=202611161041';
 
 /* 4. UI Components */
-@import 'components.css';
-@import 'buttons.css';
-@import 'cards.css';
-@import 'modal.css';
+@import 'components.css?v=202611161041';
+@import 'buttons.css?v=202611161041';
+@import 'cards.css?v=202611161041';
+@import 'modal.css?v=202611161041';
 
 /* 5. Feature Sections */
-@import 'carousel.css';
-@import 'sections.css';
-@import 'skills.css';
-@import 'tech-banner.css';
+@import 'carousel.css?v=202611161041';
+@import 'sections.css?v=202611161041';
+@import 'skills.css?v=202611161041';
+@import 'tech-banner.css?v=202611161041';
 
 /* 6. Page-Specific Styles */
-@import 'projects.css';
-@import 'blog.css';
+@import 'projects.css?v=202611161041';
+@import 'blog.css?v=202611161041';
 
 /* 7. Responsive Styles */
-@import 'responsive.css';
+@import 'responsive.css?v=202611161041';

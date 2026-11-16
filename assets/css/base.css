@@ -46,6 +46,15 @@ section {
   margin-bottom: var(--spacing-md);
 }
 
+/* Main-page section titles: top-left, all caps, one size */
+#sound h2,
+#dev h2,
+#ed h2 {
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 2.5em;
+}
+
 .container p {
   color: var(--color-text-muted);
 }

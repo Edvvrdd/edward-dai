@@ -59,6 +59,30 @@
   margin-bottom: 0;
 }
 
+/* Fresh class, zero inheritance: solid green, no gradient, no shadow */
+.send-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.625rem;
+  padding: 0.875rem 2rem;
+  font-family: var(--font-heading);
+  font-size: 1em;
+  font-weight: 700;
+  background-color: #4ade80;
+  color: #0d1117;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 0.625rem;
+  transition: background-color 0.3s ease;
+}
+
+.send-btn:hover {
+  background-color: #86efac;
+}
+
 .form-group {
   width: 100%;
   margin-bottom: 0.9375rem;

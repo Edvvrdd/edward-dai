@@ -102,7 +102,7 @@
   display: grid;
   grid-template-columns: 1.2fr minmax(14rem, 18rem) 1fr;
   gap: var(--spacing-lg);
-  align-items: start;
+  align-items: stretch;
 }
 
 .ed-photo img {
@@ -117,6 +117,23 @@
 
 .ed-form .form-row {
   display: block;
+}
+
+/* Stretch form to grid row height; textarea fills the leftover space (matches photo height) */
+.ed-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.ed-form .form-group:nth-child(3) {
+  flex: 1;
+  display: flex;
+}
+
+.ed-form .form-group:nth-child(3) textarea {
+  height: 100%;
+  min-height: 12rem;
+  resize: none;
 }
 
 @media (max-width: 900px) {
