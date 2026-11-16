@@ -11,11 +11,6 @@
   align-items: start;
 }
 
-/* ponytail: hide cards without a video clip — delete this rule when media is added */
-.projects-grid .project-card:has(> .project-card-media > img) {
-  display: none;
-}
-
 .project-card {
   background: var(--color-bg-card);
   border: 2px solid var(--color-border);

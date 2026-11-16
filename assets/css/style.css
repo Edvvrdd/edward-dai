@@ -19,6 +19,7 @@
 
 /* 5. Feature Sections */
 @import 'carousel.css';
+@import 'sections.css';
 @import 'skills.css';
 @import 'tech-banner.css';
 

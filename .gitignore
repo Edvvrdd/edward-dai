@@ -28,6 +28,11 @@ tools/
 
 # VSCode settings (if you don’t want to share them)
 .vscode/
+# AI agent files
+.agents/
+.claude/
+skills-lock.json
+
 # Large video files (linked externally)
 assets/videos/*.mp4
 *.mp4

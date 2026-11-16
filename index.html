@@ -13,35 +13,30 @@
   <link rel="shortcut icon" href="assets/favicon/favicon.ico">
   <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
   <link rel="manifest" href="assets/favicon/site.webmanifest">
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/style.css?v=202611161031">
 </head>
 <body>
 
   <header>
     <nav class="main-nav">
-      <!-- Left: Social Links -->
+      <!-- Left: SOUND/DEV/ED — each part links to its section -->
       <div class="nav-left">
-        <a href="https://www.linkedin.com/in/edward-dai-sfx/" target="_blank" rel="noopener noreferrer" class="social-link">
-          <img src="assets/images/social/linkedin-svgrepo-com.svg" alt="LinkedIn" class="social-icon-small">
-        </a>
-        <a href="https://github.com/Edvvrdd" target="_blank" rel="noopener noreferrer" class="social-link">
-          <img src="assets/images/social/Github.svg" alt="GitHub" class="social-icon-small">
-        </a>
-        <a href="https://edvvrd-dev.itch.io/" target="_blank" rel="noopener noreferrer" class="social-link">
-          <img src="assets/images/social/itch-io-svg.svg" alt="itch.io" class="social-icon-small">
-        </a>
+        <a href="#sound" class="nav-logo-link">SOUND</a><a href="#dev" class="nav-logo-link">/DEV</a><a href="#ed" class="nav-logo-link">/ED</a>
       </div>
-      
-      <!-- Center: EDSD Logo -->
-      <div class="nav-center">
-        <span class="nav-logo">Sound/Dev/Ed</span>
-      </div>
-      
-      <!-- Right: Page Links -->
+
+      <!-- Center: intentionally empty — SOUND/DEV/ED is the only page nav -->
+
+      <!-- Right: Social Links -->
       <div class="nav-right">
-        <a href="#reel">Reel</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+        <a href="https://www.linkedin.com/in/edward-dai-sfx/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+          <img src="assets/images/social/linkedin-svgrepo-com.svg" alt="" class="social-icon-small">
+        </a>
+        <a href="https://github.com/Edvvrdd" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
+          <img src="assets/images/social/Github.svg" alt="" class="social-icon-small">
+        </a>
+        <a href="https://edvvrd-dev.itch.io/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="itch.io">
+          <img src="assets/images/social/itch-io-svg.svg" alt="" class="social-icon-small">
+        </a>
       </div>
       
       <!-- Mobile Menu Button -->
@@ -55,9 +50,9 @@
     <!-- Mobile Menu Overlay -->
     <div class="mobile-menu">
       <div class="mobile-menu-links">
-        <a href="#reel">Reel</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+        <a href="#sound">Sound</a>
+        <a href="#dev">Dev</a>
+        <a href="#ed">Ed</a>
       </div>
       <div class="mobile-menu-social">
         <a href="https://www.linkedin.com/in/edward-dai-sfx/" target="_blank" rel="noopener noreferrer">
@@ -80,7 +75,7 @@
   </header>
 
   <!-- HERO HEADER SECTION -->
-  <section class="hero-header" id="reel">
+  <section class="hero-header">
     <div class="hero-content">
       <p class="hero-subtitle">Technical Sound Design Reel</p>
       <div class="hero-video-container">
@@ -96,7 +91,7 @@
   </section>
 
   <!-- TECHNOLOGY BANNER -->
-  <section id="about" class="tech-banner">
+  <section class="tech-banner">
     <div class="container">
       <div class="tech-icons">
         <div class="tech-icon-wrapper">
@@ -135,152 +130,35 @@
     </div>
   </section>
 
-  <!-- ABOUT (Full Version) -->
-  <section class="container about-full">
-    <h2>About Me</h2>
-    <div style="display: flex; gap: 2rem; align-items: flex-start;">
-      <div>
-        <p>As a senior technical sound designer for video games, I integrate deeply with development teams to design, implement, and manage the complete auditory experience.</p>
+  <!-- SOUND SECTION: tiles open modals with video + description -->
+  <section id="sound" class="sound-section">
+    <div class="container">
+      <h2>Sound</h2>
 
-        <p>My sound design style is functional and adaptive—always catering to specific gameplay mechanics to elevate the player experience. By leveraging deep expertise across game engines and audio middleware, I manage the full audio pipeline from initial concept to technical implementation.</p>
+      <div class="sound-grid">
+        <button class="sound-tile" data-modal="modal-bg3" aria-haspopup="dialog">
+          <video src="https://assets.edward-dai.com/Baldur's%20Gate%203%20Opening%20Cinematic%20Sound%20Redesign.mp4#t=1" preload="metadata" muted tabindex="-1"></video>
+          <span class="sound-tile-label">BG3 Cinematic Sound Redesign</span>
+          <span class="sound-tile-play" aria-hidden="true">&#9654;</span>
+        </button>
 
-        <p>Whether it’s crafting high-impact sound design, engineering adaptive music systems, or building custom audio tools for the dev team, I can help bring your game's vision to life.</p>
-
-        <p>Check out the projects below to see if my skills can fit your needs...</p>
+        <button class="sound-tile" data-modal="modal-azuki" aria-haspopup="dialog">
+          <video src="https://assets.edward-dai.com/Azuki%20Elementals%20Sound%20Redesign.mp4#t=1" preload="metadata" muted tabindex="-1"></video>
+          <span class="sound-tile-label">Azuki Elementals Sound Redesign</span>
+          <span class="sound-tile-play" aria-hidden="true">&#9654;</span>
+        </button>
       </div>
-      <img src="assets/images/Power.jpg" alt="Sound Designer" style="width: 18.75rem; height: auto; border-radius: 0.5rem; flex-shrink: 0;">
-    </div>
 
-    <a href="#top" class="back-to-top">Back to Top &uarr;</a>
+      <a href="#top" class="back-to-top">Back to Top &uarr;</a>
+    </div>
   </section>
 
-  <!-- PROJECTS SECTION -->
-  <section class="other-reels" id="projects">
+  <!-- DEV SECTION: rectangular cards linking to GitHub / itch.io -->
+  <section class="other-reels" id="dev">
     <div class="container">
-      <h2>Projects</h2>
+      <h2>Dev</h2>
 
       <div class="projects-grid">
-
-        <!-- Project: Gasp Away -->
-        <article class="project-card">
-          <div class="project-card-media">
-            <img src="assets/images/projects/GaspAwayIcon.png" alt="Gasp Away">
-          </div>
-          <div class="project-card-body">
-            <h3>Gasp Away!</h3>
-            <div class="project-card-tags">
-              <span class="project-card-tag">Game Audio</span>
-              <span class="project-card-tag">Sound Design</span>
-              <span class="project-card-tag">Godot</span>
-              <span class="project-card-tag">Ludum Dare 59</span>
-            </div>
-            <p>Play as a castaway stranded on a deserted island. Send Morse Code through Smoke Signals by blowing on your trusty campfire. A rhythm-comedy game made in 72 hours for Ludum Dare 59. Contributed all sound design.</p>
-            <a href="https://tiny-bot.itch.io/gasp-away" target="_blank" rel="noopener noreferrer" class="project-card-link">Play on itch.io &rarr;</a>
-          </div>
-        </article>
-
-        <!-- Project: Lambyrinth -->
-        <article class="project-card">
-          <div class="project-card-media">
-            <img src="assets/images/projects/LambyrinthProjectIcon.png" alt="Lambyrinth">
-          </div>
-          <div class="project-card-body">
-            <h3>Lambyrinth</h3>
-            <div class="project-card-tags">
-              <span class="project-card-tag">Game Audio</span>
-              <span class="project-card-tag">Sound Design</span>
-              <span class="project-card-tag">Unity</span>
-            </div>
-            <p>An immersive puzzle-adventure game featuring a fully custom sound design palette. Every footstep, environmental ambience, and interactive element was crafted to enhance the player's sense of exploration and discovery within the labyrinth.</p>
-            <a href="pages/lambyrinth.html" class="project-card-link">Read the Full Breakdown &rarr;</a>
-          </div>
-        </article>
-
-        <!-- Project: Broken Hero -->
-        <article class="project-card">
-          <div class="project-card-media">
-            <img src="assets/images/projects/TheBrokenHero-Logo.png" alt="The Broken Hero">
-          </div>
-          <div class="project-card-body">
-            <h3>The Broken Hero</h3>
-            <div class="project-card-tags">
-              <span class="project-card-tag">Game Audio</span>
-              <span class="project-card-tag">Technical Sound Design</span>
-              <span class="project-card-tag">Unity</span>
-            </div>
-            <p>A single-player, 3D, fixed cinematic camera platformer about a Greek soldier reborn from an ancient fresco. Navigate between 3D physical ruins and 2D fresco worlds, avoiding the mythic Minotaur to escape a crumbling temple. Contributed as Technical Sound Designer on the audio implementation and sound design.</p>
-            <a href="https://vfs-gdpg.itch.io/the-broken-hero" target="_blank" rel="noopener noreferrer" class="project-card-link">Play on itch.io &rarr;</a>
-          </div>
-        </article>
-
-        <!-- Project: Gone Astray -->
-        <article class="project-card">
-          <div class="project-card-media">
-            <img src="assets/images/projects/GoneAstray.png" alt="Gone Astray">
-          </div>
-          <div class="project-card-body">
-            <h3>Gone Astray</h3>
-            <div class="project-card-tags">
-              <span class="project-card-tag">Game Audio</span>
-              <span class="project-card-tag">Sound Design</span>
-              <span class="project-card-tag">Composition</span>
-              <span class="project-card-tag">Stealth Horror</span>
-            </div>
-            <p>A single-player, 3D, first-person stealth horror game. Play as Vyncent Roan, an urban explorer searching for your missing friend in an abandoned Hydro plant overrun by cultists and a disturbing Lovecraftian horror. Survive by hiding, running, and outsmarting your pursuers. Contributed as Sound Designer and Composer.</p>
-            <a href="https://vfs-gdpg.itch.io/gone-astray" target="_blank" rel="noopener noreferrer" class="project-card-link">Play on itch.io &rarr;</a>
-          </div>
-        </article>
-
-        <!-- Project: Möbius Fish -->
-        <article class="project-card">
-          <div class="project-card-media">
-            <img src="assets/images/projects/MobiusFish.png" alt="Möbius Fish">
-          </div>
-          <div class="project-card-body">
-            <h3>Möbius Fish</h3>
-            <div class="project-card-tags">
-              <span class="project-card-tag">Game Audio</span>
-              <span class="project-card-tag">Technical Sound Design</span>
-              <span class="project-card-tag">Tower Defense</span>
-            </div>
-            <p>A top-down 3D tower defense roguelike where you helm a small boat down the treacherous rivers of the great Möbius Fish, fending off hordes of killer fish while upgrading your towers' tiers and stats. Contributed as Technical Sound Designer.</p>
-            <a href="https://vfs-gdpg.itch.io/mbius-fish" target="_blank" rel="noopener noreferrer" class="project-card-link">Play on itch.io &rarr;</a>
-          </div>
-        </article>
-
-        <!-- Project: Prom Night Mayhem -->
-        <article class="project-card">
-          <div class="project-card-media">
-            <img src="assets/images/projects/PromNightMayhem.png" alt="Prom Night Mayhem">
-          </div>
-          <div class="project-card-body">
-            <h3>Prom Night Mayhem</h3>
-            <div class="project-card-tags">
-              <span class="project-card-tag">Game Audio</span>
-              <span class="project-card-tag">Technical Sound Design</span>
-              <span class="project-card-tag">Top-Down Shooter</span>
-            </div>
-            <p>A 3D top-down shooter starring Rebecca, a sassy prom queen whose big night is ruined when vampires invade her high school. Armed with a confetti cannon and explosive beakers, she fights through comedically gory chaos to save her king. Contributed as Technical Sound Designer.</p>
-            <a href="https://vfs-gdpg.itch.io/prom-night-mayhem" target="_blank" rel="noopener noreferrer" class="project-card-link">Play on itch.io &rarr;</a>
-          </div>
-        </article>
-
-        <!-- Project: Hooky -->
-        <article class="project-card">
-          <div class="project-card-media">
-            <img src="assets/images/projects/Hooky.png" alt="Hooky">
-          </div>
-          <div class="project-card-body">
-            <h3>Hooky</h3>
-            <div class="project-card-tags">
-              <span class="project-card-tag">Game Audio</span>
-              <span class="project-card-tag">Co-op</span>
-              <span class="project-card-tag">Game Jam</span>
-            </div>
-            <p>A cozy co-op fishing game where you and your friends take to the seas, harpoon fish, and haul in the catch together — complete with proximity voice chat for high-seas banter. Built with a small team for Comfy Jam Summer 2026.</p>
-            <a href="https://mooncako.itch.io/hooky" target="_blank" rel="noopener noreferrer" class="project-card-link">Play on itch.io &rarr;</a>
-          </div>
-        </article>
 
         <!-- Project: FMOD Hotkeys -->
         <article class="project-card">
@@ -299,78 +177,6 @@
           </div>
         </article>
 
-        <!-- Project: QikWhoosh -->
-        <article class="project-card">
-          <div class="project-card-media" style="background:#161b22;">
-            <img src="assets/images/projects/QikWhoosh.png" alt="QikWhoosh" style="object-fit:contain;">
-          </div>
-          <div class="project-card-body">
-            <h3>QikWhoosh</h3>
-            <div class="project-card-tags">
-              <span class="project-card-tag">Tool Development</span>
-              <span class="project-card-tag">REAPER</span>
-              <span class="project-card-tag">Lua</span>
-              <span class="project-card-tag">Open Source</span>
-            </div>
-            <p>A granular whoosh engine built directly into REAPER. Turns your entire session into the granular engine — every processing stage stays fully editable on the timeline, with volume, pan, pitch, and filter envelopes tweakable post-generation, and recursive re-granulation of your output in a single click.</p>
-            <a href="https://github.com/Edvvrdd/QikWhoosh" target="_blank" rel="noopener noreferrer" class="project-card-link">View on GitHub &rarr;</a>
-          </div>
-        </article>
-
-        <!-- Project: Unify Audio -->
-        <article class="project-card">
-          <div class="project-card-media">
-            <img src="assets/images/projects/UnifyAudio.png" alt="Unify Audio">
-          </div>
-          <div class="project-card-body">
-            <h3>Unify Audio</h3>
-            <div class="project-card-tags">
-              <span class="project-card-tag">Tool Development</span>
-              <span class="project-card-tag">Audio Utility</span>
-              <span class="project-card-tag">Open Source</span>
-            </div>
-            <p>An audio tool designed to streamline sound design workflows. Unify Audio provides utilities for organizing, processing, and managing audio assets efficiently.</p>
-            <a href="https://github.com/Edvvrdd/UnifyAudio" target="_blank" rel="noopener noreferrer" class="project-card-link">View on GitHub &rarr;</a>
-          </div>
-        </article>
-
-        <!-- Project: BG3 Sound Redesign -->
-        <article class="project-card">
-          <div class="project-card-media">
-            <video controls preload="metadata">
-              <source src="https://assets.edward-dai.com/Baldur's%20Gate%203%20Opening%20Cinematic%20Sound%20Redesign.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-            </video>
-          </div>
-          <div class="project-card-body">
-            <h3>BG3 Cinematic Sound Redesign</h3>
-            <div class="project-card-tags">
-              <span class="project-card-tag">Sound Redesign</span>
-              <span class="project-card-tag">Game Cinematic</span>
-            </div>
-            <p>A complete sound redesign of a Baldur's Gate 3 cinematic, replacing the original audio with entirely original sound design.</p>
-          </div>
-        </article>
-
-        <!-- Project: Azuki Sound Redesign -->
-        <article class="project-card">
-          <div class="project-card-media">
-            <video controls preload="metadata">
-              <source src="https://assets.edward-dai.com/Azuki%20Elementals%20Sound%20Redesign.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-            </video>
-          </div>
-          <div class="project-card-body">
-            <h3>Azuki Sound Redesign</h3>
-            <div class="project-card-tags">
-              <span class="project-card-tag">Sound Redesign</span>
-              <span class="project-card-tag">Animation</span>
-            </div>
-            <p>A complete sound redesign for an Azuki animated short, reimagining the soundtrack with entirely original sound design.</p>
-            <a href="https://www.youtube.com/watch?v=RrsEiN5ae5E" target="_blank" rel="noopener noreferrer" class="project-card-link">Watch on YouTube &rarr;</a>
-          </div>
-        </article>
-
       </div>
 
       <a href="#top" class="back-to-top">Back to Top &uarr;</a>
@@ -380,60 +186,41 @@
 
   
 
-  <!-- SKILLS & CTA SECTION -->
-  <section id="contact" class="skills-cta-section">
+  <!-- ED SECTION: bio | picture | contact form -->
+  <section id="ed" class="ed-section">
     <div class="container">
-      
-      <!-- CTA Main Container -->
-      <div class="cta-content">
-        <h2>Let's Create Together</h2>
-        <p class="cta-subtitle">I'm available for full-time opportunities and freelance contract projects </p>
-        
-        <!-- Skills Grid Inside CTA -->
-        <div class="skills-grid">
-          <div class="skill-card">
-            <div class="skill-overlay" style="background-image: url('assets/images/Skills/SoundDesign.svg');"></div>
-            <div class="skill-content">
-              <h3 style="color: #89b8d6;">Bespoke Sound Design</h3>
-            </div>
-          </div>
+      <h2>Ed</h2>
 
-          <div class="skill-card">
-            <div class="skill-overlay" style="background-image: url('assets/images/Skills/Programming.svg');"></div>
-            <div class="skill-content">
-              <h3 style="color: #8cc9a1;">Custom Audio Tools</h3>
-            </div>
-          </div>
+      <div class="ed-grid">
+        <div class="ed-bio">
+          <p>As a senior technical sound designer for video games, I integrate deeply with development teams to design, implement, and manage the complete auditory experience.</p>
 
-          <div class="skill-card">
-            <div class="skill-overlay" style="background-image: url('assets/images/Skills/Recording.svg'); background-position: center 70%;"></div>
-            <div class="skill-content">
-              <h3 style="color: #4ade80;">High Resolution Recording</h3>
-            </div>
-          </div>
+          <p>My sound design style is functional and adaptive—always catering to specific gameplay mechanics to elevate the player experience. By leveraging deep expertise across game engines and audio middleware, I manage the full audio pipeline from initial concept to technical implementation.</p>
 
-          <div class="skill-card">
-            <div class="skill-overlay" style="background-image: url('assets/images/Skills/consultation.svg');"></div>
-            <div class="skill-content">
-              <h3 style="color: #60a5fa;">Game Audio Design & implementation</h3>
-            </div>
-          </div>
+          <p>Whether it’s crafting high-impact sound design, engineering adaptive music systems, or building custom audio tools for the dev team, I can help bring your game's vision to life.</p>
+
+          <p class="cta-contact-info">
+            <a href="assets/downloads/Edward_Dai_2026_Resume.docx" download="Edward_Dai_2026_Resume.docx">Download Resume</a>
+            <span class="separator">•</span>
+            <a href="https://www.linkedin.com/in/edward-dai-sfx/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          </p>
         </div>
-        
-        <!-- Contact Form -->
-        <form class="contact-form" action="https://formspree.io/f/xwvvpbkq" method="POST">
-          <div class="form-row">
-            <div class="form-group">
-              <input type="text" name="name" placeholder="Your Name" required>
-            </div>
-            <div class="form-group">
-              <input type="email" name="email" placeholder="Your Email" required>
-            </div>
+
+        <div class="ed-photo">
+          <img src="assets/images/Power.jpg" alt="Edward Dai">
+        </div>
+
+        <form class="contact-form ed-form" action="https://formspree.io/f/xwvvpbkq" method="POST">
+          <div class="form-group">
+            <input type="text" name="name" placeholder="Your Name" required>
+          </div>
+          <div class="form-group">
+            <input type="email" name="email" placeholder="Your Email" required>
           </div>
           <div class="form-group">
             <textarea name="message" rows="4" placeholder="Tell me about your project..." required></textarea>
           </div>
-          <button type="submit" class="btn btn-primary">
+          <button type="submit">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
               <polyline points="22,6 12,13 2,6"></polyline>
@@ -441,18 +228,47 @@
             Send Message
           </button>
         </form>
-        
-        <div class="cta-contact-info">
-          <a href="assets/downloads/Edward_Dai_2026_Resume.docx" download="Edward_Dai_2026_Resume.docx">Download Resume</a>
-          <span class="separator">•</span>
-          <a href="https://www.linkedin.com/in/edward-dai-sfx/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-        </div>
       </div>
 
       <a href="#top" class="back-to-top">Back to Top &uarr;</a>
-
     </div>
   </section>
+
+  <!-- SOUND MODALS -->
+  <div class="modal-overlay" id="soundOverlay"></div>
+
+  <div class="modal-container modal-video" id="modal-bg3" role="dialog" aria-modal="true" aria-label="BG3 Cinematic Sound Redesign">
+    <button class="modal-close" data-close aria-label="Close">&times;</button>
+    <video controls preload="metadata">
+      <source src="https://assets.edward-dai.com/Baldur's%20Gate%203%20Opening%20Cinematic%20Sound%20Redesign.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="modal-video-body">
+      <h3>BG3 Cinematic Sound Redesign</h3>
+      <div class="project-card-tags">
+        <span class="project-card-tag">Sound Redesign</span>
+        <span class="project-card-tag">Game Cinematic</span>
+      </div>
+      <p>A complete sound redesign of a Baldur's Gate 3 cinematic, replacing the original audio with entirely original sound design.</p>
+    </div>
+  </div>
+
+  <div class="modal-container modal-video" id="modal-azuki" role="dialog" aria-modal="true" aria-label="Azuki Elementals Sound Redesign">
+    <button class="modal-close" data-close aria-label="Close">&times;</button>
+    <video controls preload="metadata">
+      <source src="https://assets.edward-dai.com/Azuki%20Elementals%20Sound%20Redesign.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="modal-video-body">
+      <h3>Azuki Elementals Sound Redesign</h3>
+      <div class="project-card-tags">
+        <span class="project-card-tag">Sound Redesign</span>
+        <span class="project-card-tag">Animation</span>
+      </div>
+      <p>A complete sound redesign for an Azuki animated short, reimagining the soundtrack with entirely original sound design.</p>
+      <a href="https://www.youtube.com/watch?v=RrsEiN5ae5E" target="_blank" rel="noopener noreferrer">Watch on YouTube &rarr;</a>
+    </div>
+  </div>
 
   <footer>
     <p>&copy; 2025 Edward Dai. All rights reserved.</p>
@@ -481,6 +297,35 @@
         });
       });
     }
+
+    // SOUND section modals: one shared overlay, per-tile containers.
+    const soundOverlay = document.getElementById('soundOverlay');
+    let openSoundModal = null;
+
+    document.querySelectorAll('.sound-tile').forEach(tile => {
+      tile.addEventListener('click', () => {
+        openSoundModal = document.getElementById(tile.dataset.modal);
+        soundOverlay.classList.add('active');
+        openSoundModal.classList.add('active');
+        document.body.classList.add('modal-open');
+      });
+    });
+
+    function closeSoundModal() {
+      soundOverlay.classList.remove('active');
+      if (openSoundModal) {
+        openSoundModal.classList.remove('active');
+        openSoundModal.querySelectorAll('video').forEach(v => v.pause());
+      }
+      openSoundModal = null;
+      document.body.classList.remove('modal-open');
+    }
+
+    soundOverlay.addEventListener('click', closeSoundModal);
+    document.querySelectorAll('[data-close]').forEach(btn => btn.addEventListener('click', closeSoundModal));
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape' && openSoundModal) closeSoundModal();
+    });
   </script>
 
 </body>

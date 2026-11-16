@@ -6,15 +6,15 @@ body {
   line-height: 1.6;
   background-color: var(--color-bg-dark);
   color: var(--color-text);
-  /* clip (not hidden): hidden on body creates a scroll container and breaks
-     html's scroll-behavior: smooth — anchors would jump instead of scrolling */
+  /* clip (not hidden): body with clip is never a scroll container, so it cannot
+     interfere with html's scroll-behavior: smooth. Do NOT put overflow on html —
+     root overflow propagates to the viewport and breaks smooth anchor scrolling. */
   overflow-x: clip;
 }
 
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 6.25rem; /* keep anchored sections clear of the sticky header */
-  overflow-x: clip;
   /* ponytail: fluid root scale — everything is rem-based, so this one line scales the
      whole site. 16px (unchanged look) below ~1500px viewport, 20px at 2560px+ (1440p). */
   font-size: clamp(16px, 10px + 0.4vw, 20px);

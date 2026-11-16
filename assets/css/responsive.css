@@ -12,10 +12,6 @@
   .nav-right {
     gap: 0.9375rem;
   }
-
-  .nav-right a {
-    font-size: 0.9em;
-  }
 }
 
 /* 768px and below - Mobile */
@@ -30,11 +26,6 @@
   .nav-left,
   .nav-right {
     display: none;
-  }
-
-  .nav-center {
-    position: static;
-    transform: none;
   }
 
   .nav-hamburger {

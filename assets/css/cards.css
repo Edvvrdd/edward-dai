@@ -74,7 +74,7 @@
   left: 0;
   width: 100%;
   height: 0.1875rem;
-  background: linear-gradient(90deg, #5a7fa3 0%, #d4915d 100%);
+  background: var(--color-primary);
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 0.3s ease;
@@ -127,7 +127,7 @@
   left: 0;
   width: 100%;
   height: 0.1875rem;
-  background: linear-gradient(90deg, #d4915d 0%, #5a7fa3 100%);
+  background: var(--color-primary);
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 0.3s ease;
@@ -206,7 +206,7 @@
   left: 0;
   width: 100%;
   height: 0.1875rem;
-  background: linear-gradient(90deg, var(--color-secondary) 0%, var(--color-primary) 100%);
+  background: var(--color-primary);
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 0.3s ease;
@@ -251,7 +251,7 @@
 .testimonial-divider {
   width: 3.125rem;
   height: 0.1875rem;
-  background: linear-gradient(90deg, var(--color-primary) 0%, transparent 100%);
+  background: var(--color-primary);
   margin-bottom: 1.25rem;
 }
 

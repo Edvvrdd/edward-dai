@@ -73,7 +73,7 @@
   display: none;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, #3c3231 0%, #393836 100%);
+  background: #383836;
 }
 
 .blog-image-placeholder span {
@@ -231,10 +231,7 @@
 .monster-name {
   font-weight: 700;
   letter-spacing: 0.5px;
-  background: linear-gradient(180deg, #ffffff 0%, #b0b0b0 50%, #808080 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  background: none;
   text-shadow: 0 2px 0.5rem rgba(0, 0, 0, 0.4);
   position: relative;
   display: inline-block;
