@@ -5,7 +5,9 @@
 /* SOUND: icon tiles that open video modals */
 .sound-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(17.5rem, 1fr));
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 75rem;
+  margin: 0 auto;
   gap: var(--spacing-md);
 }
 
@@ -143,5 +145,20 @@
 
   .ed-photo {
     max-width: 18.75rem;
+  }
+}
+
+/* Match dev section (.projects-grid) responsive column counts so columns align */
+@media (max-width: 900px) {
+  .sound-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .sound-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
   }
 }
