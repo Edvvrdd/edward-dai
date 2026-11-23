@@ -42,22 +42,6 @@
   margin-bottom: 0.625rem;
 }
 
-.project-card-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  margin-bottom: 0.875rem;
-}
-
-.project-card-tag {
-  background: rgba(107, 140, 174, 0.15);
-  color: var(--color-secondary);
-  padding: 0.25rem 0.75rem;
-  font-size: 0.8em;
-  font-weight: 700;
-  border: 1px solid rgba(107, 140, 174, 0.3);
-}
-
 .project-card-body p {
   color: #c8c8c8;
   line-height: 1.6;
